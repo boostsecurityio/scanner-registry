@@ -1,7 +1,7 @@
 api_version: 1.0
 
 
-identifier: example-diff-sarif     # unique name
+id: example-diff-sarif             # unique name
 name: Example Sarif Scanner        # descriptive name
 namespace: example-diff-sarif      # rule namespace
 
