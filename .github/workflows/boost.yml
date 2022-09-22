@@ -12,7 +12,7 @@ on:
 
 jobs:
   boost_security_sast:
-    name: Boost Security / Native Scanner
+    name: Boost Security Scanner
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,5 +21,5 @@ jobs:
         uses: boostsecurityio/boostsec-scanner-github@v3
         with:
           action: scan
-          api_endpoint: https://api.dev.boostsec.io
-          api_token: ${{ secrets.BOOST_API_TOKEN_DEV }}
+          api_token: ${{ secrets.BOOST_API_TOKEN }}
+
