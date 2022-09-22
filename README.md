@@ -1,0 +1,1 @@
+# Boostsecurity Scanner Registry
