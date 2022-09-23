@@ -1,0 +1,25 @@
+name: Scan Rules DB and Namespaces
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+    branches:
+      - main
+      - master
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  scan_job:
+    name: Scanner Registry Action
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Scan Registry
+        uses: boostsecurityio/scanner-registry-action@v1
