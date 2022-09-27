@@ -11,11 +11,11 @@ setup:
         && machine="$(uname -m)" \
         && case "${machine}" in \
           x86_64)
-            name="snyk-linux"
+            arch="snyk-linux"
             sha="c20bc0d5926bab059e5e9b970b511d4f108896f3c4b07e0ca26405cd969c0569  snyk-linux"
             ;;
           aarch64)
-            name="snyk-linux-arm64"
+            arch="snyk-linux-arm64"
             sha="02aa303b65b928e7265dd070992f7823962b4b7e846233f6fa39144935c5fff8  snyk-linux-arm64"         
             ;;
           *)
@@ -23,9 +23,9 @@ setup:
             exit 1
             ;;
         esac \
-        && curl -fsSL -O "https://static.snyk.io/cli/v1.1013.0/${name}" \
+        && curl -fsSL -O "https://static.snyk.io/cli/v1.1013.0/${arch}" \
         && echo "${sha}" | sha256sum -c \
-        && mv ${name} snyk \
+        && mv ${arch} snyk \
         && chmod +x snyk \
         && ./snyk auth $SNYK_TOKEN
 
@@ -36,5 +36,5 @@ steps:
         format: sarif
         post-processor:
             docker:
-                image: docker.io/library/boost-scanner-snyk:devel
+                image: public.ecr.aws/boostsecurityio/boost-scanner-snyk:6486a90
                 command: process
