@@ -1,0 +1,19 @@
+api_version: 1.0
+
+id: boostsecurity-trivy-sbom
+name: Boostsecurity Trivy SBOM
+namespace: boostsecurity-sbom
+
+
+config:
+  support_diff_scan: false
+
+
+steps:
+    - scan:
+        command:
+            docker:
+                image: aquasec/trivy:0.32.0
+                command: trivy fs --format cyclonedx /app
+                workdir: /app
+        format: cyclone
