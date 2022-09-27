@@ -1,0 +1,40 @@
+api_version: 1.0
+
+
+id: boostsecurity-snyk
+name: boostsecurity-snyk module
+namespace: boostsecurity-snyk
+
+setup:
+    - run: |
+        set -eux \
+        && machine="$(uname -m)" \
+        && case "${machine}" in \
+          x86_64)
+            name="snyk-linux"
+            sha="c20bc0d5926bab059e5e9b970b511d4f108896f3c4b07e0ca26405cd969c0569  snyk-linux"
+            ;;
+          aarch64)
+            name="snyk-linux-arm64"
+            sha="02aa303b65b928e7265dd070992f7823962b4b7e846233f6fa39144935c5fff8  snyk-linux-arm64"         
+            ;;
+          *)
+            echo "Unsupported machine: ${machine}"
+            exit 1
+            ;;
+        esac \
+        && curl -fsSL -O "https://static.snyk.io/cli/v1.1013.0/${name}" \
+        && echo "${sha}" | sha256sum -c \
+        && mv ${name} snyk \
+        && chmod +x snyk \
+        && ./snyk auth $SNYK_TOKEN
+
+steps:
+    - scan:
+        command:
+            run: $SETUP_PATH/snyk test --json || true
+        format: sarif
+        post-processor:
+            docker:
+                image: docker.io/library/boost-scanner-snyk:devel
+                command: process
