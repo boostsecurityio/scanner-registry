@@ -1,0 +1,16 @@
+api_version: 1.0
+
+id: boostsecurity-brakeman-scanner
+name: Boostsecurity Brakeman Scanner
+namespace: boostsecurity-brakeman
+
+config:
+  support_diff_scan: true
+
+steps:
+  - scan:
+      command:
+        run: docker run --rm -v "$(pwd):/src" \
+          -it presidentbeef/brakeman:latest --format json --quiet --no-pager /src | \
+          docker run --rm --interactive public.ecr.aws/boostsecurityio/boost-scanner-brakeman:latest
+      format: sarif
