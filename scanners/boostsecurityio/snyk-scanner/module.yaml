@@ -5,39 +5,53 @@ id: boostsecurity-snyk-scanner
 name: Boostsecurity Snyk Scanner Module
 namespace: boost-snyk
 
+
 config:
   support_diff_scan: true
 
+
 setup:
-    - run: |
-        set -eux \
-        && machine="$(uname -m)" \
-        && case "${machine}" in \
-          x86_64)
+  - name: download snyk-cli
+    environment:
+      VERSION: v1.1014.0
+    run: |
+        if test -f /etc/os-release
+        then grep -q alpine /etc/os-release && os=alpine || os=linux
+        else os=linux
+        fi
+
+        case "$(uname -m)-${os}" in
+          x86_64-linux)
             arch="snyk-linux"
-            sha="c20bc0d5926bab059e5e9b970b511d4f108896f3c4b07e0ca26405cd969c0569  snyk-linux"
+            sha="ad45378b3e137f45335ccbd09d39395f6acb60f2375a0971c9942cc959adda4f  snyk-linux"
             ;;
-          aarch64)
+          x86_64-alpine)
+            arch="snyk-alpine"
+            sha="f301c353de234b12e8af1a9269aed69d2cdc2b1ee56092c533144ba6945f8fdb  snyk-alpine"
+            ;;
+          aarch64-linux)
             arch="snyk-linux-arm64"
-            sha="02aa303b65b928e7265dd070992f7823962b4b7e846233f6fa39144935c5fff8  snyk-linux-arm64"         
+            sha="b3c074f98368a1dd5d06d78f29db1a721f31f2ba5171e694b67fba3c27ba818a  snyk-linux-arm64"
             ;;
           *)
             echo "Unsupported machine: ${machine}"
             exit 1
             ;;
-        esac \
-        && curl -fsSL -O "https://static.snyk.io/cli/v1.1013.0/${arch}" \
-        && echo "${sha}" | sha256sum -c \
-        && mv ${arch} snyk \
-        && chmod +x snyk \
-        && ./snyk auth $SNYK_TOKEN
+        esac
+
+        curl -fsSL -O "https://static.snyk.io/cli/${VERSION}/${arch}"
+        echo ${sha} | sha256sum --check
+
+        mv ${arch} snyk
+        chmod +x snyk
+        ./snyk auth $SNYK_TOKEN
 
 steps:
-    - scan:
-        command:
-            run: $SETUP_PATH/snyk test --json || true
-        format: sarif
-        post-processor:
-            docker:
-                image: public.ecr.aws/boostsecurityio/boost-scanner-snyk:6486a90
-                command: process
+  - scan:
+      command:
+          run: $SETUP_PATH/snyk test --json || true
+      format: sarif
+      post-processor:
+        docker:
+            image: public.ecr.aws/boostsecurityio/boost-scanner-snyk:6486a90
+            command: process
