@@ -10,7 +10,12 @@ config:
 steps:
   - scan:
       command:
-        run: docker run --rm -v "$(pwd):/src" \
-          -it presidentbeef/brakeman:latest --format json --quiet --no-pager /src | \
-          docker run --rm --interactive public.ecr.aws/boostsecurityio/boost-scanner-brakeman:latest
+        docker:
+          image: presidentbeef/brakeman:latest
+          command: --format json --quiet --no-pager --no-exit-on-warn --no-exit-on-error /src
+          workdir: /src
       format: sarif
+      post-processor:
+        docker:
+          image: test:latest
+          command: --interactive
