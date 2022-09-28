@@ -14,8 +14,10 @@ steps:
     - scan:
         command:
           docker:
-            image: public.ecr.aws/boostsecurityio/boost-scanner-native:a4909e6
+            image: public.ecr.aws/boostsecurityio/boost-scanner-native:cc61f34@sha256:142ddd9cc98e1fecf0833770bf84a3d773ecabbd1ac1566a19f5496ff122eef5
             command: scanner scan
             workdir: /src
+            environment:
+              XDG_CONFIG_HOME: /tmp
           name: scanner
         format: sarif
