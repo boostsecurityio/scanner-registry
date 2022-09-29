@@ -11,11 +11,11 @@ steps:
   - scan:
       command:
         docker:
-          image: presidentbeef/brakeman:latest
+          image: presidentbeef/brakeman:latest@sha256:7416e4cf46131d5f920be496485d30d55a9b9f00acec28847ae1e5f10ac837f4
           command: --format json --quiet --no-pager --no-exit-on-warn --no-exit-on-error /src
           workdir: /src
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-brakeman:89a87a3@sha256:c4627e2bf8567a39f6b5fd950b04ba452841b106a64bca91f0461f6049ae9b60
+          image: public.ecr.aws/boostsecurityio/boost-scanner-brakeman:0d60f30@sha256:e2021b9343d856962e1349fdb2a68833fa32677a787ec4f6ee10670766089f23
           command: --interactive
