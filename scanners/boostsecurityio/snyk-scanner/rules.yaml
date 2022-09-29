@@ -4,41 +4,45 @@ boost-snyk:
       - ALL
       - boost-hardened
       - supply-chain
-    description: "Dependency with a Low Risk Vulnerability"
-    driver: "Boost Scanner"
-    group: "Known Vulnerable Components"
-    prettyName: "Dependency with a Low Risk Vulnerability"
-    ref: "https://docs.boostsecurity.net"
+    description: Dependency with a Low Risk Vulnerability
+    driver: Boost Scanner
+    name: cve-low
+    group: Known Vulnerable Components
+    prettyName: Dependency with a Low Risk Vulnerability
+    ref: https://docs.boostsecurity.net
   cve-moderate:
     categories:
       - ALL
       - boost-hardened
       - supply-chain
-    description: "Dependency with a Medium Risk Vulnerability"
-    driver: "Boost Scanner"
-    group: "Known Vulnerable Components"
-    prettyName: "Dependency with a Medium Risk Vulnerability"
-    ref: "https://docs.boostsecurity.net"
+    description: Dependency with a Medium Risk Vulnerability
+    driver: Boost Scanner
+    name: cve-moderate
+    group: Known Vulnerable Components
+    prettyName: Dependency with a Medium Risk Vulnerability
+    ref: https://docs.boostsecurity.net
   cve-high:
     categories:
       - ALL
       - boost-baseline
       - boost-hardened
       - supply-chain
-    description: "Dependency with a High Risk Vulnerability"
-    driver: "Boost Scanner"
-    group: "Known Vulnerable Components"
-    prettyName: "Dependency with a High Risk Vulnerability"
-    ref: "https://docs.boostsecurity.net"
+    description: Dependency with a High Risk Vulnerability
+    driver: Boost Scanner
+    name: cve-high
+    group: Known Vulnerable Components
+    prettyName: Dependency with a High Risk Vulnerability
+    ref: https://docs.boostsecurity.net
   cve-critical:
     categories:
       - ALL
       - boost-baseline
       - boost-hardened
       - supply-chain
-    description: "Dependency with a Critical Vulnerability"
-    driver: "Boost Scanner"
-    group: "Known Vulnerable Components"
-    prettyName: "Dependency with a Critical Vulnerability"
-    ref: "https://docs.boostsecurity.net"
+    description: Dependency with a Critical Vulnerability
+    name: cve-critical
+    driver: Boost Scanner
+    group: Known Vulnerable Components
+    prettyName: Dependency with a Critical Vulnerability
+    ref: https://docs.boostsecurity.net
 
