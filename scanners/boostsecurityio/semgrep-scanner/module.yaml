@@ -2,7 +2,7 @@ api_version: 1.0
 
 id: boostsecurity-semgrep-scanner
 name: Boostsecurity Semgrep Scanner
-namespace: boostsecurity-semgrep
+namespace: boost-semgrep
 
 config:
   support_diff_scan: true
@@ -21,5 +21,5 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-semgrep:a881c15@sha256:7e3041c9d0917a677a87079ddf41dad46424915d7b5e10892ee9fabb2892ccf5
+          image: public.ecr.aws/boostsecurityio/boost-scanner-semgrep:fc4e93d@sha256:29a92ab5faaf254eb1a9e9beebbe6ea8341c50748de5579aeecc8a30fb07ab9b
           command: process
