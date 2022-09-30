@@ -1,0 +1,21 @@
+api_version: 1.0
+
+id: boostsecurity-brakeman-scanner-test
+name: Boostsecurity Brakeman Scanner Test
+namespace: boostsecurity-brakeman-test
+
+config:
+  support_diff_scan: true
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: presidentbeef/brakeman:latest@sha256:7416e4cf46131d5f920be496485d30d55a9b9f00acec28847ae1e5f10ac837f4
+          command: --format json --quiet --no-pager --no-exit-on-warn --no-exit-on-error /src
+          workdir: /src
+      format: sarif
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-brakeman:0d60f30@sha256:e2021b9343d856962e1349fdb2a68833fa32677a787ec4f6ee10670766089f23
+          command: --interactive
