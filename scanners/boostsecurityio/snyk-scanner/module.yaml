@@ -54,11 +54,7 @@ steps:
   - scan:
       command:
           run: |
-            $SETUP_PATH/snyk test --json --all-projects
-            status=$?
-            if [ $status -ne 0 ] || [[ $status -ne 1 ]]; then
-              exit $status
-            fi
+            $SETUP_PATH/snyk test --json --all-projects || true
       format: sarif
       post-processor:
         docker:
