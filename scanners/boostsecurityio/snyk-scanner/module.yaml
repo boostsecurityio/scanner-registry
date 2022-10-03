@@ -58,5 +58,5 @@ steps:
       format: sarif
       post-processor:
         docker:
-            image: boost-scanner-snyk:devel
+            image: public.ecr.aws/boostsecurityio/boost-scanner-snyk:6486a90@sha256:fcd6c7a780dbf29129f580fe1f3a3af0d1b906a4574ac5403079f9de0a700bd6
             command: process
