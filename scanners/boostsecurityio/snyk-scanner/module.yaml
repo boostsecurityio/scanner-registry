@@ -33,6 +33,10 @@ setup:
             arch="snyk-linux-arm64"
             sha="b3c074f98368a1dd5d06d78f29db1a721f31f2ba5171e694b67fba3c27ba818a  snyk-linux-arm64"
             ;;
+          arm64-linux)
+            arch="snyk-macos"
+            sha="a6c7aec91cf67223acd7f2b6e2b793f9ddd70649e1740462bd1af65476c78b4f  snyk-macos"
+            ;;        
           *)
             echo "Unsupported machine: ${machine}"
             exit 1
@@ -49,9 +53,14 @@ setup:
 steps:
   - scan:
       command:
-          run: $SETUP_PATH/snyk test --json || true
+          run: |
+            $SETUP_PATH/snyk test --json --all-projects
+            status=$?
+            if [ $status -ne 0 ] || [[ $status -ne 1 ]]; then
+              exit $status
+            fi
       format: sarif
       post-processor:
         docker:
-            image: public.ecr.aws/boostsecurityio/boost-scanner-snyk:6486a90@sha256:fcd6c7a780dbf29129f580fe1f3a3af0d1b906a4574ac5403079f9de0a700bd6
+            image: boost-scanner-snyk:devel
             command: process
