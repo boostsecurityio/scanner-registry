@@ -54,7 +54,8 @@ steps:
   - scan:
       command:
           run: |
-            $SETUP_PATH/snyk test --json --all-projects || true
+            $SETUP_PATH/snyk test --json --all-projects || ecode=$?
+            [ ${ecode:-0} -lt 2 ] || exit $ecode
       format: sarif
       post-processor:
         docker:
