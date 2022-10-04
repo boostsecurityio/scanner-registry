@@ -1,11 +1,10 @@
-boost-semgrep:
+rules:
   CWE-284:
     categories:
     - ALL
     - cwe-top-25
     - cwe-284
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-284
     pretty_name: CWE-284 - Improper Access Control
@@ -17,7 +16,6 @@ boost-semgrep:
     - cwe-320
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-320
     pretty_name: CWE-320 - Key Management Errors
@@ -30,7 +28,6 @@ boost-semgrep:
     - cwe-319
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-319
     pretty_name: CWE-319 - Cleartext Transmission of Sensitive Information
@@ -42,7 +39,6 @@ boost-semgrep:
     - cwe-326
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-326
     pretty_name: CWE-326 - Inadequate Encryption Strength
@@ -52,7 +48,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-778
-    driver: semgrep
     group: CWE Top 25
     name: CWE-778
     pretty_name: CWE-778 - Insufficient Logging
@@ -65,7 +60,6 @@ boost-semgrep:
     - cwe-287
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-287
     pretty_name: CWE-287 - Improper Authentication
@@ -77,7 +71,6 @@ boost-semgrep:
     - cwe-top-25
     - cwe-200
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-200
     pretty_name: CWE-200 - Exposure of Sensitive Information to an Unauthorized Actor
@@ -89,7 +82,6 @@ boost-semgrep:
     - cwe-311
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-311
     pretty_name: CWE-311 - Missing Encryption of Sensitive Data
@@ -102,7 +94,6 @@ boost-semgrep:
     - cwe-522
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-522
     pretty_name: CWE-522 - Insufficiently Protected Credentials
@@ -114,7 +105,6 @@ boost-semgrep:
     - cwe-top-25
     - cwe-269
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-269
     pretty_name: CWE-269 - Improper Privilege Management
@@ -125,7 +115,6 @@ boost-semgrep:
     - ALL
     - cwe-250
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-250
     pretty_name: CWE-250 - Execution with Unnecessary Privileges
@@ -138,7 +127,6 @@ boost-semgrep:
     - cwe-798
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-798
     pretty_name: CWE-798 - Use of Hard-coded Credentials
@@ -150,7 +138,6 @@ boost-semgrep:
     - cwe-top-25
     - cwe-732
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-732
     pretty_name: CWE-732 - Incorrect Permission Assignment for Critical Resource
@@ -163,7 +150,6 @@ boost-semgrep:
     - cwe-352
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-352
     pretty_name: CWE-352 - Cross-Site Request Forgery (CSRF)
@@ -173,7 +159,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-614
-    driver: semgrep
     group: CWE Top 25
     name: CWE-614
     pretty_name: CWE-614 - Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
@@ -183,7 +168,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-1004
-    driver: semgrep
     group: CWE Top 25
     name: CWE-1004
     pretty_name: CWE-1004 - Sensitive Cookie Without 'HttpOnly' Flag
@@ -196,7 +180,6 @@ boost-semgrep:
     - cwe-89
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-89
     pretty_name: CWE-89 - Improper Neutralization of Special Elements used in an SQL
@@ -209,7 +192,6 @@ boost-semgrep:
     - cwe-327
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-327
     pretty_name: CWE-327 - Use of a Broken or Risky Cryptographic Algorithm
@@ -220,7 +202,6 @@ boost-semgrep:
     - ALL
     - cwe-345
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-345
     pretty_name: CWE-345 - Insufficient Verification of Data Authenticity
@@ -231,7 +212,6 @@ boost-semgrep:
     - ALL
     - cwe-top-25
     - cwe-400
-    driver: semgrep
     group: CWE Top 25
     name: CWE-400
     pretty_name: CWE-400 - Uncontrolled Resource Consumption
@@ -244,7 +224,6 @@ boost-semgrep:
     - cwe-22
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-22
     pretty_name: CWE-22 - Improper Limitation of a Pathname to a Restricted Directory
@@ -258,7 +237,6 @@ boost-semgrep:
     - cwe-94
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-94
     pretty_name: CWE-94 - Improper Control of Generation of Code ('Code Injection')
@@ -271,7 +249,6 @@ boost-semgrep:
     - cwe-79
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-79
     pretty_name: CWE-79 - Improper Neutralization of Input During Web Page Generation
@@ -284,7 +261,6 @@ boost-semgrep:
     - cwe-489
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-489
     pretty_name: CWE-489 - Active Debug Code
@@ -297,7 +273,6 @@ boost-semgrep:
     - cwe-611
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-611
     pretty_name: CWE-611 - Improper Restriction of XML External Entity Reference
@@ -310,7 +285,6 @@ boost-semgrep:
     - cwe-918
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-918
     pretty_name: CWE-918 - Server-Side Request Forgery (SSRF)
@@ -321,7 +295,6 @@ boost-semgrep:
     - ALL
     - cwe-top-25
     - cwe-601
-    driver: semgrep
     group: CWE Top 25
     name: CWE-601
     pretty_name: CWE-601 - URL Redirection to Untrusted Site ('Open Redirect')
@@ -334,7 +307,6 @@ boost-semgrep:
     - cwe-502
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-502
     pretty_name: CWE-502 - Deserialization of Untrusted Data
@@ -346,7 +318,6 @@ boost-semgrep:
     - cwe-96
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-96
     pretty_name: CWE-96 - Improper Neutralization of Directives in Statically Saved
@@ -357,7 +328,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-704
-    driver: semgrep
     group: CWE Top 25
     name: CWE-704
     pretty_name: CWE-704 - Incorrect Type Conversion or Cast
@@ -369,7 +339,6 @@ boost-semgrep:
     - cwe-95
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-95
     pretty_name: CWE-95 - Improper Neutralization of Directives in Dynamically Evaluated
@@ -380,7 +349,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-1236
-    driver: semgrep
     group: CWE Top 25
     name: CWE-1236
     pretty_name: CWE-1236 - Improper Neutralization of Formula Elements in a CSV File
@@ -393,7 +361,6 @@ boost-semgrep:
     - cwe-78
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-78
     pretty_name: CWE-78 - Improper Neutralization of Special Elements used in an OS
@@ -404,7 +371,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-116
-    driver: semgrep
     group: CWE Top 25
     name: CWE-116
     pretty_name: CWE-116 - Improper Encoding or Escaping of Output
@@ -414,7 +380,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-1275
-    driver: semgrep
     group: CWE Top 25
     name: CWE-1275
     pretty_name: CWE-1275 - Sensitive Cookie with Improper SameSite Attribute
@@ -424,7 +389,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-943
-    driver: semgrep
     group: CWE Top 25
     name: CWE-943
     pretty_name: CWE-943 - Improper Neutralization of Special Elements in Data Query
@@ -438,7 +402,6 @@ boost-semgrep:
     - cwe-295
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-295
     pretty_name: CWE-295 - Improper Certificate Validation
@@ -448,7 +411,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-706
-    driver: semgrep
     group: CWE Top 25
     name: CWE-706
     pretty_name: CWE-706 - Use of Incorrectly-Resolved Name or Reference
@@ -460,7 +422,6 @@ boost-semgrep:
     - cwe-top-25
     - cwe-276
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-276
     pretty_name: CWE-276 - Incorrect Default Permissions
@@ -470,7 +431,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-915
-    driver: semgrep
     group: CWE Top 25
     name: CWE-915
     pretty_name: CWE-915 - Improperly Controlled Modification of Dynamically-Determined
@@ -484,7 +444,6 @@ boost-semgrep:
     - cwe-74
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-74
     pretty_name: CWE-74 - Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')
@@ -496,7 +455,6 @@ boost-semgrep:
     - cwe-90
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-90
     pretty_name: CWE-90 - Improper Neutralization of Special Elements used in an LDAP
@@ -508,7 +466,6 @@ boost-semgrep:
     - ALL
     - cwe-346
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-346
     pretty_name: CWE-346 - Origin Validation Error
@@ -519,7 +476,6 @@ boost-semgrep:
     - ALL
     - cwe-1104
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-1104
     pretty_name: CWE-1104 - Use of Unmaintained Third Party Components
@@ -531,7 +487,6 @@ boost-semgrep:
     - cwe-top-25
     - cwe-310
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-310
     pretty_name: CWE-310 - Cryptographic Issues
@@ -544,7 +499,6 @@ boost-semgrep:
     - cwe-20
     - boost-baseline
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-20
     pretty_name: CWE-20 - Improper Input Validation
@@ -554,7 +508,6 @@ boost-semgrep:
     categories:
     - ALL
     - cwe-693
-    driver: semgrep
     group: CWE Top 25
     name: CWE-693
     pretty_name: CWE-693 - Protection Mechanism Failure
@@ -565,7 +518,6 @@ boost-semgrep:
     - ALL
     - cwe-494
     - boost-hardened
-    driver: semgrep
     group: CWE Top 25
     name: CWE-494
     pretty_name: CWE-494 - Download of Code Without Integrity Check
@@ -574,7 +526,6 @@ boost-semgrep:
   CWE-UNKNOWN:
     categories:
     - ALL
-    driver: semgrep
     group: CWE Top 25
     name: CWE-UNKNOWN
     pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule

@@ -1,11 +1,10 @@
-boost-snyk:
+rules:
   cve-low:
     categories:
       - ALL
       - boost-hardened
       - supply-chain
     description: Dependency with a Low Risk Vulnerability
-    driver: Boost Scanner
     name: cve-low
     group: Known Vulnerable Components
     prettyName: Dependency with a Low Risk Vulnerability
@@ -16,7 +15,6 @@ boost-snyk:
       - boost-hardened
       - supply-chain
     description: Dependency with a Medium Risk Vulnerability
-    driver: Boost Scanner
     name: cve-moderate
     group: Known Vulnerable Components
     prettyName: Dependency with a Medium Risk Vulnerability
@@ -28,7 +26,6 @@ boost-snyk:
       - boost-hardened
       - supply-chain
     description: Dependency with a High Risk Vulnerability
-    driver: Boost Scanner
     name: cve-high
     group: Known Vulnerable Components
     prettyName: Dependency with a High Risk Vulnerability
@@ -41,7 +38,6 @@ boost-snyk:
       - supply-chain
     description: Dependency with a Critical Vulnerability
     name: cve-critical
-    driver: Boost Scanner
     group: Known Vulnerable Components
     prettyName: Dependency with a Critical Vulnerability
     ref: https://docs.boostsecurity.net
