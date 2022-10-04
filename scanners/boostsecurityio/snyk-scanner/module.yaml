@@ -32,7 +32,7 @@ setup:
           aarch64-linux)
             arch="snyk-linux-arm64"
             sha="b3c074f98368a1dd5d06d78f29db1a721f31f2ba5171e694b67fba3c27ba818a  snyk-linux-arm64"
-            ;;    
+            ;;
           *)
             echo "Unsupported machine: ${machine}"
             exit 1
