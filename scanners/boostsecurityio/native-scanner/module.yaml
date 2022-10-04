@@ -14,7 +14,7 @@ steps:
     - scan:
         command:
           docker:
-            image: public.ecr.aws/boostsecurityio/boost-scanner-native:126a64c@sha256:899ddcfca8ebaca9f53d0aafa986162b4a0c2553ca135f2c677032bd7600676a
+            image: public.ecr.aws/boostsecurityio/boost-scanner-native:b939d9a@sha256:dcefc1ed48b628d043268bee0de8d24cb3468ca89acb92ccb91d0112a41920a2
             command: scanner scan
             workdir: /src
           name: scanner
