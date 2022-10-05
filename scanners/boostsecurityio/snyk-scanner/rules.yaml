@@ -1,4 +1,4 @@
-boost-snyk:
+rules:
   cve-low:
     categories:
       - ALL
@@ -45,4 +45,3 @@ boost-snyk:
     group: Known Vulnerable Components
     prettyName: Dependency with a Critical Vulnerability
     ref: https://docs.boostsecurity.net
-

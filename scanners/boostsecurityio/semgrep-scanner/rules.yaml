@@ -1,10 +1,10 @@
-boost-semgrep:
+rules:
   CWE-284:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-284
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-284
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-284
@@ -13,10 +13,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-320:
     categories:
-    - ALL
-    - cwe-320
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-320
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-320
@@ -25,11 +25,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-319:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-319
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-319
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-319
@@ -38,10 +38,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-326:
     categories:
-    - ALL
-    - cwe-326
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-326
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-326
@@ -50,8 +50,8 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-778:
     categories:
-    - ALL
-    - cwe-778
+      - ALL
+      - cwe-778
     driver: semgrep
     group: CWE Top 25
     name: CWE-778
@@ -60,11 +60,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-287:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-287
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-287
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-287
@@ -73,10 +73,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-200:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-200
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-200
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-200
@@ -85,10 +85,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-311:
     categories:
-    - ALL
-    - cwe-311
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-311
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-311
@@ -97,11 +97,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-522:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-522
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-522
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-522
@@ -110,10 +110,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-269:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-269
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-269
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-269
@@ -122,9 +122,9 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-250:
     categories:
-    - ALL
-    - cwe-250
-    - boost-hardened
+      - ALL
+      - cwe-250
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-250
@@ -133,11 +133,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-798:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-798
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-798
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-798
@@ -146,10 +146,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-732:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-732
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-732
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-732
@@ -158,11 +158,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-352:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-352
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-352
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-352
@@ -171,8 +171,8 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-614:
     categories:
-    - ALL
-    - cwe-614
+      - ALL
+      - cwe-614
     driver: semgrep
     group: CWE Top 25
     name: CWE-614
@@ -181,8 +181,8 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-1004:
     categories:
-    - ALL
-    - cwe-1004
+      - ALL
+      - cwe-1004
     driver: semgrep
     group: CWE Top 25
     name: CWE-1004
@@ -191,24 +191,25 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-89:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-89
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-89
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-89
-    pretty_name: CWE-89 - Improper Neutralization of Special Elements used in an SQL
+    pretty_name:
+      CWE-89 - Improper Neutralization of Special Elements used in an SQL
       Command ('SQL Injection')
     description: The code constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-327:
     categories:
-    - ALL
-    - cwe-327
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-327
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-327
@@ -217,9 +218,9 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-345:
     categories:
-    - ALL
-    - cwe-345
-    - boost-hardened
+      - ALL
+      - cwe-345
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-345
@@ -228,9 +229,9 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-400:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-400
+      - ALL
+      - cwe-top-25
+      - cwe-400
     driver: semgrep
     group: CWE Top 25
     name: CWE-400
@@ -239,25 +240,26 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-22:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-22
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-22
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-22
-    pretty_name: CWE-22 - Improper Limitation of a Pathname to a Restricted Directory
+    pretty_name:
+      CWE-22 - Improper Limitation of a Pathname to a Restricted Directory
       ('Path Traversal')
     description: The code uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-94:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-94
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-94
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-94
@@ -266,24 +268,25 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-79:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-79
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-79
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-79
-    pretty_name: CWE-79 - Improper Neutralization of Input During Web Page Generation
+    pretty_name:
+      CWE-79 - Improper Neutralization of Input During Web Page Generation
       ('Cross-site Scripting')
     description: The code does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-489:
     categories:
-    - ALL
-    - cwe-489
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-489
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-489
@@ -292,11 +295,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-611:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-611
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-611
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-611
@@ -305,11 +308,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-918:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-918
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-918
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-918
@@ -318,9 +321,9 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-601:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-601
+      - ALL
+      - cwe-top-25
+      - cwe-601
     driver: semgrep
     group: CWE Top 25
     name: CWE-601
@@ -329,11 +332,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-502:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-502
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-502
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-502
@@ -342,21 +345,22 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-96:
     categories:
-    - ALL
-    - cwe-96
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-96
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-96
-    pretty_name: CWE-96 - Improper Neutralization of Directives in Statically Saved
+    pretty_name:
+      CWE-96 - Improper Neutralization of Directives in Statically Saved
       Code ('Static Code Injection')
     description: The code receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before inserting the input into an executable resource, such as a library, configuration file, or template.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-704:
     categories:
-    - ALL
-    - cwe-704
+      - ALL
+      - cwe-704
     driver: semgrep
     group: CWE Top 25
     name: CWE-704
@@ -365,21 +369,22 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-95:
     categories:
-    - ALL
-    - cwe-95
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-95
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-95
-    pretty_name: CWE-95 - Improper Neutralization of Directives in Dynamically Evaluated
+    pretty_name:
+      CWE-95 - Improper Neutralization of Directives in Dynamically Evaluated
       Code ('Eval Injection')
     description: The code receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval").
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-1236:
     categories:
-    - ALL
-    - cwe-1236
+      - ALL
+      - cwe-1236
     driver: semgrep
     group: CWE Top 25
     name: CWE-1236
@@ -388,22 +393,23 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-78:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-78
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-78
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-78
-    pretty_name: CWE-78 - Improper Neutralization of Special Elements used in an OS
+    pretty_name:
+      CWE-78 - Improper Neutralization of Special Elements used in an OS
       Command ('OS Command Injection')
     description: The code constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-116:
     categories:
-    - ALL
-    - cwe-116
+      - ALL
+      - cwe-116
     driver: semgrep
     group: CWE Top 25
     name: CWE-116
@@ -412,8 +418,8 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-1275:
     categories:
-    - ALL
-    - cwe-1275
+      - ALL
+      - cwe-1275
     driver: semgrep
     group: CWE Top 25
     name: CWE-1275
@@ -422,22 +428,23 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-943:
     categories:
-    - ALL
-    - cwe-943
+      - ALL
+      - cwe-943
     driver: semgrep
     group: CWE Top 25
     name: CWE-943
-    pretty_name: CWE-943 - Improper Neutralization of Special Elements in Data Query
+    pretty_name:
+      CWE-943 - Improper Neutralization of Special Elements in Data Query
       Logic
     description: The code generates a query intended to access or manipulate data in a data store such as a database, but it does not neutralize or incorrectly neutralizes special elements that can modify the intended logic of the query.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-295:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-295
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-295
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-295
@@ -446,8 +453,8 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-706:
     categories:
-    - ALL
-    - cwe-706
+      - ALL
+      - cwe-706
     driver: semgrep
     group: CWE Top 25
     name: CWE-706
@@ -456,10 +463,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-276:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-276
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-276
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-276
@@ -468,22 +475,23 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-915:
     categories:
-    - ALL
-    - cwe-915
+      - ALL
+      - cwe-915
     driver: semgrep
     group: CWE Top 25
     name: CWE-915
-    pretty_name: CWE-915 - Improperly Controlled Modification of Dynamically-Determined
+    pretty_name:
+      CWE-915 - Improperly Controlled Modification of Dynamically-Determined
       Object Attributes
     description: The code receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-74:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-74
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-74
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-74
@@ -492,22 +500,23 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-90:
     categories:
-    - ALL
-    - cwe-90
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-90
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-90
-    pretty_name: CWE-90 - Improper Neutralization of Special Elements used in an LDAP
+    pretty_name:
+      CWE-90 - Improper Neutralization of Special Elements used in an LDAP
       Query ('LDAP Injection')
     description: The code constructs all or part of an LDAP query using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended LDAP query when it is sent to a downstream component.
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-346:
     categories:
-    - ALL
-    - cwe-346
-    - boost-hardened
+      - ALL
+      - cwe-346
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-346
@@ -516,9 +525,9 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-1104:
     categories:
-    - ALL
-    - cwe-1104
-    - boost-hardened
+      - ALL
+      - cwe-1104
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-1104
@@ -527,10 +536,10 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-310:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-310
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-310
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-310
@@ -539,11 +548,11 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-20:
     categories:
-    - ALL
-    - cwe-top-25
-    - cwe-20
-    - boost-baseline
-    - boost-hardened
+      - ALL
+      - cwe-top-25
+      - cwe-20
+      - boost-baseline
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-20
@@ -552,8 +561,8 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-693:
     categories:
-    - ALL
-    - cwe-693
+      - ALL
+      - cwe-693
     driver: semgrep
     group: CWE Top 25
     name: CWE-693
@@ -562,9 +571,9 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-494:
     categories:
-    - ALL
-    - cwe-494
-    - boost-hardened
+      - ALL
+      - cwe-494
+      - boost-hardened
     driver: semgrep
     group: CWE Top 25
     name: CWE-494
@@ -573,7 +582,7 @@ boost-semgrep:
     ref: https://github.com/returntocorp/semgrep-rules/
   CWE-UNKNOWN:
     categories:
-    - ALL
+      - ALL
     driver: semgrep
     group: CWE Top 25
     name: CWE-UNKNOWN
