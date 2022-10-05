@@ -1,5 +1,4 @@
----
-boostsecurity-brakeman:
+rules:
   cwe-1004:
     categories:
       - ALL
