@@ -17,5 +17,5 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-brakeman:0d60f30@sha256:e2021b9343d856962e1349fdb2a68833fa32677a787ec4f6ee10670766089f23
+          image: public.ecr.aws/boostsecurityio/boost-scanner-brakeman:951712d@sha256:335e67fcb7d40cb51d1ea54d17d85269f6da87520d592889e1cbba87e6ddaf28
           command: --interactive
