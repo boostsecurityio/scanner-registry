@@ -1,7 +1,7 @@
 api_version: 1.0
 
 
-id: native-scanner
+id: scanner
 name: Boost Native Scanner
 namespace: default
 
