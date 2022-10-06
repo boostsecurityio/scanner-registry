@@ -4,7 +4,6 @@ rules:
       - ALL
       - cwe-1004
     description: The software uses a cookie to store sensitive information, but the cookie is not marked with the HttpOnly flag.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-1004
     pretty_name: "CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag"
@@ -13,7 +12,6 @@ rules:
     categories:
       - ALL
     description: The web application produces links to untrusted external sites outside of its sphere of control, but it does not properly prevent the external site from modifying security-critical properties of the window.opener object, such as the location property.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-1022
     pretty_name: "CWE-1022: Missing Reverse-Tabnabbing Protection"
@@ -23,7 +21,6 @@ rules:
       - ALL
       - cwe-1104
     description: The product relies on third-party components that are not actively supported or maintained by the original developer or a trusted proxy for the original developer.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-1104
     pretty_name: "CWE-1104: Use of Unmaintained Third Party Components"
@@ -32,7 +29,6 @@ rules:
     categories:
       - ALL
     description: The software reads data past the end, or before the beginning, of the intended buffer.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-125
     pretty_name: "CWE-125: Out-of-bounds Read"
@@ -41,7 +37,6 @@ rules:
     categories:
       - ALL
     description: The comparison logic is performed over a series of steps rather than across the entire string in one operation. If there is a comparison logic failure, the operation may be vulnerable to a timing attack that can result in the interception of the process.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-1254
     pretty_name: "CWE-1254: Incorrect Comparison Logic Granularity"
@@ -50,7 +45,6 @@ rules:
     categories:
       - ALL
     description: The product uses a template engine to insert or process externally-influenced input, but it does not neutralize or incorrectly neutralizes special elements or syntax that can be interpreted as template expressions or other code directives when processed by the engine.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-1336
     pretty_name: "CWE-1336: Improper Neutralization of Special Elements Used in a Template Engine"
@@ -59,7 +53,6 @@ rules:
     categories:
       - ALL
     description: The software specifies a regular expression in a way that causes data to be improperly matched or compared.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-185
     pretty_name: "CWE-185: Incorrect Regular Expression"
@@ -69,7 +62,6 @@ rules:
       - ALL
       - cwe-20
     description: The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-20
     pretty_name: "CWE-20: Improper Input Validation"
@@ -79,7 +71,6 @@ rules:
       - ALL
       - cwe-200
     description: The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-200
     pretty_name: "CWE-200: Exposure of Sensitive Information"
@@ -88,7 +79,6 @@ rules:
     categories:
       - ALL
     description: The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-22
     pretty_name: "CWE-22: Path Traversal"
@@ -97,7 +87,6 @@ rules:
     categories:
       - ALL
     description: The software contains a hard-coded password, which it uses for its own inbound authentication or for outbound communication to external components.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-259
     pretty_name: "CWE-259: Use of Hard-coded Password"
@@ -107,7 +96,6 @@ rules:
       - ALL
       - cwe-284
     description: The software does not restrict or incorrectly restricts access to a resource from an unauthorized actor.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-284
     pretty_name: "CWE-284: Improper Access Control"
@@ -116,7 +104,6 @@ rules:
     categories:
       - ALL
     description: The software does not perform or incorrectly performs an authorization check when an actor attempts to access a resource or perform an action.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-285
     pretty_name: "CWE-285: Improper Authorization"
@@ -126,7 +113,6 @@ rules:
       - ALL
       - cwe-287
     description: When an actor claims to have a given identity, the software does not prove or insufficiently proves that the claim is correct.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-287
     pretty_name: "CWE-287: Improper Authentication on Critical Resource"
@@ -136,7 +122,6 @@ rules:
       - ALL
       - cwe-311
     description: The software does not encrypt sensitive or critical information before storage or transmission.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-311
     pretty_name: "CWE-311: Missing Encryption of Sensitive Data"
@@ -145,7 +130,6 @@ rules:
     categories:
       - ALL
     description: The product uses an algorithm that produces a digest that does not meet security expectations for a hash function that allows a preimage attack, find another input that can produce the same hash (2nd preimage attack), or birthday attack.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-328
     pretty_name: "CWE-328: CWE-328: Use of Weak Hash"
@@ -155,7 +139,6 @@ rules:
       - ALL
       - cwe-352
     description: The web application does not, or can not, sufficiently verify whether a well-formed, valid, consistent request was intentionally provided by the user who submitted the request.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-352
     pretty_name: "CWE-352: Cross-Site Request Forgery (CSRF)"
@@ -164,7 +147,6 @@ rules:
     categories:
       - ALL
     description: The product divides a value by zero.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-369
     pretty_name: "CWE-369: CWE-369: Divide By Zero"
@@ -173,7 +155,6 @@ rules:
     categories:
       - ALL
     description: Weaknesses in this category are related to improper management of system resources.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-399
     pretty_name: "CWE-399: CWE-399: Resource Management Errors"
@@ -182,7 +163,6 @@ rules:
     categories:
       - ALL
     description: The application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-470
     pretty_name: "CWE-470: Use of Externally-Controlled Input to Select Classes or Code"
@@ -192,7 +172,6 @@ rules:
       - ALL
       - cwe-502
     description: The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-502
     pretty_name: "CWE-502: Deserialization of Untrusted Data"
@@ -201,7 +180,6 @@ rules:
     categories:
       - ALL
     description: The application relies on the existence or values of cookies when performing security-critical operations, but it does not properly ensure that the setting is valid for the associated user.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: ref:
     pretty_name: "CWE-565: Reliance on Cookies without Validation and Integrity Checking"
@@ -211,7 +189,6 @@ rules:
       - ALL
       - cwe-601
     description: A web application accepts a user-controlled input that specifies a link to an external site, and uses that link in a Redirect. This simplifies phishing attacks.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-601
     pretty_name: "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"
@@ -221,7 +198,6 @@ rules:
       - ALL
       - cwe-614
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not set, which could cause the user agent to send those cookies in plaintext over an HTTP session.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-614
     pretty_name: "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute"
@@ -231,7 +207,6 @@ rules:
       - ALL
       - cwe-74
     description: The software constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-74
     pretty_name: "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"
@@ -240,7 +215,6 @@ rules:
     categories:
       - ALL
     description: The software constructs all or part of a command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended command when it is sent to a downstream component.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-77
     pretty_name: "CWE-77: Command Injection"
@@ -249,7 +223,6 @@ rules:
     categories:
       - ALL
     description: The software uses a regular expression to perform neutralization, but the regular expression is not anchored and may allow malicious or malformed data to slip through.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-777
     pretty_name: "CWE-777: Regular Expression without Anchors"
@@ -259,7 +232,6 @@ rules:
       - ALL
       - cwe-79
     description: The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-79
     pretty_name: "CWE-79: Cross-site Scripting (XSS)"
@@ -269,7 +241,6 @@ rules:
       - ALL
       - cwe-798
     description: The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-798
     pretty_name: "CWE-798: Use of Hard-coded Credentials"
@@ -279,7 +250,6 @@ rules:
       - ALL
       - cwe-89
     description: The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-89
     pretty_name: "CWE-89: SQL Injection"
@@ -288,7 +258,6 @@ rules:
     categories:
       - ALL
     description: The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-913
     pretty_name: "CWE-913: Improper Control of Dynamically-Managed Code Resources"
@@ -298,7 +267,6 @@ rules:
       - ALL
       - cwe-915
     description: The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-915
     pretty_name: "CWE-915: Use of Incorrectly-Resolved Name or Reference"
@@ -308,7 +276,6 @@ rules:
       - ALL
       - cwe-94
     description: The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-94
     pretty_name: "CWE-94: Improper Control of Generation of Code ('Code Injection')"
@@ -318,7 +285,6 @@ rules:
       - ALL
       - cwe-95
     description: The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval").
-    driver: Boost Brakeman Scanner
     group: Community Scanners
     name: cwe-95
     pretty_name: "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"
