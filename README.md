@@ -1,8 +1,6 @@
 # Boostsecurity Scanner Registry
 
-## Scanners
+## Supported Scanners
 
-### Snyk
-
-The Snyk scanner requires the following env variable :
-- `SNYK_TOKEN` : The token for API authentication with Snyk API 
+### [Snyk](scanners/boostsecurityio/snyk-scanner/README.md)
+### [Semgrep](scanners/boostsecurityio/semgrep-scanner/README.md)
