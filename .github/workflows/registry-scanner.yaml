@@ -20,4 +20,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Scan Registry
-        uses: boostsecurityio/scanner-registry-action@v1
+        uses: boostsecurityio/scanner-registry-action@v1.0.0
+        with:
+          api_token: ${{ secrets.BOOST_API_TOKEN }}
