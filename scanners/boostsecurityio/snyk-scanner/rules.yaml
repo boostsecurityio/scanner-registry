@@ -7,7 +7,7 @@ rules:
     description: Dependency with a Low Risk Vulnerability
     name: cve-low
     group: Known Vulnerable Components
-    prettyName: Dependency with a Low Risk Vulnerability
+    pretty-name: Dependency with a Low Risk Vulnerability
     ref: https://docs.boostsecurity.net
   cve-moderate:
     categories:
@@ -17,7 +17,7 @@ rules:
     description: Dependency with a Medium Risk Vulnerability
     name: cve-moderate
     group: Known Vulnerable Components
-    prettyName: Dependency with a Medium Risk Vulnerability
+    pretty-name: Dependency with a Medium Risk Vulnerability
     ref: https://docs.boostsecurity.net
   cve-high:
     categories:
@@ -28,7 +28,7 @@ rules:
     description: Dependency with a High Risk Vulnerability
     name: cve-high
     group: Known Vulnerable Components
-    prettyName: Dependency with a High Risk Vulnerability
+    pretty-name: Dependency with a High Risk Vulnerability
     ref: https://docs.boostsecurity.net
   cve-critical:
     categories:
@@ -39,6 +39,5 @@ rules:
     description: Dependency with a Critical Vulnerability
     name: cve-critical
     group: Known Vulnerable Components
-    prettyName: Dependency with a Critical Vulnerability
+    pretty-name: Dependency with a Critical Vulnerability
     ref: https://docs.boostsecurity.net
-
