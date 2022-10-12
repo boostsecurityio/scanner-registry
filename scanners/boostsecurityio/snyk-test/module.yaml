@@ -1,9 +1,9 @@
 api_version: 1.0
 
 
-id: boostsecurity-snyk-scanner
-name: Boostsecurity Snyk Scanner Module
-namespace: boost-snyk
+id: boostsecurityio/snyk-test
+name: Boostsecurity Snyk Scanner
+namespace: boostsecurityio/snyk-test
 
 
 config:

@@ -2,5 +2,14 @@
 
 ## Supported Scanners
 
-### [Snyk](scanners/boostsecurityio/snyk-scanner/README.md)
-### [Semgrep](scanners/boostsecurityio/semgrep-scanner/README.md)
+### [Brakeman](scanners/boostsecurityio/brakeman)
+
+### [Native](scanners/boostsecurityio/native-scanner)
+
+### [Semgrep](scanners/boostsecurityio/semgrep/README.md)
+
+### [Snyk](scanners/boostsecurityio/snyk-test/README.md)
+
+### [Trivy](scanners/boostsecurityio/trivy-image)
+
+### [Trivy-SBOM](scanners/boostsecurityio/trivy-sbom)

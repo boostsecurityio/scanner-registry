@@ -1,0 +1,43 @@
+rules:
+  cve-low:
+    categories:
+      - ALL
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Low Risk Vulnerability
+    name: cve-low
+    group: Known Vulnerable Components
+    pretty_name: Dependency with a Low Risk Vulnerability
+    ref: https://docs.boostsecurity.net
+  cve-moderate:
+    categories:
+      - ALL
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Medium Risk Vulnerability
+    name: cve-moderate
+    group: Known Vulnerable Components
+    pretty_name: Dependency with a Medium Risk Vulnerability
+    ref: https://docs.boostsecurity.net
+  cve-high:
+    categories:
+      - ALL
+      - boost-baseline
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a High Risk Vulnerability
+    name: cve-high
+    group: Known Vulnerable Components
+    pretty_name: Dependency with a High Risk Vulnerability
+    ref: https://docs.boostsecurity.net
+  cve-critical:
+    categories:
+      - ALL
+      - boost-baseline
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Critical Vulnerability
+    name: cve-critical
+    group: Known Vulnerable Components
+    pretty_name: Dependency with a Critical Vulnerability
+    ref: https://docs.boostsecurity.net

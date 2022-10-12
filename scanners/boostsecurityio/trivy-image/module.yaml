@@ -1,0 +1,62 @@
+api_version: 1.0
+
+
+id: boostsecurityio/trivy-image
+name: Boostsecurity Trivy Image Scanner
+namespace: boostsecurityio/trivy-image
+
+
+config:
+  require_full_repo: true
+  support_diff_scan: true
+
+
+setup:
+  - name: download snyk-cli
+    environment:
+      VERSION: 0.32.1
+    run: |
+      BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
+      ARCH=$(uname -m)
+
+      case "$(uname -sm)" in
+        "Linux x86_64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-64bit.tar.gz"
+          SHA="ca0213f0c0f3b76498f1d8c20aabebeb7cedf8433ceacdef853c7841134e0033 trivy.tgz"
+          ;;
+        "Linux aarch64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-ARM64.tar.gz"
+          SHA="61275e16a148e4d29c566ae9794df5c8b24415e8417a3d971aea8da42b6b7f7d trivy.tgz"
+          ;;
+        "Darwin arm64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-ARM64.tar.gz"
+          SHA="b2efd5247e94cb5e1076faf46a757a42e0429d6a72d060efc1e41679faea3125 trivy.tgz"
+          ;;
+        *)
+          echo "Unsupported machine: ${OPTARG}"
+          exit 1
+          ;;
+      esac
+
+      curl -o trivy.tgz -fsSL "${BINARY_URL}"
+      echo "${SHA}" | sha256sum --check
+
+      tar --no-same-owner -zxf trivy.tgz trivy
+      rm trivy.tgz
+      chmod +x trivy
+
+steps:
+  - scan:
+      command:
+        environment:
+          IMAGE_NAME: ${BOOST_IMAGE_NAME}
+        run: |
+            $SETUP_PATH/trivy image --format json --security-checks vuln \
+              --quiet ${BOOST_IMAGE_NAME}
+      format: sarif
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:f0a18c5@sha256:f439307ca5b157ab46984ed96d276e8e24ffbfb696600bc66bd0e5d12ec051a8
+          command: process
+          environment:
+            PYTHONIOENCODING: utf-8

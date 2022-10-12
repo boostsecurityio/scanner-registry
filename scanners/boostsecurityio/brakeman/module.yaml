@@ -1,8 +1,8 @@
 api_version: 1.0
 
-id: boostsecurity-brakeman-scanner
+id: boostsecurityio/brakeman
 name: Boostsecurity Brakeman Scanner
-namespace: boostsecurity-brakeman
+namespace: boostsecurityio/brakeman
 
 config:
   support_diff_scan: true
