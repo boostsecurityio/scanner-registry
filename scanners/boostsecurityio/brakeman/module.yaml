@@ -6,6 +6,7 @@ namespace: boostsecurityio/brakeman
 
 config:
   support_diff_scan: true
+  require_full_repo: true
 
 steps:
   - scan:
