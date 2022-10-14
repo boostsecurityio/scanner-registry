@@ -2,8 +2,8 @@ rules:
   CWE-284:
     categories:
     - ALL
-    - cwe-top-25
     - cwe-284
+    - cwe-top-25
     - boost-hardened
     group: CWE Top 25
     name: CWE-284
