@@ -141,7 +141,7 @@ rules:
     description: The product uses an algorithm that produces a digest that does not meet security expectations for a hash function that allows a preimage attack, find another input that can produce the same hash (2nd preimage attack), or birthday attack.
     group: CWE Top 25
     name: CWE-328
-    pretty_name: CWE-328 - CWE-328: Use of Weak Hash
+    pretty_name: CWE-328 - Use of Weak Hash
     ref: https://cwe.mitre.org/data/definitions/328.html
   CWE-352:
     categories:
@@ -159,7 +159,7 @@ rules:
     description: The product divides a value by zero.
     group: CWE Top 25
     name: CWE-369
-    pretty_name: CWE-369 - CWE-369: Divide By Zero
+    pretty_name: CWE-369 - Divide By Zero
     ref: https://cwe.mitre.org/data/definitions/369.html
   CWE-399:
     categories:
@@ -168,7 +168,7 @@ rules:
     description: Weaknesses in this category are related to improper management of system resources.
     group: CWE Top 25
     name: CWE-399
-    pretty_name: CWE-399 - CWE-399: Resource Management Errors
+    pretty_name: CWE-399 - Resource Management Errors
     ref: https://cwe.mitre.org/data/definitions/399.html
   CWE-470:
     categories:
