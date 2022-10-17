@@ -50,7 +50,7 @@ steps:
       command:
         environment:
           IMAGE_NAME: ${BOOST_IMAGE_NAME}
-          TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS:--ignore-unfixed}
+          TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
         run: |
             $SETUP_PATH/trivy image ${TRIVY_ADDITIONAL_ARGS} --format json --security-checks vuln \
               --quiet ${BOOST_IMAGE_NAME}
