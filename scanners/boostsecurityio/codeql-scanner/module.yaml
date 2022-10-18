@@ -50,7 +50,7 @@ steps:
             -- "$SETUP_PATH/codeql-db" $CODEQL_QUERY
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-codeql:latest
+          image: public.ecr.aws/boostsecurityio/boost-scanner-codeql:b1e7245
           command: process
           environment:
             PYTHONIOENCODING: utf-8
