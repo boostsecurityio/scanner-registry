@@ -33,6 +33,7 @@ steps:
   - scan:
       format: sarif
       command:
+        format: sarif
         environment:
           CODEQL_QUERY: ${CODEQL_QUERY:-}
           CODEQL_ANALYZE_ARGS: ${CODEQL_ANALYZE_ARGS:-}
@@ -48,3 +49,10 @@ steps:
             --threads=0 \
             $CODEQL_ANALYZE_ARGS \
             -- "$SETUP_PATH/codeql-db" $CODEQL_QUERY
+        post-processor:
+          docker:
+            image: public.ecr.aws/boostsecurityio/boost-scanner-codeql:latest
+            command: process
+            environment:
+              PYTHONIOENCODING: utf-8
+        
