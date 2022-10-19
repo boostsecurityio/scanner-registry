@@ -1,0 +1,66 @@
+api_version: 1.0
+
+id: boostsecurityio/codeql
+name: Boost CodeQL Scanner
+namespace: boostsecurityio/codeql
+
+config:
+  support_diff_scan: true
+  require_full_repo: true
+
+setup:
+  - name: Download CodeQL bundle
+    run: |
+      case "$CODEQL_LANGUAGE" in
+        html|cpp|ruby|python|javascript|csv|csharp|xml|go|java|properties) ;;
+        *) echo "Invalid value for CODEQL_LANGUAGE '$CODEQL_LANGUAGE'."
+           echo "Supported languages are html, cpp, ruby, python, " \
+                 "javascript, csv, csharp, xml, go, java, properties."
+           exit 1;;
+      esac
+
+      curl -fsSL -O "https://github.com/github/codeql-action/releases/download/codeql-bundle-20221010/codeql-bundle-linux64.tar.gz"
+
+      echo "38ecbfeb314f76a267ddb902cc4198d28ee56b0e1d87e030254391c0a8536c6c  codeql-bundle-linux64.tar.gz" | sha256sum --check
+
+      tar -xzf codeql-bundle-linux64.tar.gz
+
+steps:
+  - name: "Create CodeQL database"
+    environment:
+      CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
+      CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
+    run: |
+      $SETUP_PATH/codeql/codeql database create \
+        "--language=$CODEQL_LANGUAGE" \
+        --no-calculate-baseline \
+        --quiet \
+        --threads=0 \
+        $CODEQL_CREATE_ARGS \
+        -- "$SETUP_PATH/codeql-db"
+
+  - scan:
+      format: sarif
+      command:
+        environment:
+          CODEQL_QUERY: ${CODEQL_QUERY:-}
+          CODEQL_ANALYZE_ARGS: ${CODEQL_ANALYZE_ARGS:-}
+        run: |
+          $SETUP_PATH/codeql/codeql database analyze \
+            --format=sarifv2.1.0 \
+            --output=/dev/stdout \
+            --no-print-diagnostics-summary \
+            --no-print-metrics-summary \
+            --no-debug-info \
+            --logdir=/tmp \
+            --quiet \
+            --threads=0 \
+            $CODEQL_ANALYZE_ARGS \
+            -- "$SETUP_PATH/codeql-db" $CODEQL_QUERY
+
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-codeql:ba9f188@sha256:a37637c8d187499ef5b2ba8b5daf1dee0cb28b94f14bfc3919299e94dd1b4235
+          command: process
+          environment:
+            PYTHONIOENCODING: utf-8
