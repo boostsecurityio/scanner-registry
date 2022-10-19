@@ -305,3 +305,15 @@ rules:
     name: CWE-95
     pretty_name: CWE-95 - Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')
     ref: https://cwe.mitre.org/data/definitions/95.html
+  CWE-295:
+    categories:
+    - ALL
+    - cwe-top-25
+    - cwe-295
+    - boost-baseline
+    - boost-hardened
+    group: CWE Top 25
+    name: CWE-295
+    pretty_name: CWE-295 - Improper Certificate Validation
+    description: The code does not validate, or incorrectly validates, a certificate.
+    ref: https://cwe.mitre.org/data/definitions/295.html
