@@ -13,3 +13,7 @@
 ### [Trivy](scanners/boostsecurityio/trivy-image)
 
 ### [Trivy-SBOM](scanners/boostsecurityio/trivy-sbom)
+
+### [CodeQL](scanners/boostsecurityio/codeql)
+
+### [GitLeaks](scanners/boostsecurityio/gitleaks)
