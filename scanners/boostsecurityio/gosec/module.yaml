@@ -1,0 +1,32 @@
+api_version: 1.0
+
+
+id: boostsecurityio/gosec
+name: Boostsecurity GoSec Scanner
+namespace: boostsecurityio/gosec
+
+
+config:
+  require_full_repo: true
+  support_diff_scan: true
+
+
+setup:
+  - name: Install post-processing dependency
+    run: |
+      curl -fsSL -O "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64"
+      echo "af986793a515d500ab2d35f8d2aecd656e764504b789b66d7e1a0b727a124c44  jq-linux64" | sha256sum --check
+      chmod +x jq-linux64
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: securego/gosec:2.14.0@sha256:73858f8b1b9b7372917677151ec6deeceeaa40c5b02753080bd647dede14e213
+          command: -fmt sarif -no-fail -track-suppressions .
+          workdir: /app
+          environment:
+            HOME: /tmp/gosec
+      format: sarif
+      post-processor:
+        run: $SETUP_PATH/jq-linux64 'walk(if type == "object" and has("id") and has("name") then del(.name) else . end)'
