@@ -1,0 +1,10 @@
+rules:
+  CWE-200:
+    name: CWE-200
+    pretty_name: CWE-200 - Exposure of Sensitive Information to an Unauthorized Actor
+    group: Stored Secrets
+    ref: https://github.com/zricethezav/gitleaks
+    description: The repository exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
+    categories:
+      - ALL
+      - cwe-200

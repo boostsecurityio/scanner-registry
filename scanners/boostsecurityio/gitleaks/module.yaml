@@ -1,0 +1,24 @@
+api_version: 1.0
+
+id: boostsecurityio/gitleaks
+name: Boost GitLeaks Scanner
+namespace: boostsecurityio/gitleaks
+
+config:
+  support_diff_scan: true
+
+steps:
+  - scan:
+      format: sarif
+      command:
+        docker:
+          image: zricethezav/gitleaks:v8.15.0@sha256:ebf35c0373d275e0a65e424a35343a9c243bff848fc6c3340c410f59e6616cc8
+          command: detect --no-banner --exit-code 0 --redact --report-format sarif --report-path /dev/stdout --no-git --source .
+          workdir: /src
+          environment:
+            GITLEAKS_CONFIG: ${GITLEAKS_CONFIG:-}
+
+      post-processor:
+        docker:
+          command: process
+          image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:903446f@sha256:63c712573f2e1dd921a58c5041d94c9ba9306320520e92aac00340b134065706
