@@ -1,0 +1,338 @@
+rules:
+  G111:
+    categories:
+      - ALL
+      - cwe-22
+      - boost-baseline
+      - boost-hardened
+      - cwe-top-25
+      - owasp-top-10
+    group: CWE Top 25
+    name: G111
+    pretty_name: "G111: Potential directory traversal"
+    description: The software does not properly neutralize special elements within the pathname.
+    ref: https://cwe.mitre.org/data/definitions/22.html
+
+  G304:
+    categories:
+      - ALL
+      - cwe-22
+      - boost-baseline
+      - boost-hardened
+      - cwe-top-25
+      - owasp-top-10
+    group: CWE Top 25
+    name: G304
+    pretty_name: "G304: File path provided as taint input"
+    description: The software does not properly neutralize special elements within the pathname.
+    ref: https://cwe.mitre.org/data/definitions/22.html
+
+  G305:
+    categories:
+      - ALL
+      - cwe-22
+      - boost-baseline
+      - boost-hardened
+      - cwe-top-25
+      - owasp-top-10
+    group: CWE Top 25
+    name: G305
+    pretty_name: "G305: File traversal when extracting zip/tar archive"
+    description: The software does not properly neutralize special elements within the pathname.
+    ref: https://cwe.mitre.org/data/definitions/22.html
+
+  G204:
+    categories:
+      - ALL
+      - cwe-78
+    group: CWE Top 25
+    name: G204
+    pretty_name: "G204: Audit use of command execution"
+    description: The software does not eutralize or incorrectly neutralizes special elements that could modify the intended OS command.
+    ref: https://cwe.mitre.org/data/definitions/78.html
+
+  G203:
+    categories:
+      - ALL
+      - cwe-79
+    group: CWE Top 25
+    name: G203
+    pretty_name: "G203: Use of unescaped data in HTML templates"
+    description: The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output.
+    ref: https://cwe.mitre.org/data/definitions/79.html
+
+  G107:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G107
+    pretty_name: "G107: Url provided to HTTP request as taint input"
+    description: The software does not properly delimit the intended arguments, options, or switches within that command string.
+    ref: https://cwe.mitre.org/data/definitions/88.html
+
+  G201:
+    categories:
+      - ALL
+      - cwe-89
+    group: CWE Top 25
+    name: G201
+    pretty_name: "G201: SQL query construction using format string"
+    description: The software does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command.
+    ref: https://cwe.mitre.org/data/definitions/89.html
+
+  G202:
+    categories:
+      - ALL
+      - cwe-89
+    group: CWE Top 25
+    name: G202
+    pretty_name: "G202: SQL query construction using string concatenation"
+    description: The software does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command.
+    ref: https://cwe.mitre.org/data/definitions/89.html
+
+  G601:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G601
+    pretty_name: "G601: Implicit memory aliasing of items from a range statement"
+    description: The software does not restrict or incorrectly restricts operations within the boundaries of a resource.
+    ref: https://cwe.mitre.org/data/definitions/118.html
+
+  G109:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G109
+    pretty_name: "G109: Potential Integer overflow made by strconv.Atoi result conversion to int16/32"
+    description: The software performs a calculation that can produce an integer overflow or wraparound.
+    ref: https://cwe.mitre.org/data/definitions/190.html
+
+  G113:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G113
+    pretty_name: "G113: Usage of Rat.SetString in math/big with an overflow (CVE-2022-23772)"
+    description: The software performs a calculation that can produce an integer overflow or wraparound.
+    ref: https://cwe.mitre.org/data/definitions/190.html
+
+  G102:
+    categories:
+      - ALL
+      - cwe-200
+    group: CWE Top 25
+    name: G102
+    pretty_name: "G102: Bind to all interfaces"
+    description: The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
+    ref: https://cwe.mitre.org/data/definitions/200.html
+
+  G108:
+    categories:
+      - ALL
+      - cwe-200
+    group: CWE Top 25
+    name: G108
+    pretty_name: "G108: Profiling endpoint automatically exposed on /debug/pprof"
+    description: The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
+    ref: https://cwe.mitre.org/data/definitions/200.html
+
+  G103:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G103
+    pretty_name: "G103: Audit the use of unsafe block"
+    description: The program calls a function that can never be guaranteed to work safely.
+    ref: https://cwe.mitre.org/data/definitions/242.html
+
+  G301:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G301
+    pretty_name: "G301: Poor file permissions used when creating a directory"
+    description: During installation, installed file permissions are set to allow anyone to modify those files.
+    ref: https://cwe.mitre.org/data/definitions/276.html
+
+  G302:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G302
+    pretty_name: "G302: Poor file permissions used with chmod"
+    description: During installation, installed file permissions are set to allow anyone to modify those files.
+    ref: https://cwe.mitre.org/data/definitions/276.html
+
+  G306:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G306
+    pretty_name: "G306: Poor file permissions used when writing to a new file"
+    description: During installation, installed file permissions are set to allow anyone to modify those files.
+    ref: https://cwe.mitre.org/data/definitions/276.html
+
+  G402:
+    categories:
+      - ALL
+      - cwe-295
+    group: CWE Top 25
+    name: G402
+    pretty_name: "G402: Look for bad TLS connection settings"
+    description: The software does not validate, or incorrectly validates, a certificate.
+    ref: https://cwe.mitre.org/data/definitions/295.html
+
+  G403:
+    categories:
+      - ALL
+      - cwe-310
+    group: CWE Top 25
+    name: G403
+    pretty_name: "G403: Ensure minimum RSA key length of 2048 bits"
+    description: The code contains a weakness related to the design and implementation of data confidentiality and integrity.
+    ref: https://cwe.mitre.org/data/definitions/310.html
+
+  G106:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G106
+    pretty_name: "G106: Audit the use of ssh.InsecureIgnoreHostKey"
+    description: The software performs a key exchange with an actor without verifying the identity of that actor.
+    ref: https://cwe.mitre.org/data/definitions/322.html
+
+  G401:
+    categories:
+      - ALL
+      - cwe-326
+    group: CWE Top 25
+    name: G401
+    pretty_name: "G401: Detect the usage of DES, RC4, MD5 or SHA1"
+    description: The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.
+    ref: https://cwe.mitre.org/data/definitions/326.html
+
+  G501:
+    categories:
+      - ALL
+      - cwe-327
+    group: CWE Top 25
+    name: G501
+    pretty_name: "G501: Import blocklist: crypto/md5"
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+
+  G502:
+    categories:
+      - ALL
+      - cwe-327
+    group: CWE Top 25
+    name: G502
+    pretty_name: "G502: Import blocklist: crypto/des"
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+
+  G503:
+    categories:
+      - ALL
+      - cwe-327
+    group: CWE Top 25
+    name: G503
+    pretty_name: "G503: Import blocklist: crypto/rc4"
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+
+  G504:
+    categories:
+      - ALL
+      - cwe-327
+    group: CWE Top 25
+    name: G504
+    pretty_name: "G504: Import blocklist: net/http/cgi"
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+
+  G505:
+    categories:
+      - ALL
+      - cwe-327
+    group: CWE Top 25
+    name: G505
+    pretty_name: "G505: Import blocklist: crypto/sha1"
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+
+  G404:
+    categories:
+      - ALL
+      - cwe-338
+    group: CWE Top 25
+    name: G404
+    pretty_name: "G404: Insecure random number source (rand)"
+    description: The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.
+    ref: https://cwe.mitre.org/data/definitions/338.html
+
+  G303:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G303
+    pretty_name: "G303: Creating tempfile using a predictable path"
+    description: Creating and using insecure temporary files can leave application and system data vulnerable to attack.
+    ref: https://cwe.mitre.org/data/definitions/377.html
+
+  G112:
+    categories:
+      - ALL
+      - cwe-400
+    group: CWE Top 25
+    name: G112
+    pretty_name: "G112: Potential slowloris attack"
+    description: The software does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources.
+    ref: https://cwe.mitre.org/data/definitions/400.html
+
+  G110:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G110
+    pretty_name: "G110: Potential DoS vulnerability via decompression bomb"
+    description: The software does not handle or incorrectly handles a compressed input with a very high compression ratio that produces a large output.
+    ref: https://cwe.mitre.org/data/definitions/409.html
+
+  G114:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G114
+    pretty_name: "G114: Use of net/http serve function that has no support for setting timeouts"
+    description: The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely.
+    ref: https://cwe.mitre.org/data/definitions/676.html
+
+  G104:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G104
+    pretty_name: "G104: Audit errors not checked"
+    description: The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software.
+    ref: https://cwe.mitre.org/data/definitions/703.html
+
+  G307:
+    categories:
+      - ALL
+    group: CWE Top 25
+    name: G307
+    pretty_name: "G307: Deferring a method which returns an error"
+    description: The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software.
+    ref: https://cwe.mitre.org/data/definitions/703.html
+
+  G101:
+    categories:
+      - ALL
+      - cwe-798
+    group: CWE Top 25
+    name: G101
+    pretty_name: "G101: Look for hard coded credentials"
+    description: The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.
+    ref: https://cwe.mitre.org/data/definitions/798.html
