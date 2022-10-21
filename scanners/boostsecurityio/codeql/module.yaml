@@ -36,6 +36,7 @@ steps:
         --no-calculate-baseline \
         --quiet \
         --threads=0 \
+        --overwrite \
         $CODEQL_CREATE_ARGS \
         -- "../codeql-db"
 
@@ -55,7 +56,6 @@ steps:
             --logdir=/tmp \
             --quiet \
             --threads=0 \
-            --overwrite \
             $CODEQL_ANALYZE_ARGS \
             -- "../codeql-db" $CODEQL_QUERY
 
