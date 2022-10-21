@@ -55,6 +55,7 @@ steps:
             --logdir=/tmp \
             --quiet \
             --threads=0 \
+            --overwrite \
             $CODEQL_ANALYZE_ARGS \
             -- "$SETUP_PATH/codeql-db" $CODEQL_QUERY
 
