@@ -4,7 +4,7 @@ rules:
       - ALL
       - cwe-1336
     description: The product uses a template engine to insert or process externally-influenced input, but it does not neutralize or incorrectly neutralizes special elements or syntax that can be interpreted as template expressions or other code directives when processed.
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-1336
     pretty_name: CWE-1336 - Improper Neutralization of Special Elements Used in a Template Engine
     ref: https://codeql.github.com/codeql-query-help/
@@ -13,7 +13,7 @@ rules:
       - ALL
       - cwe-285
     description: The software does not perform or incorrectly performs an authorization check when an actor attempts to access a resource or perform an action.
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-285
     pretty_name: CWE-285 - Improper Authorization
     ref: https://codeql.github.com/codeql-query-help/
@@ -22,7 +22,7 @@ rules:
       - ALL
       - cwe-259
     description: The software contains a hard-coded password, which it uses for its own inbound authentication or for outbound communication to external components.
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: CWE-259
     pretty_name: CWE-259 - Use of Hard-coded Password
     ref: https://codeql.github.com/codeql-query-help/
@@ -32,7 +32,7 @@ rules:
     - cwe-top-25
     - cwe-284
     - boost-hardened
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-284
     pretty_name: CWE-284 - Improper Access Control
     description: The code does not restrict or incorrectly restricts access to a resource from an unauthorized actor.
@@ -43,7 +43,7 @@ rules:
     - cwe-320
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: CWE-320
     pretty_name: CWE-320 - Key Management Errors
     description: Weaknesses in this category are related to errors in the management of cryptographic keys.
@@ -55,7 +55,7 @@ rules:
     - cwe-319
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: CWE-319
     pretty_name: CWE-319 - Cleartext Transmission of Sensitive Information
     description: The software transmits sensitive or security-critical data in cleartext in a communication channel that can be sniffed by unauthorized actors.
@@ -66,7 +66,7 @@ rules:
     - cwe-326
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: CWE-326
     pretty_name: CWE-326 - Inadequate Encryption Strength
     description: The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.
@@ -75,7 +75,7 @@ rules:
     categories:
     - ALL
     - cwe-778
-    group: CWE Top 25
+    group: top10-security-logging-monitoring-failures
     name: CWE-778
     pretty_name: CWE-778 - Insufficient Logging
     description: When a security-critical event occurs, the software either does not record the event or omits important details about the event when logging it.
@@ -87,7 +87,7 @@ rules:
     - cwe-287
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: CWE-287
     pretty_name: CWE-287 - Improper Authentication
     description: When an actor claims to have a given identity, the software does not prove or insufficiently proves that the claim is correct.
@@ -98,7 +98,7 @@ rules:
     - cwe-top-25
     - cwe-200
     - boost-hardened
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-200
     pretty_name: CWE-200 - Exposure of Sensitive Information to an Unauthorized Actor
     description: The code exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
@@ -109,7 +109,7 @@ rules:
     - cwe-311
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-311
     pretty_name: CWE-311 - Missing Encryption of Sensitive Data
     description: The code does not encrypt sensitive or critical information before storage or transmission.
@@ -121,7 +121,7 @@ rules:
     - cwe-522
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-522
     pretty_name: CWE-522 - Insufficiently Protected Credentials
     description: The code transmits or stores authentication credentials, but it uses an insecure method that is susceptible to unauthorized interception and/or retrieval.
@@ -132,7 +132,7 @@ rules:
     - cwe-top-25
     - cwe-269
     - boost-hardened
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-269
     pretty_name: CWE-269 - Improper Privilege Management
     description: The code does not properly assign, modify, track, or check privileges for an actor, creating an unintended sphere of control for that actor.
@@ -142,7 +142,7 @@ rules:
     - ALL
     - cwe-250
     - boost-hardened
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: CWE-250
     pretty_name: CWE-250 - Execution with Unnecessary Privileges
     description: The code performs an operation at a privilege level that is higher than the minimum level required, which creates new weaknesses or amplifies the consequences of other weaknesses.
@@ -154,7 +154,7 @@ rules:
     - cwe-798
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: CWE-798
     pretty_name: CWE-798 - Use of Hard-coded Credentials
     description: The code contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.
@@ -165,7 +165,7 @@ rules:
     - cwe-top-25
     - cwe-732
     - boost-hardened
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-732
     pretty_name: CWE-732 - Incorrect Permission Assignment for Critical Resource
     description: The code specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.
@@ -177,7 +177,7 @@ rules:
     - cwe-352
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-352
     pretty_name: CWE-352 - Cross-Site Request Forgery (CSRF)
     description: The web application does not, or can not, sufficiently verify whether a well-formed, valid, consistent request was intentionally provided by the user who submitted the request.
@@ -186,7 +186,7 @@ rules:
     categories:
     - ALL
     - cwe-614
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: CWE-614
     pretty_name: CWE-614 - Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not set, which could cause the user agent to send those cookies in plaintext over an HTTP session.
@@ -195,7 +195,7 @@ rules:
     categories:
     - ALL
     - cwe-1004
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: CWE-1004
     pretty_name: CWE-1004 - Sensitive Cookie Without 'HttpOnly' Flag
     description: The code uses a cookie to store sensitive information, but the cookie is not marked with the HttpOnly flag.
@@ -207,7 +207,7 @@ rules:
     - cwe-89
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-89
     pretty_name: CWE-89 - Improper Neutralization of Special Elements used in an SQL
       Command ('SQL Injection')
@@ -219,7 +219,7 @@ rules:
     - cwe-327
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: CWE-327
     pretty_name: CWE-327 - Use of a Broken or Risky Cryptographic Algorithm
     description: The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.
@@ -229,7 +229,7 @@ rules:
     - ALL
     - cwe-345
     - boost-hardened
-    group: CWE Top 25
+    group: top10-software-data-integrity-failures
     name: CWE-345
     pretty_name: CWE-345 - Insufficient Verification of Data Authenticity
     description: The code does not sufficiently verify the origin or authenticity of data, in a way that causes it to accept invalid data.
@@ -239,7 +239,7 @@ rules:
     - ALL
     - cwe-top-25
     - cwe-400
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-400
     pretty_name: CWE-400 - Uncontrolled Resource Consumption
     description: The code does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources.
@@ -251,7 +251,7 @@ rules:
     - cwe-22
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-22
     pretty_name: CWE-22 - Improper Limitation of a Pathname to a Restricted Directory
       ('Path Traversal')
@@ -264,7 +264,7 @@ rules:
     - cwe-94
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-94
     pretty_name: CWE-94 - Improper Control of Generation of Code ('Code Injection')
     description: The code constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.
@@ -276,7 +276,7 @@ rules:
     - cwe-79
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-79
     pretty_name: CWE-79 - Improper Neutralization of Input During Web Page Generation
       ('Cross-site Scripting')
@@ -288,7 +288,7 @@ rules:
     - cwe-489
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: CWE-489
     pretty_name: CWE-489 - Active Debug Code
     description: The code is deployed to unauthorized actors with debugging code still enabled or active, which can create unintended entry points or expose sensitive information.
@@ -300,7 +300,7 @@ rules:
     - cwe-611
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: CWE-611
     pretty_name: CWE-611 - Improper Restriction of XML External Entity Reference
     description: The code processes an XML document that can contain XML entities with URIs that resolve to documents outside of the intended sphere of control, causing the product to embed incorrect documents into its output.
@@ -312,7 +312,7 @@ rules:
     - cwe-918
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-server-side-request-forgery
     name: CWE-918
     pretty_name: CWE-918 - Server-Side Request Forgery (SSRF)
     description: The code receives a URL or similar request from an upstream component and retrieves the contents of this URL, but it does not sufficiently ensure that the request is being sent to the expected destination.
@@ -322,7 +322,7 @@ rules:
     - ALL
     - cwe-top-25
     - cwe-601
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-601
     pretty_name: CWE-601 - URL Redirection to Untrusted Site ('Open Redirect')
     description: The code accepts a user-controlled input that specifies a link to an external site, and uses that link in a Redirect. This simplifies phishing attacks.
@@ -334,7 +334,7 @@ rules:
     - cwe-502
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-software-data-integrity-failures
     name: CWE-502
     pretty_name: CWE-502 - Deserialization of Untrusted Data
     description: The code deserializes untrusted data without sufficiently verifying that the resulting data will be valid.
@@ -345,7 +345,7 @@ rules:
     - cwe-96
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-96
     pretty_name: CWE-96 - Improper Neutralization of Directives in Statically Saved
       Code ('Static Code Injection')
@@ -355,7 +355,7 @@ rules:
     categories:
     - ALL
     - cwe-704
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-704
     pretty_name: CWE-704 - Incorrect Type Conversion or Cast
     description: The code does not correctly convert an object, resource, or structure from one type to a different type.
@@ -366,7 +366,7 @@ rules:
     - cwe-95
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-95
     pretty_name: CWE-95 - Improper Neutralization of Directives in Dynamically Evaluated
       Code ('Eval Injection')
@@ -376,7 +376,7 @@ rules:
     categories:
     - ALL
     - cwe-1236
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-1236
     pretty_name: CWE-1236 - Improper Neutralization of Formula Elements in a CSV File
     description: The code saves user-provided information into a Comma-Separated Value (CSV) file, but it does not neutralize or incorrectly neutralizes special elements that could be interpreted as a command when the file is opened by spreadsheet software.
@@ -388,7 +388,7 @@ rules:
     - cwe-78
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-78
     pretty_name: CWE-78 - Improper Neutralization of Special Elements used in an OS
       Command ('OS Command Injection')
@@ -398,7 +398,7 @@ rules:
     categories:
     - ALL
     - cwe-116
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-116
     pretty_name: CWE-116 - Improper Encoding or Escaping of Output
     description: The code prepares a structured message for communication with another component, but encoding or escaping of the data is either missing or done incorrectly. As a result, the intended structure of the message is not preserved.
@@ -407,7 +407,7 @@ rules:
     categories:
     - ALL
     - cwe-1275
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-1275
     pretty_name: CWE-1275 - Sensitive Cookie with Improper SameSite Attribute
     description: The SameSite attribute for sensitive cookies is not set, or an insecure value is used.
@@ -416,7 +416,7 @@ rules:
     categories:
     - ALL
     - cwe-943
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-943
     pretty_name: CWE-943 - Improper Neutralization of Special Elements in Data Query
       Logic
@@ -429,7 +429,7 @@ rules:
     - cwe-295
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: CWE-295
     pretty_name: CWE-295 - Improper Certificate Validation
     description: The code does not validate, or incorrectly validates, a certificate.
@@ -438,7 +438,7 @@ rules:
     categories:
     - ALL
     - cwe-706
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-706
     pretty_name: CWE-706 - Use of Incorrectly-Resolved Name or Reference
     description: The code uses a name or reference to access a resource, but the name/reference resolves to a resource that is outside of the intended control sphere.
@@ -449,7 +449,7 @@ rules:
     - cwe-top-25
     - cwe-276
     - boost-hardened
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: CWE-276
     pretty_name: CWE-276 - Incorrect Default Permissions
     description: During installation, installed file permissions are set to allow anyone to modify those files.
@@ -458,7 +458,7 @@ rules:
     categories:
     - ALL
     - cwe-915
-    group: CWE Top 25
+    group: top10-software-data-integrity-failures
     name: CWE-915
     pretty_name: CWE-915 - Improperly Controlled Modification of Dynamically-Determined
       Object Attributes
@@ -471,7 +471,7 @@ rules:
     - cwe-74
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-74
     pretty_name: CWE-74 - Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')
     description: The code constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component.
@@ -482,7 +482,7 @@ rules:
     - cwe-90
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-90
     pretty_name: CWE-90 - Improper Neutralization of Special Elements used in an LDAP
       Query ('LDAP Injection')
@@ -493,7 +493,7 @@ rules:
     - ALL
     - cwe-346
     - boost-hardened
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: CWE-346
     pretty_name: CWE-346 - Origin Validation Error
     description: The code does not properly verify that the source of data or communication is valid.
@@ -503,7 +503,7 @@ rules:
     - ALL
     - cwe-1104
     - boost-hardened
-    group: CWE Top 25
+    group: top10-vulnerable-components
     name: CWE-1104
     pretty_name: CWE-1104 - Use of Unmaintained Third Party Components
     description: The code relies on third-party components that are not actively supported or maintained by the original developer or a trusted proxy for the original developer.
@@ -514,7 +514,7 @@ rules:
     - cwe-top-25
     - cwe-310
     - boost-hardened
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: CWE-310
     pretty_name: CWE-310 - Cryptographic Issues
     description: The code contains a weakness related to the design and implementation of data confidentiality and integrity.
@@ -526,7 +526,7 @@ rules:
     - cwe-20
     - boost-baseline
     - boost-hardened
-    group: CWE Top 25
+    group: top10-injection
     name: CWE-20
     pretty_name: CWE-20 - Improper Input Validation
     description: The code receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly.
@@ -535,7 +535,7 @@ rules:
     categories:
     - ALL
     - cwe-693
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-693
     pretty_name: CWE-693 - Protection Mechanism Failure
     description: The code does not use or incorrectly uses a protection mechanism that provides sufficient defense against directed attacks against the product.
@@ -545,7 +545,7 @@ rules:
     - ALL
     - cwe-494
     - boost-hardened
-    group: CWE Top 25
+    group: top10-software-data-integrity-failures
     name: CWE-494
     pretty_name: CWE-494 - Download of Code Without Integrity Check
     description: The code downloads source code or an executable from a remote location and executes the code without sufficiently verifying the origin and integrity of the code.
@@ -553,7 +553,7 @@ rules:
   CWE-UNKNOWN:
     categories:
     - ALL
-    group: CWE Top 25
+    group: top10-insecure-design
     name: CWE-UNKNOWN
     pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule
     description: The original rule could not be map to a CWE rule

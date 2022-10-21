@@ -7,7 +7,7 @@ rules:
       - boost-hardened
     description: Ensure Athena Workgroup should enforce configuration to prevent client
       disabling encryption
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: aws-athena-encryption-off
     pretty_name: AWS Athena Encryption Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-athena-encryption-off.html"
@@ -19,7 +19,7 @@ rules:
       - boost-hardened
     description: Checks for EC2 Classic instances which run with insecure VPC configurations
       using shared hosts.
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: aws-classic-resource-usage
     pretty_name: AWS Classic Resource Usage
     ref: "{BOOSTSEC_DOC_BASE_URL}/misconfig/aws/index.html#aws-classic-resource-usage"
@@ -31,7 +31,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure CloudTrail is enabled in all Regions
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: aws-cloudtrail-all-regions
     pretty_name: AWS Cloudtrail All Regions
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-cloudtrail-all-regions.html"
@@ -43,7 +43,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure CloudTrail log file validation is enabled
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: aws-cloudtrail-validation-off
     pretty_name: AWS Cloudtrail Validation Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-cloudtrail-validation-off.html"
@@ -55,7 +55,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure cloudwatch log groups specify retention days
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: aws-cloudwatch-log-retention
     pretty_name: AWS Cloudwatch Log Retention
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-cloudwatch-log-retention.html"
@@ -64,7 +64,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Ensure that database backup is enabled
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: aws-db-backup-off
     pretty_name: AWS Database Backup Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-db-backup-off.html"
@@ -73,7 +73,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Ensured that database auto-upgrade is enabled
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: aws-db-no-version-upgrade
     pretty_name: AWS Database No Version Upgrade
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-db-no-version-upgrade.html"
@@ -84,7 +84,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: EC2 instance should not have public IP.
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-ec2-public-ip
     pretty_name: AWS EC2 Public IP
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-ec2-public-ip.html"
@@ -94,7 +94,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure ECR image scanning on push is enabled
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: aws-ecr-scanning-off
     pretty_name: AWS ECR Scanning Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-ecr-scanning-off.html"
@@ -105,7 +105,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure ECR Image Tags are immutable
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: aws-ecr-tags-mutable
     pretty_name: AWS ECR Tags Mutable
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-ecr-tags-mutable.html"
@@ -114,7 +114,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Ensure container insights are enabled on ECS cluster
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: aws-ecs-container-insights-off
     pretty_name: AWS ECS Container Insights Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-ecs-container-insights-off.html"
@@ -125,7 +125,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure IAM password policy requires minimum length of 14 or greater
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: aws-iam-password-policy
     pretty_name: AWS IAM Password Policy
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-iam-password-policy.html"
@@ -137,7 +137,7 @@ rules:
       - boost-hardened
     description: Ensure IAM policies that allow full *-* administrative privileges
       are not created
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: aws-iam-policy-lax-full-admin
     pretty_name: AWS IAM Policy Lax Full Admin
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-iam-policy-lax-full-admin.html"
@@ -147,7 +147,7 @@ rules:
       - cloud-iam-best-practices
       - boost-hardened
     description: Ensure IAM policies are attached only to groups or roles
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: aws-iam-policy-on-users
     pretty_name: AWS IAM Policy On Users
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-iam-policy-on-users.html"
@@ -158,7 +158,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure no IAM policies documents allow * as a statements actions
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: aws-iam-wildcard-actions
     pretty_name: AWS IAM Wildcard Actions
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-iam-wildcard-actions.html"
@@ -169,7 +169,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure rotation for customer created CMKs is enabled
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: aws-kms-key-rotation
     pretty_name: AWS KMS Key Rotation
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-kms-key-rotation.html"
@@ -178,7 +178,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Ensure that the load balancer drops invalid HTTP headers
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: aws-lb-allow-invalid-headers
     pretty_name: AWS Load Balancer Allow Invalid Headers
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-lb-allow-invalid-headers.html"
@@ -189,7 +189,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure Instance Metadata Service Version 1 is not enabled
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: aws-legacy-instance-meta
     pretty_name: AWS Legacy Instance Meta
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-legacy-instance-meta.html"
@@ -200,7 +200,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure the the networking resource enforces the use of HTTPS
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: aws-network-https-off
     pretty_name: AWS Network Https Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-network-https-off.html"
@@ -211,7 +211,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that load balancer is using TLS 1.2
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: aws-network-insecure-tls
     pretty_name: AWS Network Insecure TLS
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-network-insecure-tls.html"
@@ -222,7 +222,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-network-public-rdp
     pretty_name: AWS Network Public RDP
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-network-public-rdp.html"
@@ -234,7 +234,7 @@ rules:
       - boost-hardened
     description: Ensure that the resource or security group allow ingress from 0.0.0.0:0
       to port 22 (SSH)
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-network-public-ssh
     pretty_name: AWS Network Public SSH
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-network-public-ssh.html"
@@ -245,7 +245,7 @@ rules:
       - boost-hardened
     description: Ensure that the resource has some form of audit logging enabled to
       help with forensics
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: aws-resource-logging-off
     pretty_name: AWS Resource Logging Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-logging-off.html"
@@ -256,7 +256,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that the resource is configured inside a VPC
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-resource-outside-vpc
     pretty_name: AWS Resource Outside VPC
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-outside-vpc.html"
@@ -268,7 +268,7 @@ rules:
       - boost-hardened
     description: Ensure that all data stored in the managed service is not publicly
       accessible
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-resource-public-access
     pretty_name: AWS Resource Public Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-public-access.html"
@@ -280,7 +280,7 @@ rules:
       - boost-hardened
     description: Ensure that all data stored in the managed service is not publicly
       accessible
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-resource-public-policy
     pretty_name: AWS Resource Public Policy
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-public-policy.html"
@@ -292,7 +292,7 @@ rules:
       - boost-hardened
     description: Ensure that all data stored in the managed service is securely encrypted
       at rest
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: aws-resource-unencrypted-at-rest
     pretty_name: AWS Resource Unencrypted At Rest
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-unencrypted-at-rest.html"
@@ -304,7 +304,7 @@ rules:
       - boost-hardened
     description: Ensure that data going to and from the managed service is securely
       encrypted at transit
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: aws-resource-unencrypted-in-transit
     pretty_name: AWS Resource Unencrypted In Transit
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-unencrypted-in-transit.html"
@@ -315,7 +315,7 @@ rules:
       - boost-hardened
     description: Ensure that the S3 bucket has some form of audit logging enabled
       to help with forensics
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: aws-s3-logging-off
     pretty_name: AWS S3 Logging Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-resource-logging-off.html"
@@ -327,7 +327,7 @@ rules:
       - boost-hardened
     description: Ensure the S3 bucket does not allow Read or Write permissions to
       anyone on the Internet
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-s3-public-access
     pretty_name: AWS S3 Public Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-s3-public-access.html"
@@ -339,7 +339,7 @@ rules:
       - boost-hardened
     description: Ensure S3 bucket does not allow an action with any Principal (i.e.
       anyone on the Internet)
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-s3-public-policy
     pretty_name: AWS S3 Public Policy
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-s3-public-policy.html"
@@ -351,7 +351,7 @@ rules:
       - boost-hardened
     description: Ensure all data stored in the S3 bucket is securely encrypted at
       rest
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: aws-s3-unencrypted-at-rest
     pretty_name: AWS S3 Unencrypted At Rest
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-s3-unencrypted-at-rest.html"
@@ -362,7 +362,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure VPC subnets do not assign public IP by default
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: aws-vpc-assign-public-ip
     pretty_name: AWS VPC Assign Public Ip
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-vpc-assign-public-ip.html"
@@ -373,7 +373,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that VPC Endpoint Service is configured for Manual Acceptance
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: aws-vpc-endpoint-auto-accept
     pretty_name: AWS VPC Endpoint Auto Accept
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/aws-vpc-endpoint-auto-accept.html"
@@ -384,7 +384,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure AKS has an API Server Authorized IP Ranges enabled
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-aks-api-iprange
     pretty_name: Azure AKS Api Iprange
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-aks-api-iprange.html"
@@ -394,7 +394,7 @@ rules:
       - insufficient-logging
       - boost-hardened
     description: Ensure AKS logging to Azure Monitoring is Configured
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-aks-logging-enable
     pretty_name: Azure AKS Logging Enable
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-aks-logging-enable.html"
@@ -403,7 +403,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Ensure AKS cluster has Network Policy configured
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: azure-aks-networkpolicy
     pretty_name: Azure AKS Networkpolicy
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-aks-networkpolicy.html"
@@ -414,7 +414,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that AKS enables private clusters
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-aks-private-cluster
     pretty_name: Azure AKS Private Cluster
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-aks-private-cluster.html"
@@ -423,7 +423,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Ensure RBAC is enabled on AKS clusters
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: azure-aks-rbac-enabled
     pretty_name: Azure AKS RBAC Enabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-aks-rbac-enabled.html"
@@ -435,7 +435,7 @@ rules:
       - boost-hardened
     description: Ensure that Register with Azure Active Directory is enabled on App
       Service
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: azure-appsvc-ad-enabled
     pretty_name: Azure App Service Ad Enabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-ad-enabled.html"
@@ -446,7 +446,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure App Service Authentication is set on Azure App Service
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: azure-appsvc-auth-enabled
     pretty_name: Azure App Service Auth Enabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-auth-enabled.html"
@@ -456,7 +456,7 @@ rules:
       - cloud-insecure-config
       - boost-hardened
     description: Ensure that CORS disallows every resource to access app services
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-appsvc-cors-restrictive
     pretty_name: Azure App Service Cors Restrictive
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-cors-restrictive.html"
@@ -467,7 +467,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that remote debugging is not enabled for app services
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-appsvc-disable-debug
     pretty_name: Azure App Service Disable Debug
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-disable-debug.html"
@@ -478,7 +478,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure FTP deployments are disabled
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-appsvc-ftp-disabled
     pretty_name: Azure App Service FTP Disabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-ftp-disabled.html"
@@ -489,7 +489,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-appsvc-http-redirect
     pretty_name: Azure App Service HTTP Redirect
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-http-redirect.html"
@@ -500,7 +500,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure web app is using the latest version of TLS encryption
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-appsvc-http-tls-version
     pretty_name: Azure App Service HTTP TLS Version
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-http-tls-version.html"
@@ -510,7 +510,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure that HTTP Version is the latest if used to run the web app
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: azure-appsvc-http-version
     pretty_name: Azure App Service Http Version
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-appsvc-http-version.html"
@@ -521,7 +521,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Automation account variables are encrypted
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: azure-automn-variable-encrypted
     pretty_name: Azure Automation Variable Encrypted
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-automn-variable-encrypted.html"
@@ -532,7 +532,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Azure Batch account uses key vault to encrypt data
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: azure-batch-keyvault
     pretty_name: Azure Batch Keyvault
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-batch-keyvault.html"
@@ -543,7 +543,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure Kube Dashboard is disabled
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-dashboard-disable
     pretty_name: Azure Dashboard Disable
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-dashboard-disable.html"
@@ -554,7 +554,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure that Auditing is set to On for SQL servers
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-db-audit-enabled
     pretty_name: Azure Database Audit Enabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-db-audit-enabled.html"
@@ -566,7 +566,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Auditing Retention is greater than 90 days for SQL servers
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-db-audit-retention
     pretty_name: Azure Database Audit Retention
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-db-audit-retention.html"
@@ -577,7 +577,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure no SQL Databases allow ingress from 0.0.0.0/0 (ANY IP)
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-db-public-ingress
     pretty_name: Azure Database Public Ingress
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-db-public-ingress.html"
@@ -588,7 +588,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that function apps enables Authentication
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: azure-funcapp-auth-enabled
     pretty_name: Azure Function App Auth Enabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-funcapp-auth-enabled.html"
@@ -600,7 +600,7 @@ rules:
       - boost-hardened
     description: Ensure that HTTP Version is the latest if used to run the Function
       app
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: azure-funcapp-http-version
     pretty_name: Azure Function App Http Version
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-funcapp-http-version.html"
@@ -611,7 +611,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Function apps is only accessible over HTTPS
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-funcapp-https-only
     pretty_name: Azure Function App Https Only
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-funcapp-https-only.html"
@@ -623,7 +623,7 @@ rules:
       - boost-hardened
     description: Ensure Azure linux scale set does not use basic authentication(Use
       SSH Key Instead)
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: azure-machine-scaleset-auth
     pretty_name: Azure Machine Scaleset Auth
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-machine-scaleset-auth.html"
@@ -634,7 +634,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Virtual machine scale sets have encryption at host enabled
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-machine-scaleset-encrypt
     pretty_name: Azure Machine Scaleset Encrypt
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-machine-scaleset-encrypt.html"
@@ -645,7 +645,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that no sensitive credentials are exposed in VM custom_data
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: azure-machine-sensitive-data
     pretty_name: Azure Machine Sensitive Data
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-machine-sensitive-data.html"
@@ -657,7 +657,7 @@ rules:
       - boost-hardened
     description: Ensure public network access enabled is set to False for MariaDB
       servers
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-mariadb-public-ingress
     pretty_name: Azure MariaDB Public Ingress
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mariadb-public-ingress.html"
@@ -668,7 +668,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure Enforce SSL connection is set to ENABLED for MariaDB servers
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-mariadb-ssl-enabled
     pretty_name: Azure MariaDB SSL Enabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mariadb-ssl-enabled.html"
@@ -679,7 +679,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure audit profile captures all the activities
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-monitor-audit-activities
     pretty_name: Azure Monitor Audit Activities
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-monitor-audit-activities.html"
@@ -690,7 +690,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure that Activity Log Retention is set 365 days or greater
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-monitor-log-retention
     pretty_name: Azure Monitor Log Retention
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-monitor-log-retention.html"
@@ -701,7 +701,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Specifies a retention period of less than 90 days.
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-mssql-audit-retention
     pretty_name: Azure MSSQL Audit Retention
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mssql-audit-retention.html"
@@ -713,7 +713,7 @@ rules:
       - boost-hardened
     description: Ensure that Email service and co-administrators is Enabled for MSSQL
       servers
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-mssql-email-service
     pretty_name: Azure MSSQL Email Service
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mssql-email-service.html"
@@ -724,7 +724,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure that Send Alerts To is enabled for MSSQL servers
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-mssql-send-alerts
     pretty_name: Azure MSSQL Send Alerts
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mssql-send-alerts.html"
@@ -735,7 +735,7 @@ rules:
       - cloud-best-practices
       - boost-hardened
     description: Ensure that Threat Detection types is set to All
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-mssql-threat-types
     pretty_name: Azure MSSQL Threat Types
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mssql-threat-types.html"
@@ -746,7 +746,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure MSSQL is using the latest version of TLS encryption
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-mssql-tls-version
     pretty_name: Azure MSSQL TLS Version
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mssql-tls-version.html"
@@ -758,7 +758,7 @@ rules:
       - boost-hardened
     description: Ensure Enforce SSL connection is set to ENABLED for MySQL Database
       Server
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-mysql-enforce-ssl
     pretty_name: Azure MySQL Enforce SSL
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mysql-enforce-ssl.html"
@@ -769,7 +769,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure public network access enabled is set to False for mySQL servers
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-mysql-public-ingress
     pretty_name: Azure MySQL Public Ingress
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mysql-public-ingress.html"
@@ -780,7 +780,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure MySQL is using the latest version of TLS encryption
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-mysql-tls-version
     pretty_name: Azure MySQL Tls Version
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-mysql-tls-version.html"
@@ -792,7 +792,7 @@ rules:
       - boost-hardened
     description: Ensure that Network Security Group Flow Log retention period is greater
       than 90 days
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: azure-network-log-retention
     pretty_name: Azure Network Log Retention
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-network-log-retention.html"
@@ -803,7 +803,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that RDP access is restricted from the internet
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-network-public-rdp
     pretty_name: Azure Network Public RDP
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-network-public-rdp.html"
@@ -814,7 +814,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that UDP Services are restricted from the Internet
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-network-public-udp
     pretty_name: Azure Network Public UDP
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-network-public-udp.html"
@@ -826,7 +826,7 @@ rules:
       - boost-hardened
     description: Ensure Enforce SSL connection is set to ENABLED for PostgreSQL Database
       Server
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-psql-enforce-ssl
     pretty_name: Azure PSQL Enforce SSL
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-psql-enforce-ssl.html"
@@ -837,7 +837,7 @@ rules:
       - boost-hardened
     description: Ensure server parameter connection_throttling is set to ON for PostgreSQL
       Database Server
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-psql-param-conn-throttling
     pretty_name: Azure PSQL Param Conn Throttling
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-psql-param-conn-throttling.html"
@@ -848,7 +848,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that PostgreSQL server disables public network access
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-psql-public-ingress
     pretty_name: Azure PSQL Public Ingress
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-psql-public-ingress.html"
@@ -859,7 +859,7 @@ rules:
       - boost-hardened
     description: Ensure that Send email notification for high severity alerts is set
       to On
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: azure-seccntr-email-alerts
     pretty_name: Azure Security Center Email Alerts
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-seccntr-email-alerts.html"
@@ -870,7 +870,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Public access level is set to Private for blob containers
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-storage-public-access
     pretty_name: Azure Storage Public Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-storage-public-access.html"
@@ -881,7 +881,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Storage accounts disallow public access
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-storage-public-ingress
     pretty_name: Azure Storage Public Ingress
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-storage-public-ingress.html"
@@ -892,7 +892,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that storage account enables secure transfer
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-storage-secure-xfer
     pretty_name: Azure Storage Secure Transfer
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-storage-secure-xfer.html"
@@ -902,7 +902,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure Storage Account is using the latest version of TLS encryption
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: azure-storage-tls-version
     pretty_name: Azure Storage TLS Version
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-storage-tls-version.html"
@@ -914,7 +914,7 @@ rules:
       - boost-hardened
     description: Ensure Trusted Microsoft Services is enabled for Storage Account
       access
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-storage-trust-msft
     pretty_name: Azure Storage Trusted Microsoft Service
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-storage-trust-msft.html"
@@ -925,7 +925,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Azure File Sync disables public network access
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: azure-storsync-public-ingress
     pretty_name: Azure Storage Sync Public Ingress
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-storsync-public-ingress.html"
@@ -936,7 +936,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that key vault allows firewall rules settings
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: azure-vault-allow-firewall
     pretty_name: Azure Vault Allow Firewall
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-vault-allow-firewall.html"
@@ -946,7 +946,7 @@ rules:
       - cloud-secrets-management-best-practices
       - boost-hardened
     description: Ensure that the expiration date is set on all keys
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: azure-vault-key-expiry
     pretty_name: Azure Vault Key Expiry
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-vault-key-expiry.html"
@@ -957,7 +957,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that key vault enables purge protection
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: azure-vault-purge-protection
     pretty_name: Azure Vault Purge Protection
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-vault-purge-protection.html"
@@ -967,7 +967,7 @@ rules:
       - cloud-secrets-management-best-practices
       - boost-hardened
     description: Ensure that the expiration date is set on all secrets
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: azure-vault-secret-expiry
     pretty_name: Azure Vault Secret Expiry
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/azure-vault-secret-expiry.html"
@@ -980,7 +980,7 @@ rules:
       - cwe-798
       - cwe-522
     description: Checks for basic authentication credentials stored in source.
-    group: Stored Secrets
+    group: stored-secrets
     name: basic-auth-credentials
     pretty_name: Basic Auth Credentials
     ref: "{BOOSTSEC_DOC_BASE_URL}/secrets/index.html"
@@ -994,7 +994,7 @@ rules:
       - cwe-79 # XSS
     description: Checks for dangerous functions to bypass output encoding done by
       frameworks like React and Angular.
-    group: CWE Top 25
+    group: top10-injection
     name: bypass-safe-framework-default-output-encoding
     pretty_name: Bypass Safe-by-Default Framework Output Encoding
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-bypass-framework-safe-default-output-encoding.html"
@@ -1003,7 +1003,7 @@ rules:
       - ALL
       - cloud-best-practices
     description: Checks for expired X509 certificates.
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: cert-expired
     pretty_name: Cert Expired
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-expired.html"
@@ -1013,7 +1013,7 @@ rules:
       - cloud-best-practices
     description: Checks for X509 certificates that will expire in a configured number
       of days.
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: cert-expires-soon
     pretty_name: Cert Expires Soon
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-expires-soon.html"
@@ -1024,7 +1024,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Checks for X509 certificates with insecure signing algorithms.
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: cert-insecure-signing-algorithm
     pretty_name: Cert Insecure Signing Algorithm
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-insecure-signing-algorithm.html"
@@ -1035,7 +1035,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Checks for X509 certificates with insecure key lengths.
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: cert-insufficient-key-length
     pretty_name: Cert Insufficient Key Length
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-insufficient-key-length.html"
@@ -1050,7 +1050,7 @@ rules:
       etc.) stored in the Git repository.Generally, such binary artifacts should not
       be committed to Git and should be built with reproducible build system from
       source.
-    group: Risky Usage of Dependencies
+    group: supply-chain-missing-artifact-integrity-verification
     name: cicd-binary-artifacts-stored-in-scm
     pretty_name: CI/CD - Binary artifacts stored in SCM
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-binary-artifacts-stored-in-scm.html"
@@ -1064,7 +1064,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub repositories that do not have any Branch Protection
       configured.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-absent
     pretty_name: CI/CD - Missing Repository Branch Protection
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1078,7 +1078,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that allow deletion of the branch
       from Git.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-allows-deletion
     pretty_name: CI/CD - Branch Protection - Allows deletions of branch
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1091,7 +1091,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that allow force pushes.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-allows-force-pushes
     pretty_name: CI/CD - Branch Protection - Allows force pushes
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1103,7 +1103,7 @@ rules:
       - weak-ci-cd-settings
     description: Checks for Branch Protection config that allows non linear history
       (merge commits) to be pushed.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-allows-non-linear-history
     pretty_name: CI/CD - Branch Protection - Allows non linear history
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1115,7 +1115,7 @@ rules:
       - weak-ci-cd-settings
     description: Checks for Branch Protection config that does not require all converations
       to be resolved before merging.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-allows-unresolved-conversations
     pretty_name: CI/CD - Branch Protection - Allows unresolved conversations
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1129,7 +1129,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that require no review from a
       designated code owner.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-no-code-owners-review-required
     pretty_name: CI/CD - Branch Protection - No review required from Code Owners
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1143,7 +1143,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that does not require commits
       to be cryptographically signed.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-no-commit-signature-required
     pretty_name: CI/CD - Branch Protection - No signed commits required
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1157,7 +1157,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that are not enforced for admin
       roles.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-not-enforced-for-admins
     pretty_name: CI/CD - Branch Protection - Not enforced for admin roles
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1171,7 +1171,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that keep review approvals even
       after new commits are pushed in the Pull Request.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-stale-reviews-remain-valid
     pretty_name: CI/CD - Branch Protection - Stale review approvals remain valid
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1185,7 +1185,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that require no (zero) approving
       review.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-zero-approval-required
     pretty_name: CI/CD - Branch Protection - No (zero) approving review required
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1199,7 +1199,7 @@ rules:
       - boost-hardened
     description: Checks for Branch Protection config that require no (zero) status
       check to pass.
-    group: Hardened SCM Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-branch-protection-zero-status-check-required
     pretty_name: CI/CD - Branch Protection - No (zero) status check required
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
@@ -1212,7 +1212,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub organizations that allow GitHub Actions to create
       and approve pull requests.
-    group: Hardened CI Settings
+    group: supply-chain-cicd-weak-configuration
     name: cicd-gha-can-create-and-approve-pull-requests
     pretty_name: CI/CD - GitHub Actions can approve pull requests
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-can-create-and-approve-pull-requests.html"
@@ -1225,7 +1225,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub organizations which have Organization-level secrets
       that can be accessed by workflows from public repositories.
-    group: Hardened CI Settings
+    group: supply-chain-cicd-weak-configuration
     name: cicd-gha-org-secret-publicly-visible
     pretty_name: CI/CD - GitHub Organization Secret visible from public repositories
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-org-secret-publicly-visible.html"
@@ -1238,7 +1238,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub organizations that allow all GitHub Actions to
       run without any restriction.
-    group: Hardened CI Settings
+    group: supply-chain-cicd-weak-configuration
     name: cicd-gha-org-allows-all-actions
     pretty_name: CI/CD - All GitHub Actions are allowed to run
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-org-allows-all-actions.html"
@@ -1251,7 +1251,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub organizations that grant GitHub Actions Read /
       Write permissions to the GitHub API.
-    group: Hardened CI Settings
+    group: supply-chain-cicd-weak-configuration
     name: cicd-gha-read-write-token-permissions
     pretty_name: CI/CD - GitHub Actions have Read / Write permissions
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-read-write-token-permission.html"
@@ -1265,7 +1265,7 @@ rules:
     description: Checks for GitHub Action workflow using pull_request_target where
       the code from the incoming PR is checked out.This is risky if you end up executing
       arbitrary code from the incoming PR as an attacker could steal repository secrets.
-    group: Dangerous CI Jobs
+    group: supply-chain-cicd-vulnerable-pipeline
     name: cicd-gha-risky-pull-request-target-usage
     pretty_name: CI/CD - GitHub Action risky pull_request_target usage
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-org-secret-publicly-visible.html"
@@ -1278,7 +1278,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub Action workflows where untrusted attributes controllable
       by the Pull Request author could lead to code execution.
-    group: Dangerous CI Jobs
+    group: supply-chain-cicd-vulnerable-pipeline
     name: cicd-gha-shell-injection-detected
     pretty_name: CI/CD - GitHub Action with shell injection
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-shell-injection-detected.html"
@@ -1291,7 +1291,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub repositories that do not have Dependabot scanning
       enabled.
-    group: Risky Usage of Dependencies
+    group: supply-chain-cicd-weak-configuration
     name: cicd-sca-scanning-absent
     pretty_name: CI/CD - Missing Software Composition Analysis (SCA) Scanning
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-sca-scanning-absent.html"
@@ -1305,7 +1305,7 @@ rules:
       - boost-hardened
     description: Checks for GitHub organizations that are not enforcing all members
       to have 2FA enabled.
-    group: Hardened Developer Access Settings
+    group: supply-chain-scm-weak-configuration
     name: cicd-scm-2fa-enforcement-absent
     pretty_name: CI/CD - Missing GitHub Organization 2FA Enforcement
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-2fa-enforcement-absent.html"
@@ -1320,7 +1320,7 @@ rules:
       pyproject.toml, Pipfile, go.mod, etc.),without a corresponding cryptographic
       dependency lock file (ex. package-lock.json, Gemfile.lock, poetry.lock, Pipfile.lock,
       go.sum).
-    group: Risky Usage of Dependencies
+    group: supply-chain-missing-artifact-integrity-verification
     name: cicd-unpinned-dependencies
     pretty_name: CI/CD - Using unpinned dependencies
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-unpinned-dependencies.html"
@@ -1331,7 +1331,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Dependency with a Critical Vulnerability
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     name: cve-critical
     pretty_name: Dependency with a Critical Vulnerability
     ref: "{BOOSTSEC_DOC_BASE_URL}"
@@ -1342,7 +1342,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Dependency with a High Risk Vulnerability
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     name: cve-high
     pretty_name: Dependency with a High Risk Vulnerability
     ref: "{BOOSTSEC_DOC_BASE_URL}"
@@ -1352,7 +1352,7 @@ rules:
       - supply-chain
       - boost-hardened
     description: Dependency with a Low Risk Vulnerability
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     name: cve-low
     pretty_name: Dependency with a Low Risk Vulnerability
     ref: "{BOOSTSEC_DOC_BASE_URL}"
@@ -1362,7 +1362,7 @@ rules:
       - supply-chain
       - boost-hardened
     description: Dependency with a Medium Risk Vulnerability
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     name: cve-moderate
     pretty_name: Dependency with a Moderate Risk Vulnerability
     ref: "{BOOSTSEC_DOC_BASE_URL}"
@@ -1375,7 +1375,7 @@ rules:
       - boost-hardened
       - cwe-502
     description: Checks for native object deserialization.
-    group: CWE Top 25
+    group: top10-software-data-integrity-failures
     name: dangerous-function-deserialization
     pretty_name: Dangerous Deserialization
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-dangerous-function-deserialization.html"
@@ -1387,7 +1387,7 @@ rules:
       - boost-hardened
       - cwe-89
     description: Ensure no raw SQL queries are used despite using an ORM
-    group: CWE Top 25
+    group: top10-injection
     name: dangerous-raw-sql-used-with-orm
     pretty_name: Ensure no raw SQL queries are used despite using an ORM
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-dangerous-raw-sql-used-with-orm.html"
@@ -1402,7 +1402,7 @@ rules:
       - cwe-732 # Incorrect Permissions
       - cwe-287 # Improper Authentication on Critical Resource
     description: Ensure debug interface is not exposed
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: debugging-interface-publicly-exposed
     pretty_name: Debugging interface publicly exposed
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-debugging-interface-publicly-exposed.html"
@@ -1412,7 +1412,7 @@ rules:
       - boost-hardened # Not sure where to put this one...
     description: Checks for mishandling of highly compressed data with a very high
       compression ratio producing large output.
-    group: CWE Top 25
+    group: top10-insecure-design
     name: dos-via-decompression-bomb
     pretty_name: Uncontrolled data decompression (decompression bomb)
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-dos-via-decompression-bomb.html"
@@ -1427,7 +1427,7 @@ rules:
       - cwe-77 # Command injection
       - cwe-78 # OS Command injection
     description: Checks for dangerous exec/eval functions.
-    group: CWE Top 25
+    group: top10-injection
     name: dynamic-code-injection
     pretty_name: Dynamic Code Injection
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-dynamic-code-injection.html"
@@ -1438,7 +1438,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that BigQuery datasets are not anonymously or publicly accessible
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-bq-anon-or-public
     pretty_name: GCP BigQuery Anonymous Or Publicly Accessible
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-bq-anon-or-public.html"
@@ -1450,7 +1450,7 @@ rules:
       - boost-hardened
     description: Ensure that instances are not configured to use the default service
       account with full access to all Cloud APIs
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: gcp-gce-default-svcacct
     pretty_name: GCP GCE Default Service Account
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gce-default-svcacct.html"
@@ -1462,7 +1462,7 @@ rules:
       - boost-hardened
     description: Ensure Google compute firewall ingress does not allow unrestricted
       rdp access
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-gce-fw-public-rdp
     pretty_name: GCP GCE Firewall Unrestricted RDP Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gce-fw-public-rdp.html"
@@ -1474,7 +1474,7 @@ rules:
       - boost-hardened
     description: Ensure Google compute firewall ingress does not allow unrestricted
       ssh access
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-gce-fw-public-ssh
     pretty_name: GCP GCE Firewall Public SSH Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gce-fw-public-ssh.html"
@@ -1485,7 +1485,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that IP forwarding is not enabled on Instances
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: gcp-gce-ip-fwd-on
     pretty_name: GCP GCE IP Forwarding On
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gce-ip-fwd-on.html"
@@ -1496,7 +1496,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Compute instances do not have public IP addresses
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-gce-public-ip
     pretty_name: GCP GCE Instance Public IP
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gce-public-ip.html"
@@ -1507,7 +1507,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure Enable connecting to serial ports is not enabled for VM Instance
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: gcp-gce-serialport-on
     pretty_name: GCP GCE Serialport On
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gce-serialport-on.html"
@@ -1518,7 +1518,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Cloud Storage bucket is not anonymously or publicly accessible
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-gcs-anon-or-public
     pretty_name: GCP GCS Anon Or Public Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gcs-anon-or-public.html"
@@ -1529,7 +1529,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Bucket should log access
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: gcp-gcs-logs-off
     pretty_name: GCP GCS Access Logs Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-gcs-logs-off.html"
@@ -1540,7 +1540,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Service Account has no Admin privileges
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: gcp-iam-svcacct-admin-role
     pretty_name: GCP IAM Service Account Admin Role
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-iam-svcacct-admin-role.html"
@@ -1552,7 +1552,7 @@ rules:
       - boost-hardened
     description: Ensure no roles that enable to impersonate and manage all service
       accounts are used at a project level
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: gcp-iam-svcacct-allo-sudo
     pretty_name: GCP IAM Service Account Allow Sudo
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-iam-svcacct-allo-sudo.html"
@@ -1563,7 +1563,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure GKE basic auth is disabled
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: gcp-k8s-basic-auth-on
     pretty_name: GCP K8S Basic Auth On
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-k8s-basic-auth-on.html"
@@ -1574,7 +1574,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure legacy Compute Engine instance metadata APIs are Disabled
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: gcp-k8s-legacy-instance-metadata-on
     pretty_name: GCP K8S Legacy Instance Metadata On
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-k8s-legacy-instance-metadata-on.html"
@@ -1586,7 +1586,7 @@ rules:
       - boost-hardened
     description: Ensure Legacy Authorization is set to Disabled on Kubernetes Engine
       Clusters
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: gcp-k8s-legacy-rbac-on
     pretty_name: GCP K8S Legacy RBAC On
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-k8s-legacy-rbac-on.html"
@@ -1597,7 +1597,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure the GKE Metadata Server is Enabled
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: gcp-k8s-metadata-server-off
     pretty_name: GCP K8S Metadata Server Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-k8s-metadata-server-off.html"
@@ -1609,7 +1609,7 @@ rules:
       - boost-hardened
     description: Ensure Stackdriver Monitoring is set to Enabled on Kubernetes Engine
       Clusters
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: gcp-k8s-stackdriver-monitor-off
     pretty_name: GCP K8S Stackdriver Monitor Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-k8s-stackdriver-monitor-off.html"
@@ -1621,7 +1621,7 @@ rules:
       - boost-hardened
     description: Ensure Stackdriver Logging is set to Enabled on Kubernetes Engine
       Clusters
-    group: Insufficient Logging
+    group: top10-security-logging-monitoring-failures
     name: gcp-k8s-strackdriver-logs-off
     pretty_name: GCP K8S Strackdriver Logs Off
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-k8s-strackdriver-logs-off.html"
@@ -1631,7 +1631,7 @@ rules:
       - cloud-secrets-management-best-practices
       - boost-hardened
     description: Ensure KMS encryption keys are rotated within a period of 90 days
-    group: Secrets Management Best Practices
+    group: cloud-weak-secrets-management
     name: gcp-kms-bad-key-rotation
     pretty_name: GCP KMS Bad Key Rotation
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-kms-bad-key-rotation.html"
@@ -1643,7 +1643,7 @@ rules:
       - boost-hardened
     description: Ensure no HTTPS or SSL proxy load balancers permit SSL policies with
       weak cipher suites
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: gcp-lb-ssl-weak-ciphers
     pretty_name: GCP Load Balancer Weak SSL Ciphers
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-lb-ssl-weak-ciphers.html"
@@ -1654,7 +1654,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure Default Service account is not used at a folder level
-    group: IAM Best Practices
+    group: cloud-insecure-iam
     name: gcp-res-man-default-svcacct
     pretty_name: GCP Default Service Account in Project
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-res-man-default-svcacct.html"
@@ -1665,7 +1665,7 @@ rules:
       - boost-hardened
     description: Ensure all Cloud SQL database instance have backup configuration
       enabled
-    group: Cloud Best Practices
+    group: cloud-weak-configuration
     name: gcp-sql-backup-off
     pretty_name: GCP Cloud SQL Backup Disabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-sql-backup-off.html"
@@ -1676,7 +1676,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure MySQL database local_infile flag is set to off
-    group: Insecure Configuration of Cloud Resources
+    group: cloud-weak-configuration
     name: gcp-sql-mysql-local_infile-on
     pretty_name: GCP MySQL Local_Infile On
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-sql-mysql-local_infile-on.html"
@@ -1687,7 +1687,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure that Cloud SQL database Instances are not open to the world
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-sql-public-access
     pretty_name: GCP Cloud SQL Public Access
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-sql-public-access.html"
@@ -1698,7 +1698,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure SQL database do not have public IP
-    group: Cloud Resources with Unrestricted Public Access
+    group: cloud-resources-public-access
     name: gcp-sql-public-ip
     pretty_name: GCP Cloud SQL Public IP
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-sql-public-ip.html"
@@ -1710,7 +1710,7 @@ rules:
       - boost-hardened
     description: Ensure all Cloud SQL database instance requires all incoming connections
       to use SSL
-    group: Unencrypted Cloud Resources
+    group: cloud-unencrypted-resources
     name: gcp-sql-ssl-off
     pretty_name: GCP SQL SSL Disabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/gcp-sql-ssl-off.html"
@@ -1724,7 +1724,7 @@ rules:
       - cwe-200 # Exposure of Sensitive Information
       - cwe-522 # Insufficiently Protected Credentials
     description: Checks for out-of-date and now insecure encryption and hashing algorithms.
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: insecure-crypto-algorithm
     pretty_name: Insecure Crypto Algorithm
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-insecure-crypto-algorithm.html"
@@ -1738,7 +1738,7 @@ rules:
       - cwe-798
       - cwe-522
     description: Checks for JSON Web Tokens stored in source.
-    group: Stored Secrets
+    group: stored-secrets
     name: json-web-token
     pretty_name: Json Web Token
     ref: "{BOOSTSEC_DOC_BASE_URL}/secrets/index.html"
@@ -1752,7 +1752,7 @@ rules:
       - cwe-798
       - cwe-522
     description: Checks for JSON Web Tokens stored in source.
-    group: Stored Secrets
+    group: stored-secrets
     name: jwt-hardcoded-secret-key
     pretty_name: JWT Hardcoded Secret Key
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-jwt-hardcoded-secret-key.html"
@@ -1764,7 +1764,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Checks for JSON Web Tokens created without a signature.
-    group: Insecure Crypto
+    group: top10-crypto-failures
     name: jwt-none-algorithm-usage
     pretty_name: JWT Without Signature
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-jwt-none-algorithm-usage.html"
@@ -1773,7 +1773,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Ensure the Kubernetes dashboard is not deployed
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-dashboard-present
     pretty_name: K8S Dashboard Present
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-dashboard-present.html"
@@ -1782,7 +1782,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Do not expose the docker daemon socket to containers
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-docker-daemon
     pretty_name: K8S Docker Daemon
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-docker-daemon.html"
@@ -1791,7 +1791,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Containers should run as a high UID to avoid host conflict
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-host-namespace
     pretty_name: K8S Host Namespace
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-host-namespace.html"
@@ -1801,7 +1801,7 @@ rules:
       - k8s-bad-practice
       - supply-chain
     description: Image Tag should be fixed - not latest or blank
-    group: K8S Security Best Practices
+    group: cloud-weak-configuration
     name: k8s-immutable-image
     pretty_name: K8S Immutable Image
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-immutable-image.html"
@@ -1810,7 +1810,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Do not allow containers with added capability
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-podsecuritypolicy-defined
     pretty_name: K8S Podsecuritypolicy Defined
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-podsecuritypolicy-defined.html"
@@ -1819,7 +1819,7 @@ rules:
       - ALL
       - k8s-bad-practice
     description: Minimize wildcard use in Roles and ClusterRoles
-    group: K8S Security Best Practices
+    group: cloud-weak-configuration
     name: k8s-rbac-wildcards
     pretty_name: K8S Rbac Wildcards
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-rbac-wildcards.html"
@@ -1828,7 +1828,7 @@ rules:
       - ALL
       - k8s-bad-practice
     description: Memory limits should be set
-    group: K8S Security Best Practices
+    group: cloud-weak-configuration
     name: k8s-resources-defined
     pretty_name: K8S Resources Defined
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-resources-defined.html"
@@ -1837,7 +1837,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Do not use the CAP_SYS_ADMIN linux capability
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-securitycontext-capabilities
     pretty_name: K8S Securitycontext Capabilities
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-securitycontext-capabilities.html"
@@ -1846,7 +1846,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Apply security context to your pods and containers
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-securitycontext-defined
     pretty_name: K8S Securitycontext Defined
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-securitycontext-defined.html"
@@ -1856,7 +1856,7 @@ rules:
       - k8s-insecure-configuration
     description: Checks that pods and container are not running as root user OR have
       higher privileged assigned.
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-securitycontext-privileged
     pretty_name: K8S Securitycontext Privileged
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-securitycontext-privileged.html"
@@ -1865,7 +1865,7 @@ rules:
       - ALL
       - k8s-insecure-configuration
     description: Ensure that default service accounts are not actively used
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-serviceaccount-default
     pretty_name: K8S Serviceaccount Default
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-serviceaccount-default.html"
@@ -1875,7 +1875,7 @@ rules:
       - k8s-insecure-configuration
     description: Ensure the Tiller Deployment (Helm V2) is not accessible from within
       the cluster
-    group: Hardened K8S Configuration
+    group: cloud-weak-configuration
     name: k8s-tiller-present
     pretty_name: K8S Tiller Present
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/k8s-tiller-present.html"
@@ -1885,7 +1885,7 @@ rules:
       - boost-hardened
       - cwe-1022
     description: Checks for anchor tags without noopener and noreferrer attributes.
-    group: CWE Top 25
+    group: top10-security-misconfiguration
     name: missing-reverse-tabnabbing-protection
     pretty_name: Missing Reverse-Tabnabbing Protection
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-missing-reverse-tabnabbing-protection.html"
@@ -1899,7 +1899,7 @@ rules:
       - cwe-77
       - cwe-78
     description: Checks for dangerous OS functions with non-literal input.
-    group: CWE Top 25
+    group: top10-injection
     name: os-command-injection
     pretty_name: OS Command Injection
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-os-command-injection.html"
@@ -1914,7 +1914,7 @@ rules:
       - cwe-78
     description: Checks for code interfacing with the file system operations that
       could lead to path traversal attack.
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: path-traversal
     pretty_name: Path traversal
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-path-traversal.html"
@@ -1928,7 +1928,7 @@ rules:
       - cwe-798
       - cwe-522
     description: Checks for private keys stored in source.
-    group: Stored Secrets
+    group: stored-secrets
     name: private-key
     pretty_name: Private Key
     ref: "{BOOSTSEC_DOC_BASE_URL}/secrets/index.html"
@@ -1942,7 +1942,7 @@ rules:
       - cwe-798
       - cwe-522
     description: Checks for secrets and credentials stored in a source code repository.
-    group: Stored Secrets
+    group: stored-secrets
     name: secret-found-in-repository
     pretty_name: Secret found in repository
     ref: "{BOOSTSEC_DOC_BASE_URL}/secrets/index.html"
@@ -1954,7 +1954,7 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Ensure server side templates are validated
-    group: CWE Top 25
+    group: top10-injection
     name: server-side-template-injection
     pretty_name: Server-Side Template Injection (SSTI)
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-server-side-template-injection.html"
@@ -1967,7 +1967,7 @@ rules:
       - boost-hardened
     description: Checks for code issuing HTTP requests from the server-side that could
       lead to an Server-Side Request Forgery (SSRF) attack.
-    group: CWE Top 25
+    group: top10-server-side-request-forgery
     name: ssrf
     pretty_name: Server-Side Request Forgery (SSRF)
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-ssrf.html"
@@ -1981,7 +1981,7 @@ rules:
       - cwe-798
       - cwe-522
     description: Checks for Stripe API keys stored in source.
-    group: Stored Secrets
+    group: stored-secrets
     name: stripe-access-key
     pretty_name: Stripe Access Key
     ref: "{BOOSTSEC_DOC_BASE_URL}/secrets/index.html"
@@ -1996,7 +1996,7 @@ rules:
       - cwe-295
       - cwe-297
     description: Checks for network functions with TLS verification disabled.
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: tls-disabled-cert-validation
     pretty_name: TLS Verification Disabled
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-tls-disabled-cert-validation.html"
@@ -2009,7 +2009,7 @@ rules:
       - boost-hardened
       - cwe-327
     description: Checks for network functions using out-of-date and insecure TLS versions.
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: tls-insecure-protocol-config
     pretty_name: TLS Insecure Protocol Config
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-tls-insecure-protocol-config.html"
@@ -2024,7 +2024,7 @@ rules:
     description: Checks for secure connections (SSH etc.) where the public key exchange
       is not verified (i.e. authenticated) against a list of trusted entitities (ex.
       known trusted SSH hosts).
-    group: CWE Top 25
+    group: top10-id-authn-failures
     name: unauthenticated-public-key-exchange
     pretty_name: Unauthenticated public key exchange
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/unauthenticated-public-key-exchange.html"
@@ -2036,7 +2036,7 @@ rules:
       - cwe-1327
     description: Checks for instances of a server socket that is binding to all interfaces
       without IP restriction (i.e. binding to 0.0.0.0/0).
-    group: CWE Top 25
+    group: top10-broken-access-control
     name: unrestricted-server-socket-binding
     pretty_name: Unrestricted server socket binding
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-unrestricted-server-socket-binding.html"
@@ -2050,7 +2050,7 @@ rules:
       - cwe-338
     description: Checks for the usage of weak non-cryptographically secure pseudo-random
       number generator (PRNG).
-    group: CWE Top 25
+    group: top10-crypto-failures
     name: weak-pseudo-random-number-generator
     pretty_name: Usage of weak pseudo-random number generator (PRNG)
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/weak-pseudo-random-number-generator.html"
@@ -2064,8 +2064,7 @@ rules:
       - cwe-77
       - cwe-78
     description: Checks for wildcard characters in system calls.
-    group: CWE Top 25
+    group: top10-injection
     name: wildcard-in-system-call
     pretty_name: Wildcard In System Call
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-wildcard-in-system-call.html"
-
