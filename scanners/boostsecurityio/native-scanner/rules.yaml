@@ -14,7 +14,7 @@ rules:
   aws-classic-resource-usage:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for EC2 Classic instances which run with insecure VPC configurations
@@ -27,7 +27,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure CloudTrail is enabled in all Regions
@@ -39,7 +39,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure CloudTrail log file validation is enabled
@@ -51,7 +51,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure cloudwatch log groups specify retention days
@@ -62,7 +62,7 @@ rules:
   aws-db-backup-off:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Ensure that database backup is enabled
     group: cloud-weak-configuration
     name: aws-db-backup-off
@@ -71,7 +71,7 @@ rules:
   aws-db-no-version-upgrade:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Ensured that database auto-upgrade is enabled
     group: cloud-weak-configuration
     name: aws-db-no-version-upgrade
@@ -91,7 +91,7 @@ rules:
   aws-ecr-scanning-off:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure ECR image scanning on push is enabled
     group: cloud-weak-configuration
@@ -101,7 +101,7 @@ rules:
   aws-ecr-tags-mutable:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure ECR Image Tags are immutable
@@ -112,7 +112,7 @@ rules:
   aws-ecs-container-insights-off:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Ensure container insights are enabled on ECS cluster
     group: cloud-weak-configuration
     name: aws-ecs-container-insights-off
@@ -121,7 +121,7 @@ rules:
   aws-iam-password-policy:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure IAM password policy requires minimum length of 14 or greater
@@ -132,7 +132,7 @@ rules:
   aws-iam-policy-lax-full-admin:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure IAM policies that allow full *-* administrative privileges
@@ -144,7 +144,7 @@ rules:
   aws-iam-policy-on-users:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-hardened
     description: Ensure IAM policies are attached only to groups or roles
     group: cloud-insecure-iam
@@ -154,7 +154,7 @@ rules:
   aws-iam-wildcard-actions:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure no IAM policies documents allow * as a statements actions
@@ -165,7 +165,7 @@ rules:
   aws-kms-key-rotation:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
     description: Ensure rotation for customer created CMKs is enabled
@@ -176,7 +176,7 @@ rules:
   aws-lb-allow-invalid-headers:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Ensure that the load balancer drops invalid HTTP headers
     group: cloud-weak-configuration
     name: aws-lb-allow-invalid-headers
@@ -185,7 +185,7 @@ rules:
   aws-legacy-instance-meta:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure Instance Metadata Service Version 1 is not enabled
@@ -369,7 +369,7 @@ rules:
   aws-vpc-endpoint-auto-accept:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure that VPC Endpoint Service is configured for Manual Acceptance
@@ -401,7 +401,7 @@ rules:
   azure-aks-networkpolicy:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Ensure AKS cluster has Network Policy configured
     group: cloud-weak-configuration
     name: azure-aks-networkpolicy
@@ -421,7 +421,7 @@ rules:
   azure-aks-rbac-enabled:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Ensure RBAC is enabled on AKS clusters
     group: cloud-weak-configuration
     name: azure-aks-rbac-enabled
@@ -430,7 +430,7 @@ rules:
   azure-appsvc-ad-enabled:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure that Register with Azure Active Directory is enabled on App
@@ -442,7 +442,7 @@ rules:
   azure-appsvc-auth-enabled:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure App Service Authentication is set on Azure App Service
@@ -453,7 +453,7 @@ rules:
   azure-appsvc-cors-restrictive:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that CORS disallows every resource to access app services
     group: cloud-weak-configuration
@@ -463,7 +463,7 @@ rules:
   azure-appsvc-disable-debug:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure that remote debugging is not enabled for app services
@@ -474,7 +474,7 @@ rules:
   azure-appsvc-ftp-disabled:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure FTP deployments are disabled
@@ -485,7 +485,7 @@ rules:
   azure-appsvc-http-redirect:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service
@@ -507,7 +507,7 @@ rules:
   azure-appsvc-http-version:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that HTTP Version is the latest if used to run the web app
     group: cloud-weak-configuration
@@ -517,7 +517,7 @@ rules:
   azure-automn-variable-encrypted:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
     description: Ensure that Automation account variables are encrypted
@@ -528,7 +528,7 @@ rules:
   azure-batch-keyvault:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
     description: Ensure that Azure Batch account uses key vault to encrypt data
@@ -539,7 +539,7 @@ rules:
   azure-dashboard-disable:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure Kube Dashboard is disabled
@@ -551,7 +551,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Auditing is set to On for SQL servers
     group: top10-security-logging-monitoring-failures
@@ -562,7 +562,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure that Auditing Retention is greater than 90 days for SQL servers
@@ -584,7 +584,7 @@ rules:
   azure-funcapp-auth-enabled:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure that function apps enables Authentication
@@ -596,7 +596,7 @@ rules:
   azure-funcapp-http-version:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that HTTP Version is the latest if used to run the Function
       app
@@ -618,7 +618,7 @@ rules:
   azure-machine-scaleset-auth:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure Azure linux scale set does not use basic authentication(Use
@@ -641,7 +641,7 @@ rules:
   azure-machine-sensitive-data:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
     description: Ensure that no sensitive credentials are exposed in VM custom_data
@@ -676,7 +676,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure audit profile captures all the activities
     group: top10-security-logging-monitoring-failures
@@ -687,7 +687,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Activity Log Retention is set 365 days or greater
     group: top10-security-logging-monitoring-failures
@@ -698,7 +698,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Specifies a retention period of less than 90 days.
     group: top10-security-logging-monitoring-failures
@@ -709,7 +709,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Email service and co-administrators is Enabled for MSSQL
       servers
@@ -721,7 +721,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Send Alerts To is enabled for MSSQL servers
     group: top10-security-logging-monitoring-failures
@@ -732,7 +732,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Threat Detection types is set to All
     group: top10-security-logging-monitoring-failures
@@ -788,7 +788,7 @@ rules:
     categories:
       - ALL
       - insufficient-logging
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Network Security Group Flow Log retention period is greater
       than 90 days
@@ -833,7 +833,7 @@ rules:
   azure-psql-param-conn-throttling:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure server parameter connection_throttling is set to ON for PostgreSQL
       Database Server
@@ -855,7 +855,7 @@ rules:
   azure-seccntr-email-alerts:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure that Send email notification for high severity alerts is set
       to On
@@ -909,7 +909,7 @@ rules:
   azure-storage-trust-msft:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure Trusted Microsoft Services is enabled for Storage Account
@@ -932,7 +932,7 @@ rules:
   azure-vault-allow-firewall:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure that key vault allows firewall rules settings
@@ -943,7 +943,7 @@ rules:
   azure-vault-key-expiry:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-hardened
     description: Ensure that the expiration date is set on all keys
     group: cloud-weak-secrets-management
@@ -953,7 +953,7 @@ rules:
   azure-vault-purge-protection:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
     description: Ensure that key vault enables purge protection
@@ -964,7 +964,7 @@ rules:
   azure-vault-secret-expiry:
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-hardened
     description: Ensure that the expiration date is set on all secrets
     group: cloud-weak-secrets-management
@@ -1001,7 +1001,7 @@ rules:
   cert-expired:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Checks for expired X509 certificates.
     group: cloud-weak-configuration
     name: cert-expired
@@ -1010,7 +1010,7 @@ rules:
   cert-expires-soon:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
     description: Checks for X509 certificates that will expire in a configured number
       of days.
     group: cloud-weak-configuration
@@ -1020,7 +1020,7 @@ rules:
   cert-insecure-signing-algorithm:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for X509 certificates with insecure signing algorithms.
@@ -1031,7 +1031,7 @@ rules:
   cert-insufficient-key-length:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for X509 certificates with insecure key lengths.
@@ -1043,7 +1043,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - binary-artifact-in-source-code
+      - supply-chain-missing-artifact-integrity-verifification
       - boost-baseline
       - boost-hardened
     description: Checks for binary / executable artifacts (ex. *.jar, *.class, *.so,
@@ -1058,8 +1058,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub repositories that do not have any Branch Protection
@@ -1072,8 +1072,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that allow deletion of the branch
@@ -1086,8 +1086,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that allow force pushes.
@@ -1099,8 +1099,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
     description: Checks for Branch Protection config that allows non linear history
       (merge commits) to be pushed.
     group: supply-chain-scm-weak-configuration
@@ -1111,8 +1111,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
     description: Checks for Branch Protection config that does not require all converations
       to be resolved before merging.
     group: supply-chain-scm-weak-configuration
@@ -1123,8 +1123,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that require no review from a
@@ -1137,8 +1137,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that does not require commits
@@ -1151,8 +1151,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that are not enforced for admin
@@ -1165,8 +1165,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that keep review approvals even
@@ -1179,8 +1179,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that require no (zero) approving
@@ -1193,8 +1193,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-branch-protection-settings
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for Branch Protection config that require no (zero) status
@@ -1207,7 +1207,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-ci-cd-settings
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub organizations that allow GitHub Actions to create
@@ -1220,7 +1220,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-ci-cd-settings
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub organizations which have Organization-level secrets
@@ -1233,7 +1233,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-ci-cd-settings
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub organizations that allow all GitHub Actions to
@@ -1246,7 +1246,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - weak-ci-cd-settings
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub organizations that grant GitHub Actions Read /
@@ -1259,7 +1259,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - potentially-dangerous-ci-job
+      - supply-chain-cicd-vulnerable-pipeline
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub Action workflow using pull_request_target where
@@ -1273,7 +1273,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - potentially-dangerous-ci-job
+      - supply-chain-cicd-vulnerable-pipeline
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub Action workflows where untrusted attributes controllable
@@ -1286,7 +1286,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - risky-usage-of-dependencies
+      - supply-chain-missing-artifact-integrity-verification
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub repositories that do not have Dependabot scanning
@@ -1299,8 +1299,8 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - missing-2FA-enforcement
-      - weak-ci-cd-settings
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub organizations that are not enforcing all members
@@ -1313,7 +1313,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - risky-usage-of-dependencies
+      - supply-chain-missing-artifact-integrity-verification
       - boost-baseline
       - boost-hardened
     description: Checks for dependency management manifests (ex. package.json, Gemfile,
@@ -1445,7 +1445,7 @@ rules:
   gcp-gce-default-svcacct:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure that instances are not configured to use the default service
@@ -1481,7 +1481,7 @@ rules:
   gcp-gce-ip-fwd-on:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure that IP forwarding is not enabled on Instances
@@ -1503,7 +1503,7 @@ rules:
   gcp-gce-serialport-on:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure Enable connecting to serial ports is not enabled for VM Instance
@@ -1536,7 +1536,7 @@ rules:
   gcp-iam-svcacct-admin-role:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure that Service Account has no Admin privileges
@@ -1547,7 +1547,7 @@ rules:
   gcp-iam-svcacct-allo-sudo: #TODO fix name
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure no roles that enable to impersonate and manage all service
@@ -1559,7 +1559,7 @@ rules:
   gcp-k8s-basic-auth-on:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure GKE basic auth is disabled
@@ -1570,7 +1570,7 @@ rules:
   gcp-k8s-legacy-instance-metadata-on:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure legacy Compute Engine instance metadata APIs are Disabled
@@ -1581,7 +1581,7 @@ rules:
   gcp-k8s-legacy-rbac-on:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure Legacy Authorization is set to Disabled on Kubernetes Engine
@@ -1593,7 +1593,7 @@ rules:
   gcp-k8s-metadata-server-off:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure the GKE Metadata Server is Enabled
@@ -1628,7 +1628,7 @@ rules:
   gcp-kms-bad-key-rotation: ### TODO: FP Start
     categories:
       - ALL
-      - cloud-secrets-management-best-practices
+      - cloud-weak-secrets-management
       - boost-hardened
     description: Ensure KMS encryption keys are rotated within a period of 90 days
     group: cloud-weak-secrets-management
@@ -1650,7 +1650,7 @@ rules:
   gcp-res-man-default-svcacct:
     categories:
       - ALL
-      - cloud-iam-best-practices
+      - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
     description: Ensure Default Service account is not used at a folder level
@@ -1661,7 +1661,7 @@ rules:
   gcp-sql-backup-off:
     categories:
       - ALL
-      - cloud-best-practices
+      - cloud-weak-configuration
       - boost-hardened
     description: Ensure all Cloud SQL database instance have backup configuration
       enabled
@@ -1672,7 +1672,7 @@ rules:
   gcp-sql-mysql-local_infile-on:
     categories:
       - ALL
-      - cloud-insecure-config
+      - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
     description: Ensure MySQL database local_infile flag is set to off
@@ -1771,7 +1771,7 @@ rules:
   k8s-dashboard-present:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Ensure the Kubernetes dashboard is not deployed
     group: cloud-weak-configuration
     name: k8s-dashboard-present
@@ -1780,7 +1780,7 @@ rules:
   k8s-docker-daemon:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Do not expose the docker daemon socket to containers
     group: cloud-weak-configuration
     name: k8s-docker-daemon
@@ -1789,7 +1789,7 @@ rules:
   k8s-host-namespace:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Containers should run as a high UID to avoid host conflict
     group: cloud-weak-configuration
     name: k8s-host-namespace
@@ -1798,7 +1798,7 @@ rules:
   k8s-immutable-image:
     categories:
       - ALL
-      - k8s-bad-practice
+      - cloud-weak-configuration
       - supply-chain
     description: Image Tag should be fixed - not latest or blank
     group: cloud-weak-configuration
@@ -1808,7 +1808,7 @@ rules:
   k8s-podsecuritypolicy-defined:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Do not allow containers with added capability
     group: cloud-weak-configuration
     name: k8s-podsecuritypolicy-defined
@@ -1817,7 +1817,7 @@ rules:
   k8s-rbac-wildcards:
     categories:
       - ALL
-      - k8s-bad-practice
+      - cloud-weak-configuration
     description: Minimize wildcard use in Roles and ClusterRoles
     group: cloud-weak-configuration
     name: k8s-rbac-wildcards
@@ -1826,7 +1826,7 @@ rules:
   k8s-resources-defined:
     categories:
       - ALL
-      - k8s-bad-practice
+      - cloud-weak-configuration
     description: Memory limits should be set
     group: cloud-weak-configuration
     name: k8s-resources-defined
@@ -1835,7 +1835,7 @@ rules:
   k8s-securitycontext-capabilities:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Do not use the CAP_SYS_ADMIN linux capability
     group: cloud-weak-configuration
     name: k8s-securitycontext-capabilities
@@ -1844,7 +1844,7 @@ rules:
   k8s-securitycontext-defined:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Apply security context to your pods and containers
     group: cloud-weak-configuration
     name: k8s-securitycontext-defined
@@ -1853,7 +1853,7 @@ rules:
   k8s-securitycontext-privileged:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Checks that pods and container are not running as root user OR have
       higher privileged assigned.
     group: cloud-weak-configuration
@@ -1863,7 +1863,7 @@ rules:
   k8s-serviceaccount-default:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Ensure that default service accounts are not actively used
     group: cloud-weak-configuration
     name: k8s-serviceaccount-default
@@ -1872,7 +1872,7 @@ rules:
   k8s-tiller-present:
     categories:
       - ALL
-      - k8s-insecure-configuration
+      - cloud-weak-configuration
     description: Ensure the Tiller Deployment (Helm V2) is not accessible from within
       the cluster
     group: cloud-weak-configuration
