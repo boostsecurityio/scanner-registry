@@ -1043,7 +1043,7 @@ rules:
     categories:
       - ALL
       - supply-chain
-      - supply-chain-missing-artifact-integrity-verifification
+      - supply-chain-missing-artifact-integrity-verification
       - boost-baseline
       - boost-hardened
     description: Checks for binary / executable artifacts (ex. *.jar, *.class, *.so,
