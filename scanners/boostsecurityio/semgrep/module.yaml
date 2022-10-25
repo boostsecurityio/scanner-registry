@@ -6,6 +6,8 @@ namespace: boostsecurityio/semgrep
 
 config:
   support_diff_scan: true
+  include_files:
+  - .semgrep/*
 
 steps:
   - scan:
