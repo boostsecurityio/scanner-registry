@@ -6,7 +6,7 @@ rules:
       - supply-chain
     description: Dependency with a Vulnerability of Unknown Risk
     name: cve-unknown
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     pretty_name: Dependency with a Vulnerability of Unknown Risk
     ref: https://github.com/rubysec/ruby-advisory-db
   cve-low:
@@ -16,7 +16,7 @@ rules:
       - supply-chain
     description: Dependency with a Low Risk Vulnerability
     name: cve-low
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     pretty_name: Dependency with a Low Risk Vulnerability
     ref: https://github.com/rubysec/ruby-advisory-db
   cve-moderate:
@@ -26,7 +26,7 @@ rules:
       - supply-chain
     description: Dependency with a Medium Risk Vulnerability
     name: cve-moderate
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     pretty_name: Dependency with a Medium Risk Vulnerability
     ref: https://github.com/rubysec/ruby-advisory-db
   cve-high:
@@ -37,7 +37,7 @@ rules:
       - supply-chain
     description: Dependency with a High Risk Vulnerability
     name: cve-high
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     pretty_name: Dependency with a High Risk Vulnerability
     ref: https://github.com/rubysec/ruby-advisory-db
   cve-critical:
@@ -48,6 +48,6 @@ rules:
       - supply-chain
     description: Dependency with a Critical Vulnerability
     name: cve-critical
-    group: Known Vulnerable Components
+    group: top10-vulnerable-components
     pretty_name: Dependency with a Critical Vulnerability
     ref: https://github.com/rubysec/ruby-advisory-db
