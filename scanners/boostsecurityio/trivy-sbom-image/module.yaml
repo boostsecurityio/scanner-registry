@@ -13,7 +13,7 @@ config:
 setup:
   - name: download trivy
     environment:
-      VERSION: 0.32.1
+      VERSION: 0.34.0
     run: |
       BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
       ARCH=$(uname -m)
@@ -21,15 +21,15 @@ setup:
       case "$(uname -sm)" in
         "Linux x86_64")
           BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-64bit.tar.gz"
-          SHA="ca0213f0c0f3b76498f1d8c20aabebeb7cedf8433ceacdef853c7841134e0033 trivy.tgz"
+          SHA="53f176ca461412563cec7199798ad9acf8bbb38527c0d9a38f745442f022f111 trivy.tgz"
           ;;
         "Linux aarch64")
           BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-ARM64.tar.gz"
-          SHA="61275e16a148e4d29c566ae9794df5c8b24415e8417a3d971aea8da42b6b7f7d trivy.tgz"
+          SHA="9cfd9efa36b69ad48a3b97843076d14ee848e240cd73c1b2da742d4de0bf568c trivy.tgz"
           ;;
         "Darwin arm64")
           BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-ARM64.tar.gz"
-          SHA="b2efd5247e94cb5e1076faf46a757a42e0429d6a72d060efc1e41679faea3125 trivy.tgz"
+          SHA="fda472bb726d0577ec92f6c5d25347f373c45ae069a6c7fb0a90133eaf21c26b trivy.tgz"
           ;;
         *)
           echo "Unsupported machine: ${OPTARG}"
