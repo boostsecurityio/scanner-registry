@@ -28,7 +28,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-            image: public.ecr.aws/boostsecurityio/boost-scanner-bundler-audit:6098d7b@sha256:8fa2e319ce8697af0c56e32f8506f753dde6746b9629e20c172eb599a38b518d
+            image: public.ecr.aws/boostsecurityio/boost-scanner-bundler-audit:e48c45a@sha256:2b4a9fb21a3108c7e609c72d6e5aebc6712dd8eab84becc71beefea541b31ed9
             command: process
             environment:
                 GEMFILE_LOCK: ${GEMFILE_LOCK:-Gemfile.lock}
