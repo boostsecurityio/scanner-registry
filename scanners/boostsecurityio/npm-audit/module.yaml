@@ -1,0 +1,32 @@
+api_version: 1.0
+
+
+id: boostsecurityio/npm-audit
+name: Boost npm audit Scanner
+namespace: boostsecurityio/npm-audit
+
+
+config:
+  support_diff_scan: true
+  include_files:
+    - package-lock.json
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: node:18.12-alpine3.16@sha256:1f09c210a17508d34277971b19541a47a26dc5a641dedc03bd28cff095052996
+          command: |
+            sh -c 'npm audit --json $NPM_AUDIT_ARGS || true'
+          workdir: /src
+          environment:
+            HOME: /tmp
+            NPM_AUDIT_ARGS: ${NPM_AUDIT_ARGS:-}
+      format: sarif
+      post-processor:
+        docker:
+            image: public.ecr.aws/boostsecurityio/boost-converter-sca:c40e685@sha256:489d2d8f880d09d8dfeea00593d4e675319ac7703feccc8bed2bef3b24731325
+            command: |
+              process --scanner npm-audit
+            environment:
+                PYTHONIOENCODING: utf-8
