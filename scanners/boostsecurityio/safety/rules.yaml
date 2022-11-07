@@ -1,0 +1,53 @@
+rules:
+  cve-unknown:
+    categories:
+      - ALL
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Vulnerability of Unknown Risk
+    name: cve-unknown
+    group: top10-vulnerable-components
+    pretty_name: Dependency with a Vulnerability of Unknown Risk
+    ref: https://github.com/pyupio/safety
+  cve-low:
+    categories:
+      - ALL
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Low Risk Vulnerability
+    name: cve-low
+    group: top10-vulnerable-components
+    pretty_name: Dependency with a Low Risk Vulnerability
+    ref: https://github.com/pyupio/safety
+  cve-moderate:
+    categories:
+      - ALL
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Medium Risk Vulnerability
+    name: cve-moderate
+    group: top10-vulnerable-components
+    pretty_name: Dependency with a Medium Risk Vulnerability
+    ref: https://github.com/pyupio/safety
+  cve-high:
+    categories:
+      - ALL
+      - boost-baseline
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a High Risk Vulnerability
+    name: cve-high
+    group: top10-vulnerable-components
+    pretty_name: Dependency with a High Risk Vulnerability
+    ref: https://github.com/pyupio/safety
+  cve-critical:
+    categories:
+      - ALL
+      - boost-baseline
+      - boost-hardened
+      - supply-chain
+    description: Dependency with a Critical Vulnerability
+    name: cve-critical
+    group: top10-vulnerable-components
+    pretty_name: Dependency with a Critical Vulnerability
+    ref: https://github.com/pyupio/safety

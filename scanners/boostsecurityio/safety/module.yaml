@@ -1,0 +1,33 @@
+api_version: 1.0
+
+
+id: boostsecurityio/safety
+name: Boost Safety Scanner
+namespace: boostsecurityio/safety
+
+
+config:
+  support_diff_scan: true
+  include_files:
+    - requirements.txt
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: python:3.11.0-alpine3.16@sha256:2a068b9442f61f4480306d44e3b166bfe3343761e9bd57c38f66302ebf28fd9e
+          command: |
+            sh -c 'pip install --quiet safety && python -m safety check --json --continue-on-error -r "$REQUIREMENTS_TXT"'
+          workdir: /src
+          environment:
+            HOME: /tmp
+            REQUIREMENTS_TXT: ${REQUIREMENTS_TXT:-requirements.txt}
+            SAFETY_API_KEY: ${SAFETY_API_KEY:-}
+      format: sarif
+      post-processor:
+        docker:
+            image: public.ecr.aws/boostsecurityio/boost-converter-sca:439762a@sha256:ee3dfa12ad037a3202602b463f678d904b87a3cfa450a0206dfc6e43851fe5f7
+            command: |
+              process --scanner safety
+            environment:
+                PYTHONIOENCODING: utf-8
