@@ -1203,6 +1203,20 @@ rules:
     name: cicd-branch-protection-zero-status-check-required
     pretty_name: CI/CD - Branch Protection - No (zero) status check required
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
+  cicd-branch-protection-allows-self-reviewed-code:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
+      - boost-baseline
+      - boost-hardened
+    description: Checks for Branch Protection config that allows a Pull Request reviewer
+      to push new commits that bypass otherwise enforced peer review approval.
+    group: supply-chain-scm-weak-configuration
+    name: cicd-branch-protection-allows-self-reviewed-code
+    pretty_name: CI/CD - Branch Protection - Allows reviewer to self-review their own changes
+    ref: "{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html"
   cicd-gha-can-create-and-approve-pull-requests:
     categories:
       - ALL
