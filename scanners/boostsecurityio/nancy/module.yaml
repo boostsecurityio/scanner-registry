@@ -1,0 +1,69 @@
+api_version: 1.0
+
+
+id: boostsecurityio/nancy
+name: Boost Nancy Scanner
+namespace: boostsecurityio/nancy
+
+
+config:
+  support_diff_scan: true
+  include_files:
+    - .nancy-ignore
+    - Gopkg.lock
+    - Gopkg.toml
+
+setup:
+  - name: Install Nancy
+    environment:
+      VERSION: v1.0.41
+    run: |
+      BASE_URL="https://github.com/sonatype-nexus-community/nancy/releases/download/$VERSION/"
+      ARCH=$(uname -m)
+
+      case "$(uname -sm)" in
+        "Linux x86_64")
+          FILENAME="nancy-$VERSION-linux-amd64"
+          SHA="bdc52763ee923f380d0fbf9782ede2fef36898587bcaf57d4e0c5413a97bc170"
+          ;;
+        "Linux aarch64")
+          FILENAME="nancy-$VERSION-linux-arm64"
+          SHA="ccee36315c34b5edc0dc41d1fd9bb3ffda16d596159ecdd11813a6067f8bffda"
+          ;;
+        "Darwin arm64")
+          FILENAME="nancy-$VERSION-darwin-amd64"
+          SHA="69cd8bfea92497ea3a0d9fe245507a9ef37234971457e912505d3aac858ef00f"
+          ;;
+        *)
+          echo "Unsupported machine: ${OPTARG}"
+          exit 1
+          ;;
+      esac
+
+      curl -o nancy -fsSL "$BASE_URL$FILENAME"
+      echo "$SHA  nancy" | sha256sum --check
+      chmod +x nancy
+
+steps:
+  - scan:
+      command:
+        run: |
+          if [ -f "$GOPKG_LOCK" ]; then
+            $SETUP_PATH/nancy sleuth --path "$GOPKG_LOCK" --output json --quiet $NANCY_ARGS || true
+          else
+            go_list=$(test -f "$GO_LIST_PATH" && cat "$GO_LIST_PATH" || go list -e -json -deps ./...)
+            echo "$go_list" | $SETUP_PATH/nancy sleuth --output json --quiet $NANCY_ARGS || true
+          fi
+        environment:
+          OSSI_USERNAME: ${OSSI_USERNAME:-}
+          OSSI_TOKEN: ${OSSI_TOKEN:-}
+          NANCY_ARGS: ${NANCY_ARGS:-}
+          GOPKG_LOCK: ${GOPKG_LOCK:-Gopkg.lock}
+          GO_LIST_PATH: ${GO_LIST_PATH:-.nancy-go-list.json}
+      format: sarif
+      post-processor:
+        docker:
+            image: public.ecr.aws/boostsecurityio/boost-converter-sca:136ae7f@sha256:34766e6ba84e64b27aacf0e56d45e9deb086ba4d02faa83dd47e8305a971eabf
+            command: process --scanner nancy
+            environment:
+                PYTHONIOENCODING: utf-8
