@@ -50,9 +50,10 @@ steps:
         run: |
           if [ -f "$GOPKG_LOCK" ]; then
             $SETUP_PATH/nancy sleuth --path "$GOPKG_LOCK" --output json --quiet $NANCY_ARGS || true
+          elif [ -f "$GO_LIST_PATH" ]; then
+            cat "$GO_LIST_PATH" | $SETUP_PATH/nancy sleuth --output json --quiet $NANCY_ARGS || true
           else
-            go_list=$(test -f "$GO_LIST_PATH" && cat "$GO_LIST_PATH" || go list -e -json -deps ./...)
-            echo "$go_list" | $SETUP_PATH/nancy sleuth --output json --quiet $NANCY_ARGS || true
+            go list -e -json -deps ./... | $SETUP_PATH/nancy sleuth --output json --quiet $NANCY_ARGS || true
           fi
         environment:
           OSSI_USERNAME: ${OSSI_USERNAME:-}
