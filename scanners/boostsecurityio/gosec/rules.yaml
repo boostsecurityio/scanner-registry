@@ -64,11 +64,12 @@ rules:
   G107:
     categories:
       - ALL
+      - cwe-918
     group: top10-server-side-request-forgery
     name: G107
     pretty_name: "G107: Url provided to HTTP request as taint input"
     description: The software does not properly delimit the intended arguments, options, or switches within that command string.
-    ref: https://cwe.mitre.org/data/definitions/88.html
+    ref: https://cwe.mitre.org/data/definitions/918.html
 
   G201:
     categories:
@@ -93,6 +94,7 @@ rules:
   G601:
     categories:
       - ALL
+      - cwe-119
     group: top10-insecure-design
     name: G601
     pretty_name: "G601: Implicit memory aliasing of items from a range statement"
@@ -102,6 +104,7 @@ rules:
   G109:
     categories:
       - ALL
+      - cwe-119
     group: top10-insecure-design
     name: G109
     pretty_name: "G109: Potential Integer overflow made by strconv.Atoi result conversion to int16/32"
@@ -111,6 +114,7 @@ rules:
   G113:
     categories:
       - ALL
+      - cwe-704
     group: top10-insecure-design
     name: G113
     pretty_name: "G113: Usage of Rat.SetString in math/big with an overflow (CVE-2022-23772)"
@@ -141,6 +145,7 @@ rules:
   G103:
     categories:
       - ALL
+      - cwe-119
     group: top10-insecure-design
     name: G103
     pretty_name: "G103: Audit the use of unsafe block"
@@ -150,6 +155,7 @@ rules:
   G301:
     categories:
       - ALL
+      - cwe-276
     group: top10-broken-access-control
     name: G301
     pretty_name: "G301: Poor file permissions used when creating a directory"
@@ -159,6 +165,7 @@ rules:
   G302:
     categories:
       - ALL
+      - cwe-276
     group: top10-broken-access-control
     name: G302
     pretty_name: "G302: Poor file permissions used with chmod"
@@ -168,6 +175,7 @@ rules:
   G306:
     categories:
       - ALL
+      - cwe-276
     group: top10-broken-access-control
     name: G306
     pretty_name: "G306: Poor file permissions used when writing to a new file"
@@ -197,6 +205,7 @@ rules:
   G106:
     categories:
       - ALL
+      - cwe-295
     group: top10-id-authn-failures
     name: G106
     pretty_name: "G106: Audit the use of ssh.InsecureIgnoreHostKey"
@@ -276,7 +285,8 @@ rules:
   G303:
     categories:
       - ALL
-    group: top10-insecure-design
+      - cwe-276
+    group: top10-broken-access-control
     name: G303
     pretty_name: "G303: Creating tempfile using a predictable path"
     description: Creating and using insecure temporary files can leave application and system data vulnerable to attack.
@@ -295,6 +305,7 @@ rules:
   G110:
     categories:
       - ALL
+      - cwe-400
     group: top10-insecure-design
     name: G110
     pretty_name: "G110: Potential DoS vulnerability via decompression bomb"
@@ -304,6 +315,8 @@ rules:
   G114:
     categories:
       - ALL
+      - cwe-400
+      - cwe-top-25
     group: top10-security-misconfiguration
     name: G114
     pretty_name: "G114: Use of net/http serve function that has no support for setting timeouts"
@@ -313,6 +326,7 @@ rules:
   G104:
     categories:
       - ALL
+      - cwe-703
     group: top10-insecure-design
     name: G104
     pretty_name: "G104: Audit errors not checked"
@@ -322,6 +336,7 @@ rules:
   G307:
     categories:
       - ALL
+      - cwe-703
     group: top10-insecure-design
     name: G307
     pretty_name: "G307: Deferring a method which returns an error"
