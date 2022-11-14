@@ -4,6 +4,7 @@ rules:
       - ALL
       - boost-hardened
       - supply-chain
+      - cwe-1104
     description: Dependency with a Low Risk Vulnerability
     name: cve-low
     group: top10-vulnerable-components
@@ -14,6 +15,7 @@ rules:
       - ALL
       - boost-hardened
       - supply-chain
+      - cwe-1104
     description: Dependency with a Medium Risk Vulnerability
     name: cve-moderate
     group: top10-vulnerable-components
@@ -25,6 +27,7 @@ rules:
       - boost-baseline
       - boost-hardened
       - supply-chain
+      - cwe-1104
     description: Dependency with a High Risk Vulnerability
     name: cve-high
     group: top10-vulnerable-components
@@ -36,6 +39,7 @@ rules:
       - boost-baseline
       - boost-hardened
       - supply-chain
+      - cwe-1104
     description: Dependency with a Critical Vulnerability
     name: cve-critical
     group: top10-vulnerable-components
