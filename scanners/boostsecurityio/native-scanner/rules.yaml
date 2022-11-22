@@ -5,8 +5,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure Athena Workgroup should enforce configuration to prevent client
-      disabling encryption
+    description: Check for unencrypted AWS resources.
     group: cloud-unencrypted-resources
     name: aws-athena-encryption-off
     pretty_name: AWS Athena Encryption Off
@@ -17,8 +16,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Checks for EC2 Classic instances which run with insecure VPC configurations
-      using shared hosts.
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-classic-resource-usage
     pretty_name: AWS Classic Resource Usage
@@ -30,7 +28,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure CloudTrail is enabled in all Regions
+    description: Check for logging best practices in AWS resources.
     group: top10-security-logging-monitoring-failures
     name: aws-cloudtrail-all-regions
     pretty_name: AWS Cloudtrail All Regions
@@ -42,7 +40,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure CloudTrail log file validation is enabled
+    description: Check for logging best practices in AWS resources.
     group: top10-security-logging-monitoring-failures
     name: aws-cloudtrail-validation-off
     pretty_name: AWS Cloudtrail Validation Off
@@ -54,7 +52,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure cloudwatch log groups specify retention days
+    description: Check for logging best practices in AWS resources.
     group: top10-security-logging-monitoring-failures
     name: aws-cloudwatch-log-retention
     pretty_name: AWS Cloudwatch Log Retention
@@ -63,7 +61,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure that database backup is enabled
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-db-backup-off
     pretty_name: AWS Database Backup Off
@@ -72,7 +70,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensured that database auto-upgrade is enabled
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-db-no-version-upgrade
     pretty_name: AWS Database No Version Upgrade
@@ -83,7 +81,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: EC2 instance should not have public IP.
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-ec2-public-ip
     pretty_name: AWS EC2 Public IP
@@ -93,7 +91,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure ECR image scanning on push is enabled
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-ecr-scanning-off
     pretty_name: AWS ECR Scanning Off
@@ -104,7 +102,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure ECR Image Tags are immutable
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-ecr-tags-mutable
     pretty_name: AWS ECR Tags Mutable
@@ -113,7 +111,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure container insights are enabled on ECS cluster
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-ecs-container-insights-off
     pretty_name: AWS ECS Container Insights Off
@@ -124,7 +122,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure IAM password policy requires minimum length of 14 or greater
+    description: Check for weak AWS permissions.
     group: cloud-insecure-iam
     name: aws-iam-password-policy
     pretty_name: AWS IAM Password Policy
@@ -135,8 +133,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure IAM policies that allow full *-* administrative privileges
-      are not created
+    description: Check for weak AWS permissions.
     group: cloud-insecure-iam
     name: aws-iam-policy-lax-full-admin
     pretty_name: AWS IAM Policy Lax Full Admin
@@ -146,7 +143,7 @@ rules:
       - ALL
       - cloud-insecure-iam
       - boost-hardened
-    description: Ensure IAM policies are attached only to groups or roles
+    description: Check for weak AWS permissions.
     group: cloud-insecure-iam
     name: aws-iam-policy-on-users
     pretty_name: AWS IAM Policy On Users
@@ -157,7 +154,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure no IAM policies documents allow * as a statements actions
+    description: Check for weak AWS permissions.
     group: cloud-insecure-iam
     name: aws-iam-wildcard-actions
     pretty_name: AWS IAM Wildcard Actions
@@ -168,7 +165,7 @@ rules:
       - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
-    description: Ensure rotation for customer created CMKs is enabled
+    description: Check that ensures best practices in AWS secrets management.
     group: cloud-weak-secrets-management
     name: aws-kms-key-rotation
     pretty_name: AWS KMS Key Rotation
@@ -177,7 +174,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure that the load balancer drops invalid HTTP headers
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-lb-allow-invalid-headers
     pretty_name: AWS Load Balancer Allow Invalid Headers
@@ -188,7 +185,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure Instance Metadata Service Version 1 is not enabled
+    description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: aws-legacy-instance-meta
     pretty_name: AWS Legacy Instance Meta
@@ -199,7 +196,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure the the networking resource enforces the use of HTTPS
+    description: Check for unencrypted AWS resources.
     group: cloud-unencrypted-resources
     name: aws-network-https-off
     pretty_name: AWS Network Https Off
@@ -210,7 +207,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure that load balancer is using TLS 1.2
+    description: Check for unencrypted AWS resources.
     group: cloud-unencrypted-resources
     name: aws-network-insecure-tls
     pretty_name: AWS Network Insecure TLS
@@ -221,7 +218,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-network-public-rdp
     pretty_name: AWS Network Public RDP
@@ -232,8 +229,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that the resource or security group allow ingress from 0.0.0.0:0
-      to port 22 (SSH)
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-network-public-ssh
     pretty_name: AWS Network Public SSH
@@ -243,8 +239,7 @@ rules:
       - ALL
       - insufficient-logging
       - boost-hardened
-    description: Ensure that the resource has some form of audit logging enabled to
-      help with forensics
+    description: Check for logging best practices in AWS resources.
     group: top10-security-logging-monitoring-failures
     name: aws-resource-logging-off
     pretty_name: AWS Resource Logging Off
@@ -255,7 +250,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that the resource is configured inside a VPC
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-resource-outside-vpc
     pretty_name: AWS Resource Outside VPC
@@ -266,8 +261,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that all data stored in the managed service is not publicly
-      accessible
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-resource-public-access
     pretty_name: AWS Resource Public Access
@@ -278,8 +272,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that all data stored in the managed service is not publicly
-      accessible
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-resource-public-policy
     pretty_name: AWS Resource Public Policy
@@ -290,8 +283,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure that all data stored in the managed service is securely encrypted
-      at rest
+    description: Check for unencrypted AWS resources.
     group: cloud-unencrypted-resources
     name: aws-resource-unencrypted-at-rest
     pretty_name: AWS Resource Unencrypted At Rest
@@ -302,8 +294,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure that data going to and from the managed service is securely
-      encrypted at transit
+    description: Check for unencrypted AWS resources.
     group: cloud-unencrypted-resources
     name: aws-resource-unencrypted-in-transit
     pretty_name: AWS Resource Unencrypted In Transit
@@ -313,8 +304,7 @@ rules:
       - ALL
       - insufficient-logging
       - boost-hardened
-    description: Ensure that the S3 bucket has some form of audit logging enabled
-      to help with forensics
+    description: Check for logging best practices in AWS resources.
     group: top10-security-logging-monitoring-failures
     name: aws-s3-logging-off
     pretty_name: AWS S3 Logging Off
@@ -325,8 +315,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure the S3 bucket does not allow Read or Write permissions to
-      anyone on the Internet
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-s3-public-access
     pretty_name: AWS S3 Public Access
@@ -337,8 +326,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure S3 bucket does not allow an action with any Principal (i.e.
-      anyone on the Internet)
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-s3-public-policy
     pretty_name: AWS S3 Public Policy
@@ -349,8 +337,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure all data stored in the S3 bucket is securely encrypted at
-      rest
+    description: Check for unencrypted AWS resources.
     group: cloud-unencrypted-resources
     name: aws-s3-unencrypted-at-rest
     pretty_name: AWS S3 Unencrypted At Rest
@@ -361,7 +348,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure VPC subnets do not assign public IP by default
+    description: Check for publicly accessible AWS resources.
     group: cloud-resources-public-access
     name: aws-vpc-assign-public-ip
     pretty_name: AWS VPC Assign Public Ip
@@ -372,7 +359,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure that VPC Endpoint Service is configured for Manual Acceptance
+    description: Check for weak AWS permissions.
     group: cloud-insecure-iam
     name: aws-vpc-endpoint-auto-accept
     pretty_name: AWS VPC Endpoint Auto Accept
@@ -383,7 +370,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure AKS has an API Server Authorized IP Ranges enabled
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-aks-api-iprange
     pretty_name: Azure AKS Api Iprange
@@ -393,7 +380,7 @@ rules:
       - ALL
       - insufficient-logging
       - boost-hardened
-    description: Ensure AKS logging to Azure Monitoring is Configured
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-aks-logging-enable
     pretty_name: Azure AKS Logging Enable
@@ -402,7 +389,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure AKS cluster has Network Policy configured
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-aks-networkpolicy
     pretty_name: Azure AKS Networkpolicy
@@ -413,7 +400,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that AKS enables private clusters
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-aks-private-cluster
     pretty_name: Azure AKS Private Cluster
@@ -422,7 +409,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure RBAC is enabled on AKS clusters
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-aks-rbac-enabled
     pretty_name: Azure AKS RBAC Enabled
@@ -433,8 +420,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure that Register with Azure Active Directory is enabled on App
-      Service
+    description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: azure-appsvc-ad-enabled
     pretty_name: Azure App Service Ad Enabled
@@ -445,7 +431,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure App Service Authentication is set on Azure App Service
+    description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: azure-appsvc-auth-enabled
     pretty_name: Azure App Service Auth Enabled
@@ -455,7 +441,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that CORS disallows every resource to access app services
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-appsvc-cors-restrictive
     pretty_name: Azure App Service Cors Restrictive
@@ -466,7 +452,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure that remote debugging is not enabled for app services
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-appsvc-disable-debug
     pretty_name: Azure App Service Disable Debug
@@ -477,7 +463,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure FTP deployments are disabled
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-appsvc-ftp-disabled
     pretty_name: Azure App Service FTP Disabled
@@ -488,7 +474,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-appsvc-http-redirect
     pretty_name: Azure App Service HTTP Redirect
@@ -499,7 +485,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure web app is using the latest version of TLS encryption
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-appsvc-http-tls-version
     pretty_name: Azure App Service HTTP TLS Version
@@ -509,7 +495,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that HTTP Version is the latest if used to run the web app
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-appsvc-http-version
     pretty_name: Azure App Service Http Version
@@ -520,7 +506,7 @@ rules:
       - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
-    description: Ensure that Automation account variables are encrypted
+    description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: azure-automn-variable-encrypted
     pretty_name: Azure Automation Variable Encrypted
@@ -531,7 +517,7 @@ rules:
       - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
-    description: Ensure that Azure Batch account uses key vault to encrypt data
+    description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: azure-batch-keyvault
     pretty_name: Azure Batch Keyvault
@@ -542,7 +528,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure Kube Dashboard is disabled
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-dashboard-disable
     pretty_name: Azure Dashboard Disable
@@ -553,7 +539,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Auditing is set to On for SQL servers
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-db-audit-enabled
     pretty_name: Azure Database Audit Enabled
@@ -565,7 +551,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure that Auditing Retention is greater than 90 days for SQL servers
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-db-audit-retention
     pretty_name: Azure Database Audit Retention
@@ -576,7 +562,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure no SQL Databases allow ingress from 0.0.0.0/0 (ANY IP)
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-db-public-ingress
     pretty_name: Azure Database Public Ingress
@@ -587,7 +573,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure that function apps enables Authentication
+    description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: azure-funcapp-auth-enabled
     pretty_name: Azure Function App Auth Enabled
@@ -598,8 +584,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that HTTP Version is the latest if used to run the Function
-      app
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-funcapp-http-version
     pretty_name: Azure Function App Http Version
@@ -610,7 +595,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure that Function apps is only accessible over HTTPS
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-funcapp-https-only
     pretty_name: Azure Function App Https Only
@@ -621,8 +606,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure Azure linux scale set does not use basic authentication(Use
-      SSH Key Instead)
+    description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: azure-machine-scaleset-auth
     pretty_name: Azure Machine Scaleset Auth
@@ -633,7 +617,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure that Virtual machine scale sets have encryption at host enabled
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-machine-scaleset-encrypt
     pretty_name: Azure Machine Scaleset Encrypt
@@ -644,7 +628,7 @@ rules:
       - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
-    description: Ensure that no sensitive credentials are exposed in VM custom_data
+    description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: azure-machine-sensitive-data
     pretty_name: Azure Machine Sensitive Data
@@ -655,8 +639,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure public network access enabled is set to False for MariaDB
-      servers
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-mariadb-public-ingress
     pretty_name: Azure MariaDB Public Ingress
@@ -667,7 +650,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure Enforce SSL connection is set to ENABLED for MariaDB servers
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-mariadb-ssl-enabled
     pretty_name: Azure MariaDB SSL Enabled
@@ -678,7 +661,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure audit profile captures all the activities
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-monitor-audit-activities
     pretty_name: Azure Monitor Audit Activities
@@ -689,7 +672,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Activity Log Retention is set 365 days or greater
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-monitor-log-retention
     pretty_name: Azure Monitor Log Retention
@@ -700,7 +683,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Specifies a retention period of less than 90 days.
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-mssql-audit-retention
     pretty_name: Azure MSSQL Audit Retention
@@ -711,8 +694,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Email service and co-administrators is Enabled for MSSQL
-      servers
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-mssql-email-service
     pretty_name: Azure MSSQL Email Service
@@ -723,7 +705,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Send Alerts To is enabled for MSSQL servers
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-mssql-send-alerts
     pretty_name: Azure MSSQL Send Alerts
@@ -734,7 +716,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Threat Detection types is set to All
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-mssql-threat-types
     pretty_name: Azure MSSQL Threat Types
@@ -745,7 +727,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure MSSQL is using the latest version of TLS encryption
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-mssql-tls-version
     pretty_name: Azure MSSQL TLS Version
@@ -756,8 +738,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure Enforce SSL connection is set to ENABLED for MySQL Database
-      Server
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-mysql-enforce-ssl
     pretty_name: Azure MySQL Enforce SSL
@@ -768,7 +749,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure public network access enabled is set to False for mySQL servers
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-mysql-public-ingress
     pretty_name: Azure MySQL Public Ingress
@@ -779,7 +760,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure MySQL is using the latest version of TLS encryption
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-mysql-tls-version
     pretty_name: Azure MySQL Tls Version
@@ -790,8 +771,7 @@ rules:
       - insufficient-logging
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Network Security Group Flow Log retention period is greater
-      than 90 days
+    description: Check for logging best practices in Azure resources.
     group: top10-security-logging-monitoring-failures
     name: azure-network-log-retention
     pretty_name: Azure Network Log Retention
@@ -802,7 +782,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that RDP access is restricted from the internet
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-network-public-rdp
     pretty_name: Azure Network Public RDP
@@ -813,7 +793,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that UDP Services are restricted from the Internet
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-network-public-udp
     pretty_name: Azure Network Public UDP
@@ -824,8 +804,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure Enforce SSL connection is set to ENABLED for PostgreSQL Database
-      Server
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-psql-enforce-ssl
     pretty_name: Azure PSQL Enforce SSL
@@ -835,8 +814,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure server parameter connection_throttling is set to ON for PostgreSQL
-      Database Server
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-psql-param-conn-throttling
     pretty_name: Azure PSQL Param Conn Throttling
@@ -847,7 +825,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that PostgreSQL server disables public network access
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-psql-public-ingress
     pretty_name: Azure PSQL Public Ingress
@@ -857,8 +835,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure that Send email notification for high severity alerts is set
-      to On
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-seccntr-email-alerts
     pretty_name: Azure Security Center Email Alerts
@@ -869,7 +846,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that Public access level is set to Private for blob containers
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-storage-public-access
     pretty_name: Azure Storage Public Access
@@ -880,7 +857,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that Storage accounts disallow public access
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-storage-public-ingress
     pretty_name: Azure Storage Public Ingress
@@ -891,7 +868,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure that storage account enables secure transfer
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-storage-secure-xfer
     pretty_name: Azure Storage Secure Transfer
@@ -901,7 +878,7 @@ rules:
       - ALL
       - boost-baseline
       - boost-hardened
-    description: Ensure Storage Account is using the latest version of TLS encryption
+    description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: azure-storage-tls-version
     pretty_name: Azure Storage TLS Version
@@ -912,8 +889,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure Trusted Microsoft Services is enabled for Storage Account
-      access
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-storage-trust-msft
     pretty_name: Azure Storage Trusted Microsoft Service
@@ -924,7 +900,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that Azure File Sync disables public network access
+    description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: azure-storsync-public-ingress
     pretty_name: Azure Storage Sync Public Ingress
@@ -935,7 +911,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure that key vault allows firewall rules settings
+    description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: azure-vault-allow-firewall
     pretty_name: Azure Vault Allow Firewall
@@ -945,7 +921,7 @@ rules:
       - ALL
       - cloud-weak-secrets-management
       - boost-hardened
-    description: Ensure that the expiration date is set on all keys
+    description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: azure-vault-key-expiry
     pretty_name: Azure Vault Key Expiry
@@ -956,7 +932,7 @@ rules:
       - cloud-weak-secrets-management
       - boost-baseline
       - boost-hardened
-    description: Ensure that key vault enables purge protection
+    description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: azure-vault-purge-protection
     pretty_name: Azure Vault Purge Protection
@@ -966,7 +942,7 @@ rules:
       - ALL
       - cloud-weak-secrets-management
       - boost-hardened
-    description: Ensure that the expiration date is set on all secrets
+    description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: azure-vault-secret-expiry
     pretty_name: Azure Vault Secret Expiry
@@ -1455,7 +1431,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that BigQuery datasets are not anonymously or publicly accessible
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-bq-anon-or-public
     pretty_name: GCP BigQuery Anonymous Or Publicly Accessible
@@ -1466,8 +1442,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure that instances are not configured to use the default service
-      account with full access to all Cloud APIs
+    description: Check for weak GCP permissions.
     group: cloud-insecure-iam
     name: gcp-gce-default-svcacct
     pretty_name: GCP GCE Default Service Account
@@ -1478,8 +1453,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure Google compute firewall ingress does not allow unrestricted
-      rdp access
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-gce-fw-public-rdp
     pretty_name: GCP GCE Firewall Unrestricted RDP Access
@@ -1490,8 +1464,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure Google compute firewall ingress does not allow unrestricted
-      ssh access
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-gce-fw-public-ssh
     pretty_name: GCP GCE Firewall Public SSH Access
@@ -1502,7 +1475,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure that IP forwarding is not enabled on Instances
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-gce-ip-fwd-on
     pretty_name: GCP GCE IP Forwarding On
@@ -1513,7 +1486,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that Compute instances do not have public IP addresses
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-gce-public-ip
     pretty_name: GCP GCE Instance Public IP
@@ -1524,7 +1497,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure Enable connecting to serial ports is not enabled for VM Instance
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-gce-serialport-on
     pretty_name: GCP GCE Serialport On
@@ -1535,7 +1508,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that Cloud Storage bucket is not anonymously or publicly accessible
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-gcs-anon-or-public
     pretty_name: GCP GCS Anon Or Public Access
@@ -1546,7 +1519,7 @@ rules:
       - insufficient-logging
       - boost-baseline
       - boost-hardened
-    description: Bucket should log access
+    description: Check for logging best practices in GCP resources.
     group: top10-security-logging-monitoring-failures
     name: gcp-gcs-logs-off
     pretty_name: GCP GCS Access Logs Off
@@ -1557,7 +1530,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure that Service Account has no Admin privileges
+    description: Check for weak GCP permissions.
     group: cloud-insecure-iam
     name: gcp-iam-svcacct-admin-role
     pretty_name: GCP IAM Service Account Admin Role
@@ -1568,8 +1541,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure no roles that enable to impersonate and manage all service
-      accounts are used at a project level
+    description: Check for weak GCP permissions.
     group: cloud-insecure-iam
     name: gcp-iam-svcacct-allo-sudo
     pretty_name: GCP IAM Service Account Allow Sudo
@@ -1580,7 +1552,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure GKE basic auth is disabled
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-k8s-basic-auth-on
     pretty_name: GCP K8S Basic Auth On
@@ -1591,7 +1563,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure legacy Compute Engine instance metadata APIs are Disabled
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-k8s-legacy-instance-metadata-on
     pretty_name: GCP K8S Legacy Instance Metadata On
@@ -1602,8 +1574,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure Legacy Authorization is set to Disabled on Kubernetes Engine
-      Clusters
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-k8s-legacy-rbac-on
     pretty_name: GCP K8S Legacy RBAC On
@@ -1614,7 +1585,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure the GKE Metadata Server is Enabled
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-k8s-metadata-server-off
     pretty_name: GCP K8S Metadata Server Off
@@ -1625,8 +1596,7 @@ rules:
       - insufficient-logging
       - boost-baseline
       - boost-hardened
-    description: Ensure Stackdriver Monitoring is set to Enabled on Kubernetes Engine
-      Clusters
+    description: Check for logging best practices in GCP resources.
     group: top10-security-logging-monitoring-failures
     name: gcp-k8s-stackdriver-monitor-off
     pretty_name: GCP K8S Stackdriver Monitor Off
@@ -1637,8 +1607,7 @@ rules:
       - insufficient-logging
       - boost-baseline
       - boost-hardened
-    description: Ensure Stackdriver Logging is set to Enabled on Kubernetes Engine
-      Clusters
+    description: Check for logging best practices in GCP resources.
     group: top10-security-logging-monitoring-failures
     name: gcp-k8s-strackdriver-logs-off
     pretty_name: GCP K8S Strackdriver Logs Off
@@ -1648,7 +1617,7 @@ rules:
       - ALL
       - cloud-weak-secrets-management
       - boost-hardened
-    description: Ensure KMS encryption keys are rotated within a period of 90 days
+    description: Check that ensures best practices in GCP secrets management.
     group: cloud-weak-secrets-management
     name: gcp-kms-bad-key-rotation
     pretty_name: GCP KMS Bad Key Rotation
@@ -1659,8 +1628,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure no HTTPS or SSL proxy load balancers permit SSL policies with
-      weak cipher suites
+    description: Check for unencrypted GCP resources.
     group: cloud-unencrypted-resources
     name: gcp-lb-ssl-weak-ciphers
     pretty_name: GCP Load Balancer Weak SSL Ciphers
@@ -1671,7 +1639,7 @@ rules:
       - cloud-insecure-iam
       - boost-baseline
       - boost-hardened
-    description: Ensure Default Service account is not used at a folder level
+    description: Check for weak GCP permissions.
     group: cloud-insecure-iam
     name: gcp-res-man-default-svcacct
     pretty_name: GCP Default Service Account in Project
@@ -1681,8 +1649,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - boost-hardened
-    description: Ensure all Cloud SQL database instance have backup configuration
-      enabled
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-sql-backup-off
     pretty_name: GCP Cloud SQL Backup Disabled
@@ -1693,7 +1660,7 @@ rules:
       - cloud-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: Ensure MySQL database local_infile flag is set to off
+    description: Check for misconfigurations in GCP resources.
     group: cloud-weak-configuration
     name: gcp-sql-mysql-local_infile-on
     pretty_name: GCP MySQL Local_Infile On
@@ -1704,7 +1671,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure that Cloud SQL database Instances are not open to the world
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-sql-public-access
     pretty_name: GCP Cloud SQL Public Access
@@ -1715,7 +1682,7 @@ rules:
       - cloud-resources-public-access
       - boost-baseline
       - boost-hardened
-    description: Ensure SQL database do not have public IP
+    description: Check for publicly accessible GCP resources.
     group: cloud-resources-public-access
     name: gcp-sql-public-ip
     pretty_name: GCP Cloud SQL Public IP
@@ -1726,8 +1693,7 @@ rules:
       - cloud-unencrypted-resources
       - boost-baseline
       - boost-hardened
-    description: Ensure all Cloud SQL database instance requires all incoming connections
-      to use SSL
+    description: Check for unencrypted GCP resources.
     group: cloud-unencrypted-resources
     name: gcp-sql-ssl-off
     pretty_name: GCP SQL SSL Disabled
@@ -1790,7 +1756,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure the Kubernetes dashboard is not deployed
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-dashboard-present
     pretty_name: K8S Dashboard Present
@@ -1799,7 +1765,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Do not expose the docker daemon socket to containers
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-docker-daemon
     pretty_name: K8S Docker Daemon
@@ -1808,7 +1774,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Containers should run as a high UID to avoid host conflict
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-host-namespace
     pretty_name: K8S Host Namespace
@@ -1818,7 +1784,7 @@ rules:
       - ALL
       - cloud-weak-configuration
       - supply-chain
-    description: Image Tag should be fixed - not latest or blank
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-immutable-image
     pretty_name: K8S Immutable Image
@@ -1827,7 +1793,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Do not allow containers with added capability
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-podsecuritypolicy-defined
     pretty_name: K8S Podsecuritypolicy Defined
@@ -1836,7 +1802,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Minimize wildcard use in Roles and ClusterRoles
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-rbac-wildcards
     pretty_name: K8S Rbac Wildcards
@@ -1845,7 +1811,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Memory limits should be set
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-resources-defined
     pretty_name: K8S Resources Defined
@@ -1854,7 +1820,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Do not use the CAP_SYS_ADMIN linux capability
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-securitycontext-capabilities
     pretty_name: K8S Securitycontext Capabilities
@@ -1863,7 +1829,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Apply security context to your pods and containers
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-securitycontext-defined
     pretty_name: K8S Securitycontext Defined
@@ -1872,8 +1838,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Checks that pods and container are not running as root user OR have
-      higher privileged assigned.
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-securitycontext-privileged
     pretty_name: K8S Securitycontext Privileged
@@ -1882,7 +1847,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure that default service accounts are not actively used
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-serviceaccount-default
     pretty_name: K8S Serviceaccount Default
@@ -1891,8 +1856,7 @@ rules:
     categories:
       - ALL
       - cloud-weak-configuration
-    description: Ensure the Tiller Deployment (Helm V2) is not accessible from within
-      the cluster
+    description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: k8s-tiller-present
     pretty_name: K8S Tiller Present
