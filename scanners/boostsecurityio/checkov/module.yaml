@@ -1,0 +1,22 @@
+api_version: 1.0
+
+id: boostsecurityio/checkov
+name: Boostsecurity Checkov Scanner
+namespace: boostsecurityio/checkov
+
+config:
+  support_diff_scan: true
+  require_full_repo: true
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: bridgecrew/checkov:2.2.63@sha256:6a3df079d623bd769f107fa76d9d1192381c898871c30c753e48c2625c49d23e
+          command: --directory /src --output json --soft-fail --quiet
+          workdir: /src
+      format: sarif
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:5016c02@sha256:6ff614dc7a2380592d6dcc3115d74ea183a225f5f9f77e999fc2bda755e94b64
+          command: process
