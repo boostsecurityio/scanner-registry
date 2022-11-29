@@ -21,6 +21,8 @@ rules:
     categories:
       - ALL
       - cwe-1104
+      - boost-baseline
+      - boost-hardened
     description: The product relies on third-party components that are not actively supported or maintained by the original developer or a trusted proxy for the original developer.
     group: top10-vulnerable-components
     name: CWE-1104
@@ -30,6 +32,8 @@ rules:
     categories:
       - ALL
       - cwe-125
+      - boost-baseline
+      - boost-hardened
     description: The software reads data past the end, or before the beginning, of the intended buffer.
     group: top10-insecure-design
     name: CWE-125
@@ -48,6 +52,8 @@ rules:
     categories:
       - ALL
       - cwe-1336
+      - boost-baseline
+      - boost-hardened
     description: The product uses a template engine to insert or process externally-influenced input, but it does not neutralize or incorrectly neutralizes special elements or syntax that can be interpreted as template expressions or other code directives when processed.
     group: top10-injection
     name: CWE-1336
@@ -66,6 +72,7 @@ rules:
     categories:
       - ALL
       - cwe-20
+      - boost-hardened
     description: The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly.
     group: top10-injection
     name: CWE-20
@@ -75,6 +82,7 @@ rules:
     categories:
       - ALL
       - cwe-200
+      - boost-hardened
     description: The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
     group: top10-broken-access-control
     name: CWE-200
@@ -84,6 +92,8 @@ rules:
     categories:
       - ALL
       - cwe-22
+      - boost-baseline
+      - boost-hardened
     description: The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname.
     group: top10-broken-access-control
     name: CWE-22
@@ -93,6 +103,8 @@ rules:
     categories:
       - ALL
       - cwe-259
+      - boost-baseline
+      - boost-hardened
     description: The software contains a hard-coded password, which it uses for its own inbound authentication or for outbound communication to external components.
     group: top10-id-authn-failures
     name: CWE-259
@@ -102,6 +114,7 @@ rules:
     categories:
       - ALL
       - cwe-284
+      - boost-hardened
     description: The software does not restrict or incorrectly restricts access to a resource from an unauthorized actor.
     group: top10-broken-access-control
     name: CWE-284
@@ -111,6 +124,7 @@ rules:
     categories:
       - ALL
       - cwe-285
+      - boost-hardened
     description: The software does not perform or incorrectly performs an authorization check when an actor attempts to access a resource or perform an action.
     group: top10-broken-access-control
     name: CWE-285
@@ -129,6 +143,8 @@ rules:
     categories:
       - ALL
       - cwe-311
+      - boost-baseline
+      - boost-hardened
     description: The software does not encrypt sensitive or critical information before storage or transmission.
     group: top10-insecure-design
     name: CWE-311
@@ -138,6 +154,7 @@ rules:
     categories:
       - ALL
       - cwe-328
+      - boost-hardened
     description: The product uses an algorithm that produces a digest that does not meet security expectations for a hash function that allows a preimage attack, find another input that can produce the same hash (2nd preimage attack), or birthday attack.
     group: top10-crypto-failures
     name: CWE-328
@@ -147,6 +164,8 @@ rules:
     categories:
       - ALL
       - cwe-352
+      - boost-baseline
+      - boost-hardened
     description: The web application does not, or can not, sufficiently verify whether a well-formed, valid, consistent request was intentionally provided by the user who submitted the request.
     group: top10-crypto-failures
     name: CWE-352
@@ -174,6 +193,7 @@ rules:
     categories:
       - ALL
       - cwe-470
+      - boost-hardened
     description: The application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.
     group: top10-injection
     name: CWE-470
@@ -183,6 +203,8 @@ rules:
     categories:
       - ALL
       - cwe-502
+      - boost-baseline
+      - boost-hardened
     description: The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.
     group: top10-software-data-integrity-failures
     name: CWE-502
@@ -192,6 +214,8 @@ rules:
     categories:
       - ALL
       - cwe-565
+      - boost-baseline
+      - boost-hardened
     description: The application relies on the existence or values of cookies when performing security-critical operations, but it does not properly ensure that the setting is valid for the associated user.
     group: top10-software-data-integrity-failures
     name: CWE-565
@@ -219,6 +243,8 @@ rules:
     categories:
       - ALL
       - cwe-74
+      - boost-baseline
+      - boost-hardened
     description: The software constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component.
     group: top10-injection
     name: CWE-74
@@ -228,6 +254,8 @@ rules:
     categories:
       - ALL
       - cwe-77
+      - boost-baseline
+      - boost-hardened
     description: The software constructs all or part of a command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended command when it is sent to a downstream component.
     group: top10-injection
     name: CWE-77
@@ -237,6 +265,7 @@ rules:
     categories:
       - ALL
       - cwe-777
+      - boost-hardened
     description: The software uses a regular expression to perform neutralization, but the regular expression is not anchored and may allow malicious or malformed data to slip through.
     group: top10-insecure-design
     name: CWE-777
@@ -246,6 +275,8 @@ rules:
     categories:
       - ALL
       - cwe-79
+      - boost-baseline
+      - boost-hardened
     description: The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
     group: top10-injection
     name: CWE-79
@@ -255,6 +286,8 @@ rules:
     categories:
       - ALL
       - cwe-798
+      - boost-baseline
+      - boost-hardened
     description: The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.
     group: top10-id-authn-failures
     name: CWE-798
@@ -264,6 +297,8 @@ rules:
     categories:
       - ALL
       - cwe-89
+      - boost-baseline
+      - boost-hardened
     description: The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.
     group: top10-injection
     name: CWE-89
@@ -273,6 +308,8 @@ rules:
     categories:
       - ALL
       - cwe-913
+      - boost-baseline # Only occurence is eval(userInput) - https://github.com/presidentbeef/brakeman/blob/9b44232e8fa374483a9964e2cf988818c68103ea/lib/brakeman/checks/check_evaluation.rb#L32
+      - boost-hardened
     description: The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements.
     group: top10-broken-access-control
     name: CWE-913
@@ -282,6 +319,7 @@ rules:
     categories:
       - ALL
       - cwe-915
+      - boost-hardened
     description: The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified.
     group: top10-software-data-integrity-failures
     name: CWE-915
@@ -291,6 +329,8 @@ rules:
     categories:
       - ALL
       - cwe-94
+      - boost-baseline
+      - boost-hardened
     description: The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.
     group: top10-injection
     name: CWE-94
@@ -300,6 +340,8 @@ rules:
     categories:
       - ALL
       - cwe-95
+      - boost-baseline
+      - boost-hardened
     description: The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval").
     group: top10-injection
     name: CWE-95
