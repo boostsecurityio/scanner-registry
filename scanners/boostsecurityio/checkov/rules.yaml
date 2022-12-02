@@ -2645,7 +2645,7 @@ rules:
     group: cloud-weak-configuration
     name: CKV_AWS_250
     pretty_name: 'CKV_AWS_250: Ensure that RDS PostgreSQL instances use a non vulnerable
-      version with the log_fdw extension (https://aws.amazon.com/security/security-bulletins/AWS-2022-004/)'
+      version with the log_fdw extension'
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AWS_251:
     categories:
@@ -3041,12 +3041,9 @@ rules:
     - ALL
     - cloud-insecure-iam
     description: Check for weak AWS permissions.
-      to inadvertently receive or retain excessive privileges.)
     group: cloud-insecure-iam
     name: CKV_AWS_40
-    pretty_name: 'CKV_AWS_40: Ensure IAM policies are attached only to groups or roles
-      (Reducing access management complexity may in-turn reduce opportunity for a
-      principal to inadvertently receive or retain excessive privileges.)'
+    pretty_name: 'CKV_AWS_40: Ensure IAM policies are attached only to groups or roles'
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AWS_41:
     categories:
@@ -5807,12 +5804,10 @@ rules:
     - ALL
     - cloud-weak-configuration
     description: Check for misconfigurations in Google Cloud resources.
-      instances)
     group: cloud-weak-configuration
     name: CKV_GCP_34
     pretty_name: 'CKV_GCP_34: Ensure that no instance in the project overrides the
-      project setting for enabling OSLogin(OSLogin needs to be enabled in project
-      metadata for all instances)'
+      project setting for enabling OSLogin'
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_GCP_35:
     categories:
@@ -6554,7 +6549,6 @@ rules:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
     description: Check for weak GitHub Action configurations.
-      inputs MUST be empty. '
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GHA_7
     pretty_name: 'CKV_GHA_7: The build output cannot be affected by user parameters
@@ -8341,8 +8335,7 @@ rules:
     group: cloud-unencrypted-resources
     name: CKV_OPENAPI_7
     pretty_name: 'CKV_OPENAPI_7: Ensure that the path scheme does not support unencrypted
-      HTTP connection where all transmissions are open to interception- version 2.0
-      files'
+      HTTP connection - version 2.0 files'
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_OPENSTACK_1:
     categories:
