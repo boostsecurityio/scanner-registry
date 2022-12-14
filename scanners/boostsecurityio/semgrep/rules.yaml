@@ -349,6 +349,7 @@ rules:
     categories:
     - ALL
     - cwe-1236
+    - boost-hardened
     group: top10-injection
     name: CWE-1236
     pretty_name: CWE-1236 - Improper Neutralization of Formula Elements in a CSV File
@@ -371,6 +372,8 @@ rules:
     categories:
     - ALL
     - cwe-116
+    - boost-baseline
+    - boost-hardened
     group: top10-injection
     name: CWE-116
     pretty_name: CWE-116 - Improper Encoding or Escaping of Output
@@ -389,6 +392,8 @@ rules:
     categories:
     - ALL
     - cwe-943
+    - boost-baseline
+    - boost-hardened
     group: top10-injection
     name: CWE-943
     pretty_name: CWE-943 - Improper Neutralization of Special Elements in Data Query

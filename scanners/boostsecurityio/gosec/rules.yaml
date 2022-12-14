@@ -45,6 +45,8 @@ rules:
     categories:
       - ALL
       - cwe-78
+      - boost-baseline
+      - boost-hardened
     group: top10-injection
     name: G204
     pretty_name: "G204: Audit use of command execution"
@@ -55,6 +57,8 @@ rules:
     categories:
       - ALL
       - cwe-79
+      - boost-baseline
+      - boost-hardened
     group: top10-injection
     name: G203
     pretty_name: "G203: Use of unescaped data in HTML templates"
@@ -75,6 +79,8 @@ rules:
     categories:
       - ALL
       - cwe-89
+      - boost-baseline
+      - boost-hardened
     group: top10-injection
     name: G201
     pretty_name: "G201: SQL query construction using format string"
@@ -85,6 +91,8 @@ rules:
     categories:
       - ALL
       - cwe-89
+      - boost-baseline
+      - boost-hardened
     group: top10-injection
     name: G202
     pretty_name: "G202: SQL query construction using string concatenation"
