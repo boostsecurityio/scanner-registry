@@ -69,6 +69,8 @@ rules:
     categories:
       - ALL
       - cwe-918
+      - boost-baseline
+      - boost-hardened
     group: top10-server-side-request-forgery
     name: G107
     pretty_name: "G107: Url provided to HTTP request as taint input"
@@ -102,7 +104,8 @@ rules:
   G601:
     categories:
       - ALL
-      - cwe-119
+      - cwe-118
+      - boost-hardened
     group: top10-insecure-design
     name: G601
     pretty_name: "G601: Implicit memory aliasing of items from a range statement"
@@ -112,7 +115,8 @@ rules:
   G109:
     categories:
       - ALL
-      - cwe-119
+      - cwe-190
+      - boost-hardened
     group: top10-insecure-design
     name: G109
     pretty_name: "G109: Potential Integer overflow made by strconv.Atoi result conversion to int16/32"
@@ -123,11 +127,12 @@ rules:
     categories:
       - ALL
       - cwe-704
+      - boost-hardened
     group: top10-insecure-design
     name: G113
     pretty_name: "G113: Usage of Rat.SetString in math/big with an overflow (CVE-2022-23772)"
     description: The software performs a calculation that can produce an integer overflow or wraparound.
-    ref: https://cwe.mitre.org/data/definitions/190.html
+    ref: https://cwe.mitre.org/data/definitions/704.html
 
   G102:
     categories:
@@ -142,18 +147,25 @@ rules:
   G108:
     categories:
       - ALL
-      - cwe-200
-      - cwe-489
+      - cwe-top-25
+      - owasp-top-10
+      - boost-baseline
+      - boost-hardened
+      - cwe-489 # Active debug code
+      - cwe-200 # Exposure of Sensitive Information
+      - cwe-732 # Incorrect Permissions
+      - cwe-287 # Improper Authentication on Critical Resource
     group: top10-security-misconfiguration
     name: G108
     pretty_name: "G108: Profiling endpoint automatically exposed on /debug/pprof"
     description: The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
-    ref: https://cwe.mitre.org/data/definitions/200.html
+    ref: https://cwe.mitre.org/data/definitions/489.html
 
   G103:
     categories:
       - ALL
       - cwe-119
+      - cwe-242
     group: top10-insecure-design
     name: G103
     pretty_name: "G103: Audit the use of unsafe block"
@@ -194,6 +206,10 @@ rules:
     categories:
       - ALL
       - cwe-295
+      - cwe-top-25
+      - owasp-top-10
+      - boost-baseline
+      - boost-hardened
     group: top10-id-authn-failures
     name: G402
     pretty_name: "G402: Look for bad TLS connection settings"
@@ -204,6 +220,8 @@ rules:
     categories:
       - ALL
       - cwe-310
+      - boost-baseline
+      - boost-hardened
     group: top10-crypto-failures
     name: G403
     pretty_name: "G403: Ensure minimum RSA key length of 2048 bits"
@@ -214,6 +232,8 @@ rules:
     categories:
       - ALL
       - cwe-295
+      - boost-baseline
+      - boost-hardened
     group: top10-id-authn-failures
     name: G106
     pretty_name: "G106: Audit the use of ssh.InsecureIgnoreHostKey"
@@ -224,6 +244,7 @@ rules:
     categories:
       - ALL
       - cwe-326
+      - boost-hardened
     group: top10-crypto-failures
     name: G401
     pretty_name: "G401: Detect the usage of DES, RC4, MD5 or SHA1"
@@ -234,6 +255,7 @@ rules:
     categories:
       - ALL
       - cwe-327
+      - boost-hardened
     group: top10-crypto-failures
     name: G501
     pretty_name: "G501: Import blocklist: crypto/md5"
@@ -244,6 +266,8 @@ rules:
     categories:
       - ALL
       - cwe-327
+      - boost-baseline
+      - boost-hardened
     group: top10-crypto-failures
     name: G502
     pretty_name: "G502: Import blocklist: crypto/des"
@@ -254,6 +278,8 @@ rules:
     categories:
       - ALL
       - cwe-327
+      - boost-baseline
+      - boost-hardened
     group: top10-crypto-failures
     name: G503
     pretty_name: "G503: Import blocklist: crypto/rc4"
@@ -264,6 +290,8 @@ rules:
     categories:
       - ALL
       - cwe-327
+      - boost-baseline
+      - boost-hardened
     group: top10-crypto-failures
     name: G504
     pretty_name: "G504: Import blocklist: net/http/cgi"
@@ -274,6 +302,7 @@ rules:
     categories:
       - ALL
       - cwe-327
+      - boost-hardened
     group: top10-crypto-failures
     name: G505
     pretty_name: "G505: Import blocklist: crypto/sha1"
@@ -284,6 +313,8 @@ rules:
     categories:
       - ALL
       - cwe-338
+      - boost-baseline
+      - boost-hardened
     group: top10-crypto-failures
     name: G404
     pretty_name: "G404: Insecure random number source (rand)"
@@ -345,6 +376,8 @@ rules:
     categories:
       - ALL
       - cwe-703
+      - boost-baseline
+      - boost-hardened
     group: top10-insecure-design
     name: G307
     pretty_name: "G307: Deferring a method which returns an error"
@@ -354,7 +387,13 @@ rules:
   G101:
     categories:
       - ALL
+      - stored-secrets
+      - cwe-top-25
+      - boost-baseline
+      - boost-hardened
+      - cwe-200
       - cwe-798
+      - cwe-522
     group: top10-id-authn-failures
     name: G101
     pretty_name: "G101: Look for hard coded credentials"
