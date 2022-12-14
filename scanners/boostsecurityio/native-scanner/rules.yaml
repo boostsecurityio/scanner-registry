@@ -1921,6 +1921,7 @@ rules:
       - cwe-top-25
       - boost-baseline
       - boost-hardened
+      - cwe-200
       - cwe-798
       - cwe-522
     description: Checks for secrets and credentials stored in a source code repository.

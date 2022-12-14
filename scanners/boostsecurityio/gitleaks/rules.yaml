@@ -7,4 +7,10 @@ rules:
     description: The repository exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
     categories:
       - ALL
+      - stored-secrets
+      - cwe-top-25
+      - boost-baseline
+      - boost-hardened
       - cwe-200
+      - cwe-798
+      - cwe-522
