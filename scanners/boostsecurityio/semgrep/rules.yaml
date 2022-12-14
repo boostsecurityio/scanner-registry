@@ -440,6 +440,7 @@ rules:
     categories:
     - ALL
     - cwe-915
+    - boost-hardened
     group: top10-software-data-integrity-failures
     name: CWE-915
     pretty_name: CWE-915 - Improperly Controlled Modification of Dynamically-Determined
@@ -535,6 +536,7 @@ rules:
   CWE-UNKNOWN:
     categories:
     - ALL
+    - boost-hardened
     group: top10-insecure-design
     name: CWE-UNKNOWN
     pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule
