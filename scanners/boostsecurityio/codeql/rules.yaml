@@ -161,13 +161,13 @@ rules:
   CWE-798:
     categories:
     - ALL
-      - stored-secrets
-      - cwe-top-25
-      - boost-baseline
-      - boost-hardened
-      - cwe-200
-      - cwe-798
-      - cwe-522
+    - stored-secrets
+    - cwe-top-25
+    - boost-baseline
+    - boost-hardened
+    - cwe-200
+    - cwe-798
+    - cwe-522
     group: top10-id-authn-failures
     name: CWE-798
     pretty_name: CWE-798 - Use of Hard-coded Credentials

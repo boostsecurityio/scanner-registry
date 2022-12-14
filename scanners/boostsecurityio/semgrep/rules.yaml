@@ -48,6 +48,7 @@ rules:
     categories:
     - ALL
     - cwe-778
+    - boost-hardened
     group: top10-security-logging-monitoring-failures
     name: CWE-778
     pretty_name: CWE-778 - Insufficient Logging
@@ -123,10 +124,13 @@ rules:
   CWE-798:
     categories:
     - ALL
+    - stored-secrets
     - cwe-top-25
-    - cwe-798
     - boost-baseline
     - boost-hardened
+    - cwe-200
+    - cwe-798
+    - cwe-522
     group: top10-id-authn-failures
     name: CWE-798
     pretty_name: CWE-798 - Use of Hard-coded Credentials
