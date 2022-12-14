@@ -23,6 +23,7 @@ rules:
       - cwe-1104
       - boost-baseline
       - boost-hardened
+      - vulnerable-and-outdated-components
     description: The product relies on third-party components that are not actively supported or maintained by the original developer or a trusted proxy for the original developer.
     group: top10-vulnerable-components
     name: CWE-1104
