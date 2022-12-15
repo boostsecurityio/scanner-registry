@@ -165,7 +165,6 @@ rules:
     categories:
       - ALL
       - cwe-119
-      - cwe-242
     group: top10-insecure-design
     name: G103
     pretty_name: "G103: Audit the use of unsafe block"
