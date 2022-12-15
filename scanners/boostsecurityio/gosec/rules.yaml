@@ -115,7 +115,7 @@ rules:
   G109:
     categories:
       - ALL
-      - cwe-190
+      - cwe-119
       - boost-hardened
     group: top10-insecure-design
     name: G109

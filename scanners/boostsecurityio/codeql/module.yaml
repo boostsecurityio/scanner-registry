@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/codeql
-name: Boost CodeQL Scanner
+name: BoostSecurity CodeQL
 namespace: boostsecurityio/codeql
 
 config:

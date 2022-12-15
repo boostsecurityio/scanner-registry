@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/trivy-sbom
-name: Boostsecurity Trivy SBOM
+name: BoostSecurity Trivy (FS SBOM)
 namespace: boostsecurityio/trivy-sbom
 
 

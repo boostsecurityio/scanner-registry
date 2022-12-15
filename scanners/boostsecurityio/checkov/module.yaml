@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/checkov
-name: Boostsecurity Checkov Scanner
+name: BoostSecurity Checkov
 namespace: boostsecurityio/checkov
 
 config:

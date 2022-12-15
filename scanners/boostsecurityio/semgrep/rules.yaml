@@ -542,3 +542,4 @@ rules:
     pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule
     description: The original rule could not be map to a CWE rule
     ref: https://github.com/returntocorp/semgrep-rules/
+

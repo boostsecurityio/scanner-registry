@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/gosec
-name: Boostsecurity GoSec Scanner
+name: BoostSecurity gosec
 namespace: boostsecurityio/gosec
 
 

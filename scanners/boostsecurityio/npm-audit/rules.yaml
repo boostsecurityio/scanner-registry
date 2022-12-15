@@ -56,3 +56,4 @@ rules:
     group: top10-vulnerable-components
     pretty_name: Dependency with a Critical Vulnerability
     ref: https://nvd.nist.gov/vuln-metrics/cvss
+

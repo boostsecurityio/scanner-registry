@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/trivy-image
-name: Boostsecurity Trivy Image Scanner
+name: BoostSecurity Trivy (Image scanning)
 namespace: boostsecurityio/trivy-image
 
 

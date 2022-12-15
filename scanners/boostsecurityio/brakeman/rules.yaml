@@ -360,3 +360,4 @@ rules:
     pretty_name: CWE-295 - Improper Certificate Validation
     description: The code does not validate, or incorrectly validates, a certificate.
     ref: https://cwe.mitre.org/data/definitions/295.html
+

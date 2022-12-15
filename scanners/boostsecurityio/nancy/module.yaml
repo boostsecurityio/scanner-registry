@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/nancy
-name: Boost Nancy Scanner
+name: BoostSecurity nancy
 namespace: boostsecurityio/nancy
 
 

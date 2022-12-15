@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/brakeman
-name: Boostsecurity Brakeman Scanner
+name: BoostSecurity Brakeman
 namespace: boostsecurityio/brakeman
 
 config:

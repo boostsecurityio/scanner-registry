@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/semgrep
-name: Boostsecurity Semgrep Scanner
+name: BoostSecurity semgrep
 namespace: boostsecurityio/semgrep
 
 config:

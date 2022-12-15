@@ -2051,3 +2051,4 @@ rules:
     name: wildcard-in-system-call
     pretty_name: Wildcard In System Call
     ref: "{BOOSTSEC_DOC_BASE_URL}/rules/code-wildcard-in-system-call.html"
+
