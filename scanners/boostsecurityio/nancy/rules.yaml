@@ -9,7 +9,7 @@ rules:
     name: cve-unknown
     group: top10-vulnerable-components
     pretty_name: Dependency with a Vulnerability of Unknown Risk
-    ref: https://ossindex.sonatype.org/
+    ref: https://nvd.nist.gov/vuln-metrics/cvss
   cve-low:
     categories:
       - ALL
@@ -20,7 +20,7 @@ rules:
     name: cve-low
     group: top10-vulnerable-components
     pretty_name: Dependency with a Low Risk Vulnerability
-    ref: https://ossindex.sonatype.org/
+    ref: https://nvd.nist.gov/vuln-metrics/cvss
   cve-moderate:
     categories:
       - ALL
@@ -31,7 +31,7 @@ rules:
     name: cve-moderate
     group: top10-vulnerable-components
     pretty_name: Dependency with a Medium Risk Vulnerability
-    ref: https://ossindex.sonatype.org/
+    ref: https://nvd.nist.gov/vuln-metrics/cvss
   cve-high:
     categories:
       - ALL
@@ -43,7 +43,7 @@ rules:
     name: cve-high
     group: top10-vulnerable-components
     pretty_name: Dependency with a High Risk Vulnerability
-    ref: https://ossindex.sonatype.org/
+    ref: https://nvd.nist.gov/vuln-metrics/cvss
   cve-critical:
     categories:
       - ALL
@@ -55,4 +55,4 @@ rules:
     name: cve-critical
     group: top10-vulnerable-components
     pretty_name: Dependency with a Critical Vulnerability
-    ref: https://ossindex.sonatype.org/
+    ref: https://nvd.nist.gov/vuln-metrics/cvss
