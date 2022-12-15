@@ -104,13 +104,13 @@ rules:
   G601:
     categories:
       - ALL
-      - cwe-118
+      - cwe-119
       - boost-hardened
     group: top10-insecure-design
     name: G601
     pretty_name: "G601: Implicit memory aliasing of items from a range statement"
     description: The software does not restrict or incorrectly restricts operations within the boundaries of a resource.
-    ref: https://cwe.mitre.org/data/definitions/118.html
+    ref: https://cwe.mitre.org/data/definitions/119.html
 
   G109:
     categories:
