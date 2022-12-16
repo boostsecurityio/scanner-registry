@@ -12,7 +12,7 @@ config:
 
 
 setup:
-  - name: download snyk-cli
+  - name: download trivy
     environment:
       VERSION: 0.32.1
     run: |
@@ -57,7 +57,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:24f6e4a@sha256:6542680d8321b12758172c97cce27ada5677bd8301b326fc4c68bce9ccdcea63
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:63d4980@sha256:4f6b20be339cfc31b38b6bdf569483a1afef73ec91a968ca6485ae71e48e4ab9
           command: process
           environment:
             PYTHONIOENCODING: utf-8
