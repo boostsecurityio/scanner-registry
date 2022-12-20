@@ -25,7 +25,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV2_AWS_11
@@ -171,7 +170,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV2_AWS_28
@@ -181,7 +179,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV2_AWS_29
@@ -191,7 +188,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV2_AWS_3
@@ -212,7 +208,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV2_AWS_31
@@ -233,7 +228,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV2_AWS_33
@@ -2094,8 +2088,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV_AWS_175
@@ -2105,8 +2097,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV_AWS_176
@@ -2290,8 +2280,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV_AWS_192
@@ -2841,7 +2829,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV_AWS_238
@@ -3768,7 +3755,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV_AWS_68
@@ -3853,7 +3839,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
     name: CKV_AWS_75
@@ -4444,7 +4429,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_12
@@ -4455,7 +4439,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_120
@@ -4465,7 +4448,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_121
@@ -4475,7 +4457,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_122
@@ -4486,7 +4467,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_123
@@ -4533,7 +4513,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_127
@@ -4544,7 +4523,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_128
@@ -4636,8 +4614,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_135
@@ -5093,7 +5069,6 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
-    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_25
