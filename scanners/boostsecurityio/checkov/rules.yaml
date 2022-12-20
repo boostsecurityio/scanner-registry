@@ -6307,6 +6307,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
     - boost-hardened
     description: Check for unencrypted Google Cloud resources.
     group: cloud-unencrypted-resources
