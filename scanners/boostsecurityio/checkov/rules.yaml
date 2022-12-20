@@ -1500,6 +1500,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
     - boost-hardened
     description: Check for misconfigurations in AWS resources.
     group: cloud-weak-configuration
