@@ -5115,6 +5115,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_29
@@ -5125,6 +5126,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_3
@@ -5135,6 +5138,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_30
@@ -5165,6 +5169,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_33
@@ -5175,6 +5180,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_34
@@ -5185,6 +5192,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: CKV_AZURE_35
@@ -5195,6 +5204,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_36
@@ -5205,6 +5216,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_37
@@ -5215,6 +5227,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_38
@@ -5224,6 +5237,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: CKV_AZURE_39
@@ -5234,6 +5249,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_4
@@ -5243,6 +5260,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_40
@@ -5252,6 +5270,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_41
@@ -5261,6 +5280,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-secrets-management
+    - boost-baseline
+    - boost-hardened
     description: Check that ensures best practices in Azure secrets management.
     group: cloud-weak-secrets-management
     name: CKV_AZURE_42
@@ -5279,6 +5300,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_44
@@ -5289,6 +5312,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_45
@@ -5299,6 +5324,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_47
@@ -5309,6 +5335,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_48
@@ -5319,6 +5347,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_49
@@ -5329,6 +5359,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: CKV_AZURE_5
@@ -5338,6 +5370,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_50
@@ -5347,6 +5381,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_52
@@ -5356,6 +5391,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_53
@@ -5366,6 +5403,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_54
@@ -5375,6 +5413,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_55
@@ -5384,6 +5423,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_56
@@ -5393,6 +5434,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_57
@@ -5403,6 +5446,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_58
@@ -5413,6 +5457,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_59
@@ -5422,6 +5468,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_6
@@ -5431,6 +5478,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_60
@@ -5440,6 +5489,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_61
@@ -5458,6 +5508,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_63
@@ -5467,6 +5519,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_64
@@ -5477,6 +5531,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_65
@@ -5486,6 +5542,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_66
@@ -5505,6 +5562,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_68
@@ -5515,6 +5574,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_69
@@ -5525,6 +5585,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_7
@@ -5534,6 +5595,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_70
@@ -5544,6 +5607,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_71
@@ -5554,6 +5619,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_72
@@ -5564,6 +5631,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_73
@@ -5573,6 +5642,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_74
@@ -5601,6 +5672,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_77
@@ -5610,6 +5683,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_78
@@ -5619,6 +5694,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_79
@@ -5629,6 +5705,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_8
@@ -5638,6 +5716,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_80
@@ -5648,6 +5728,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_81
@@ -5658,6 +5740,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_82
@@ -5668,6 +5752,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_83
@@ -5678,6 +5764,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_84
@@ -5687,6 +5774,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_85
@@ -5696,6 +5784,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_86
@@ -5706,6 +5795,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_87
@@ -5724,6 +5814,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Azure resources.
     group: cloud-resources-public-access
     name: CKV_AZURE_89
@@ -5734,6 +5826,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_9
@@ -5743,6 +5837,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_91
@@ -5752,6 +5847,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_92
@@ -5771,6 +5868,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_94
@@ -5780,6 +5878,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_95
@@ -5790,6 +5890,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_96
@@ -5799,6 +5900,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Azure resources.
     group: cloud-unencrypted-resources
     name: CKV_AZURE_97
@@ -5809,6 +5912,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Azure resources.
     group: cloud-weak-configuration
     name: CKV_AZURE_98
@@ -5819,6 +5924,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Azure permissions.
     group: cloud-insecure-iam
     name: CKV_AZURE_99
@@ -5828,6 +5935,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_BCW_1
@@ -5837,6 +5946,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-hardened
     description: Check for weak Bitbucket Pipelines configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_BITBUCKETPIPELINES_1
@@ -5856,6 +5966,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_1
@@ -5866,6 +5977,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_2
@@ -5876,6 +5988,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_3
@@ -5886,6 +5999,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_4
@@ -5896,6 +6011,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_5
@@ -5905,6 +6022,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_6
@@ -5915,6 +6034,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak CircleCI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_CIRCLECIPIPELINES_7
@@ -5924,6 +6045,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Digital Ocean resources.
     group: cloud-weak-configuration
     name: CKV_DIO_1
@@ -5933,6 +6055,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Digital Ocean resources.
     group: cloud-weak-configuration
     name: CKV_DIO_2
@@ -5942,6 +6066,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Digital Ocean resources.
     group: cloud-resources-public-access
     name: CKV_DIO_3
@@ -5951,6 +6077,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Digital Ocean resources.
     group: cloud-weak-configuration
     name: CKV_DIO_4
@@ -5960,6 +6088,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Docker resources.
     group: cloud-weak-configuration
     name: CKV_DOCKER_1
@@ -5969,6 +6099,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Docker resources.
     group: cloud-weak-configuration
     name: CKV_DOCKER_10
@@ -5978,6 +6110,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Docker resources.
     group: cloud-weak-configuration
     name: CKV_DOCKER_11
@@ -6015,6 +6149,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Docker resources.
     group: cloud-weak-configuration
     name: CKV_DOCKER_5
@@ -6035,6 +6171,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Docker resources.
     group: cloud-weak-configuration
     name: CKV_DOCKER_7
@@ -6044,6 +6182,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Docker resources.
     group: cloud-weak-configuration
     name: CKV_DOCKER_8
@@ -6062,6 +6201,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_1
@@ -6072,6 +6213,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_10
@@ -6082,6 +6225,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_100
@@ -6092,6 +6237,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_101
@@ -6102,6 +6249,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_102
@@ -6112,6 +6261,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_103
@@ -6121,6 +6272,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_104
@@ -6130,6 +6283,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_105
@@ -6139,6 +6294,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_106
@@ -6158,6 +6315,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_108
@@ -6167,6 +6326,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_109
@@ -6177,6 +6338,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_11
@@ -6187,6 +6350,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_110
@@ -6215,6 +6379,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_13
@@ -6225,6 +6391,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_14
@@ -6235,6 +6403,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_15
@@ -6254,6 +6424,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_17
@@ -6264,6 +6436,7 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_18
@@ -6273,6 +6446,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_19
@@ -6282,6 +6457,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_2
@@ -6292,6 +6469,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_20
@@ -6311,6 +6489,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_22
@@ -6361,6 +6541,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_27
@@ -6371,6 +6552,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_28
@@ -6381,6 +6564,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_29
@@ -6391,6 +6576,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_3
@@ -6401,6 +6588,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_30
@@ -6411,6 +6600,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_31
@@ -6421,6 +6612,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_32
@@ -6431,6 +6624,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_33
@@ -6440,6 +6635,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_34
@@ -6450,6 +6647,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_35
@@ -6460,6 +6659,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_36
@@ -6489,6 +6690,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_39
@@ -6499,6 +6701,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_4
@@ -6509,6 +6713,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_40
@@ -6519,6 +6725,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_41
@@ -6529,6 +6737,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_42
@@ -6538,6 +6748,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Google Cloud resources.
     group: cloud-unencrypted-resources
     name: CKV_GCP_43
@@ -6548,6 +6759,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_44
@@ -6558,6 +6771,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_45
@@ -6568,6 +6783,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_46
@@ -6578,6 +6795,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_47
@@ -6588,6 +6807,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_48
@@ -6598,6 +6819,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_49
@@ -6608,6 +6831,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_50
@@ -6618,6 +6843,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_51
@@ -6628,6 +6855,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_52
@@ -6638,6 +6867,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_53
@@ -6648,6 +6878,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_54
@@ -6668,6 +6899,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_56
@@ -6688,6 +6920,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_58
@@ -6698,6 +6932,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_59
@@ -6708,6 +6944,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Google Cloud resources.
     group: cloud-unencrypted-resources
     name: CKV_GCP_6
@@ -6718,6 +6956,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_60
@@ -6736,6 +6976,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_62
@@ -6745,6 +6986,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_63
@@ -6763,6 +7006,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Google Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_GCP_65
@@ -6773,6 +7018,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-hardened
     description: Check for weak Google Cloud configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GCP_66
@@ -6782,6 +7028,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_67
@@ -6792,6 +7040,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_68
@@ -6801,6 +7050,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_69
@@ -6810,6 +7061,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_7
@@ -6820,6 +7073,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_70
@@ -6829,6 +7084,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_71
@@ -6838,6 +7094,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_72
@@ -6848,6 +7105,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_73
@@ -6858,6 +7117,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_74
@@ -6868,6 +7129,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_75
@@ -6878,6 +7141,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_76
@@ -6887,6 +7152,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_77
@@ -6906,6 +7173,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_79
@@ -6915,6 +7184,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_8
@@ -6945,6 +7216,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_82
@@ -6984,6 +7257,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_86
@@ -6993,6 +7268,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_87
@@ -7002,6 +7279,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_88
@@ -7012,6 +7291,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-secrets-management
+    - boost-baseline
+    - boost-hardened
     description: Check that ensures best practices in Google Cloud secrets management.
     group: cloud-weak-secrets-management
     name: CKV_GCP_89
@@ -7071,6 +7352,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_94
@@ -7080,6 +7363,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Google Cloud resources.
     group: cloud-weak-configuration
     name: CKV_GCP_95
@@ -7108,6 +7393,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_98
@@ -7118,6 +7405,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Google Cloud resources.
     group: cloud-resources-public-access
     name: CKV_GCP_99
@@ -7128,6 +7417,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub Action configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GHA_1
@@ -7138,6 +7429,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub Action configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GHA_2
@@ -7147,6 +7440,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub Action configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GHA_3
@@ -7156,6 +7451,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub Action configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GHA_4
@@ -7196,6 +7493,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in GitHub resources.
     group: cloud-weak-configuration
     name: CKV_GITHUB_1
@@ -7206,6 +7505,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub configurations.
     group: supply-chain-cicd-weak-configuration
     name: CKV_GITHUB_10
@@ -7235,6 +7536,7 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-hardened
     description: Check for weak GitHub configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GITHUB_4
@@ -7245,6 +7547,8 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GITHUB_5
@@ -7255,6 +7559,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted GitHub resources.
     group: cloud-unencrypted-resources
     name: CKV_GITHUB_6
@@ -7264,6 +7570,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted GitHub resources.
     group: cloud-unencrypted-resources
     name: CKV_GITHUB_7
@@ -7273,6 +7581,7 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-hardened
     description: Check for weak GitHub configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GITHUB_8
@@ -7292,6 +7601,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-vulnerable-pipeline
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitLab CI configurations.
     group: supply-chain-cicd-vulnerable-pipeline
     name: CKV_GITLABCI_1
@@ -7302,6 +7613,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in GitLab CI resources.
     group: cloud-weak-configuration
     name: CKV_GITLABCI_2
@@ -7329,6 +7642,8 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitLab configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GITLAB_2
@@ -7347,6 +7662,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted GitHub resources.
     group: cloud-unencrypted-resources
     name: CKV_GIT_2
@@ -7356,6 +7673,8 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitHub configurations.
     group: supply-chain-cicd-weak-configuration
     name: CKV_GIT_3
@@ -7365,6 +7684,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted GitHub resources.
     group: cloud-unencrypted-resources
     name: CKV_GIT_4
@@ -7383,6 +7704,7 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-hardened
     description: Check for weak GitHub configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GIT_6
@@ -7403,6 +7725,8 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitLab configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GLB_2
@@ -7413,6 +7737,8 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for weak GitLab configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GLB_3
@@ -7422,6 +7748,7 @@ rules:
     categories:
     - ALL
     - supply-chain-scm-weak-configuration
+    - boost-hardened
     description: Check for weak GitLab configurations.
     group: supply-chain-scm-weak-configuration
     name: CKV_GLB_4
@@ -7431,6 +7758,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_1
@@ -7441,6 +7770,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_10
@@ -7450,6 +7780,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_100
@@ -7460,6 +7792,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_102
@@ -7469,6 +7803,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Kubernetes resources.
     group: cloud-unencrypted-resources
     name: CKV_K8S_104
@@ -7479,6 +7815,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_105
@@ -7489,6 +7827,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_106
@@ -7499,6 +7839,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_107
@@ -7508,6 +7850,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_108
@@ -7518,6 +7862,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_11
@@ -7527,6 +7872,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_110
@@ -7537,6 +7884,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_111
@@ -7546,6 +7895,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_112
@@ -7556,6 +7907,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_113
@@ -7565,6 +7918,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_114
@@ -7574,6 +7929,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_115
@@ -7583,6 +7940,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_116
@@ -7593,6 +7952,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_117
@@ -7603,6 +7964,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_118
@@ -7612,6 +7975,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_119
@@ -7622,6 +7987,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_12
@@ -7631,6 +7997,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_121
@@ -7641,6 +8009,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_13
@@ -7650,6 +8019,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_138
@@ -7660,6 +8031,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_139
@@ -7670,6 +8043,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-weak-configuration
+    - boost-hardened
     description: Check for weak Kubernetes configurations.
     group: supply-chain-cicd-weak-configuration
     name: CKV_K8S_14
@@ -7679,6 +8053,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_140
@@ -7689,6 +8065,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_141
@@ -7699,6 +8077,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_143
@@ -7709,6 +8089,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_144
@@ -7719,6 +8101,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_145
@@ -7729,6 +8113,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_146
@@ -7739,6 +8125,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_147
@@ -7749,6 +8137,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_148
@@ -7759,6 +8149,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_149
@@ -7769,6 +8161,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_15
@@ -7778,6 +8171,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_151
@@ -7788,6 +8183,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_152
@@ -7798,6 +8195,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_153
@@ -7808,6 +8207,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_154
@@ -7818,6 +8219,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_155
@@ -7828,6 +8231,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_156
@@ -7838,6 +8243,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_157
@@ -7848,6 +8255,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_158
@@ -7858,6 +8267,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_16
@@ -7867,6 +8278,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_17
@@ -7877,6 +8290,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_18
@@ -7887,6 +8302,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_19
@@ -7897,6 +8314,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_2
@@ -7906,6 +8325,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_20
@@ -7915,6 +8336,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_21
@@ -7933,6 +8355,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_23
@@ -7942,6 +8365,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_24
@@ -7951,6 +8376,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_25
@@ -7960,6 +8387,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_26
@@ -7969,6 +8398,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_27
@@ -7978,6 +8409,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_28
@@ -7988,6 +8421,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_29
@@ -7997,6 +8431,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_3
@@ -8007,6 +8443,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_30
@@ -8016,6 +8453,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_31
@@ -8026,6 +8464,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_32
@@ -8036,6 +8475,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_33
@@ -8045,6 +8486,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_34
@@ -8064,6 +8507,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_36
@@ -8074,6 +8519,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_37
@@ -8084,6 +8531,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_38
@@ -8094,6 +8542,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_39
@@ -8103,6 +8553,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_4
@@ -8113,6 +8565,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_40
@@ -8122,6 +8575,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_41
@@ -8132,6 +8587,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_42
@@ -8142,6 +8599,7 @@ rules:
     categories:
     - ALL
     - supply-chain-cicd-weak-configuration
+    - boost-hardened
     description: Check for weak Kubernetes configurations.
     group: supply-chain-cicd-weak-configuration
     name: CKV_K8S_43
@@ -8151,6 +8609,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_44
@@ -8160,6 +8620,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_45
@@ -8170,6 +8632,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_49
@@ -8179,6 +8643,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_5
@@ -8188,6 +8654,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_6
@@ -8197,6 +8665,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_68
@@ -8207,6 +8677,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_69
@@ -8216,6 +8688,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_7
@@ -8225,6 +8699,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_70
@@ -8234,6 +8710,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_71
@@ -8243,6 +8721,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_72
@@ -8253,6 +8733,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_73
@@ -8263,6 +8745,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_74
@@ -8273,6 +8757,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_75
@@ -8283,6 +8769,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_77
@@ -8303,6 +8791,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_79
@@ -8313,6 +8803,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_8
@@ -8322,6 +8813,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_80
@@ -8332,6 +8824,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_81
@@ -8342,6 +8835,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_82
@@ -8352,6 +8846,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_83
@@ -8362,6 +8857,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_84
@@ -8372,6 +8868,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_85
@@ -8382,6 +8879,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_86
@@ -8392,6 +8891,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_88
@@ -8401,6 +8902,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_89
@@ -8411,6 +8914,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_9
@@ -8420,6 +8924,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_90
@@ -8429,6 +8935,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_91
@@ -8438,6 +8946,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_92
@@ -8448,6 +8958,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_93
@@ -8458,6 +8970,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_94
@@ -8468,6 +8982,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_95
@@ -8478,6 +8994,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_96
@@ -8488,6 +9006,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_97
@@ -8498,6 +9018,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_99
@@ -8508,6 +9030,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_LIN_1
@@ -8517,6 +9041,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Linode resources.
     group: cloud-weak-configuration
     name: CKV_LIN_2
@@ -8526,6 +9052,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Linode resources.
     group: cloud-weak-configuration
     name: CKV_LIN_3
@@ -8535,6 +9063,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Linode resources.
     group: cloud-weak-configuration
     name: CKV_LIN_4
@@ -8544,6 +9074,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Linode resources.
     group: cloud-weak-configuration
     name: CKV_LIN_5
@@ -8553,6 +9085,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Linode resources.
     group: cloud-weak-configuration
     name: CKV_LIN_6
@@ -8562,6 +9096,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_1
@@ -8571,6 +9106,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_10
@@ -8581,6 +9118,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_11
@@ -8591,6 +9130,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_12
@@ -8600,6 +9141,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_13
@@ -8609,6 +9152,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Ncloud resources.
     group: cloud-unencrypted-resources
     name: CKV_NCP_14
@@ -8618,6 +9162,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Ncloud resources.
     group: cloud-unencrypted-resources
     name: CKV_NCP_15
@@ -8627,6 +9173,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_2
@@ -8636,6 +9184,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_3
@@ -8646,6 +9195,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_4
@@ -8656,6 +9207,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_5
@@ -8666,6 +9219,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Ncloud resources.
     group: cloud-unencrypted-resources
     name: CKV_NCP_6
@@ -8675,6 +9230,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Ncloud resources.
     group: cloud-unencrypted-resources
     name: CKV_NCP_7
@@ -8684,6 +9240,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_8
@@ -8693,6 +9251,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Ncloud resources.
     group: cloud-weak-configuration
     name: CKV_NCP_9
@@ -8702,6 +9262,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_OCI_1
@@ -8711,6 +9273,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Oracle Cloud Infrastructure resources.
     group: cloud-resources-public-access
     name: CKV_OCI_10
@@ -8720,6 +9284,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Oracle Cloud Infrastructure permissions.
     group: cloud-insecure-iam
     name: CKV_OCI_11
@@ -8729,6 +9295,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Oracle Cloud Infrastructure permissions.
     group: cloud-insecure-iam
     name: CKV_OCI_12
@@ -8738,6 +9306,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Oracle Cloud Infrastructure permissions.
     group: cloud-insecure-iam
     name: CKV_OCI_13
@@ -8747,6 +9317,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Oracle Cloud Infrastructure permissions.
     group: cloud-insecure-iam
     name: CKV_OCI_14
@@ -8766,6 +9338,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_16
@@ -8775,6 +9349,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_17
@@ -8784,6 +9360,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Oracle Cloud Infrastructure permissions.
     group: cloud-insecure-iam
     name: CKV_OCI_18
@@ -8794,6 +9372,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_19
@@ -8804,6 +9384,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_2
@@ -8813,6 +9394,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_20
@@ -8823,6 +9406,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_21
@@ -8833,6 +9418,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_22
@@ -8863,6 +9450,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_5
@@ -8873,6 +9462,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Oracle Cloud Infrastructure resources.
     group: cloud-weak-configuration
     name: CKV_OCI_6
@@ -8910,6 +9501,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenAPI resources.
     group: cloud-weak-configuration
     name: CKV_OPENAPI_1
@@ -8920,6 +9513,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenAPI resources.
     group: cloud-weak-configuration
     name: CKV_OPENAPI_2
@@ -8930,6 +9525,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted OpenAPI resources.
     group: cloud-unencrypted-resources
     name: CKV_OPENAPI_3
@@ -8940,6 +9537,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenAPI resources.
     group: cloud-weak-configuration
     name: CKV_OPENAPI_4
@@ -8949,6 +9548,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenAPI resources.
     group: cloud-weak-configuration
     name: CKV_OPENAPI_5
@@ -8958,6 +9559,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenAPI resources.
     group: cloud-weak-configuration
     name: CKV_OPENAPI_6
@@ -8968,6 +9571,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted OpenAPI resources.
     group: cloud-unencrypted-resources
     name: CKV_OPENAPI_7
@@ -8978,6 +9583,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_OPENSTACK_1
@@ -8988,6 +9595,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenStack resources.
     group: cloud-weak-configuration
     name: CKV_OPENSTACK_2
@@ -8998,6 +9607,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenStack resources.
     group: cloud-weak-configuration
     name: CKV_OPENSTACK_3
@@ -9008,6 +9619,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenStack resources.
     group: cloud-weak-configuration
     name: CKV_OPENSTACK_4
@@ -9017,6 +9630,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in OpenStack resources.
     group: cloud-weak-configuration
     name: CKV_OPENSTACK_5
@@ -9026,6 +9641,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_PAN_1
@@ -9035,6 +9652,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_10
@@ -9045,6 +9664,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted PAN-OS resources.
     group: cloud-unencrypted-resources
     name: CKV_PAN_11
@@ -9055,6 +9676,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_12
@@ -9065,6 +9688,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_13
@@ -9075,6 +9700,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_14
@@ -9085,6 +9712,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_15
@@ -9095,6 +9724,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_2
@@ -9105,6 +9736,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_3
@@ -9115,6 +9748,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_4
@@ -9124,6 +9759,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_5
@@ -9134,6 +9771,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_6
@@ -9144,6 +9783,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_7
@@ -9154,6 +9795,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in PAN-OS resources.
     group: cloud-weak-configuration
     name: CKV_PAN_8
@@ -9173,6 +9816,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_1
@@ -9182,6 +9827,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_10
@@ -9191,6 +9838,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_11
@@ -9200,6 +9849,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_12
@@ -9209,6 +9860,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_13
@@ -9218,6 +9871,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_14
@@ -9227,6 +9882,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_15
@@ -9236,6 +9893,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_16
@@ -9245,6 +9904,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_17
@@ -9254,6 +9915,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_18
@@ -9281,6 +9944,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_3
@@ -9290,6 +9955,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_4
@@ -9299,6 +9966,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_5
@@ -9317,6 +9986,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_7
@@ -9326,6 +9997,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_8
@@ -9335,6 +10008,8 @@ rules:
     categories:
     - ALL
     - stored-secrets
+    - boost-baseline
+    - boost-hardened
     description: Check for secrets stored in configuration.
     group: stored-secrets
     name: CKV_SECRET_9
@@ -9344,6 +10019,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_1
@@ -9353,6 +10030,8 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
     description: Check for unencrypted Yandex Cloud resources.
     group: cloud-unencrypted-resources
     name: CKV_YC_10
@@ -9362,6 +10041,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_11
@@ -9371,6 +10052,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Yandex Cloud resources.
     group: cloud-resources-public-access
     name: CKV_YC_12
@@ -9380,6 +10063,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Yandex Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_YC_13
@@ -9389,6 +10074,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_14
@@ -9398,6 +10085,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_15
@@ -9408,6 +10097,7 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_16
@@ -9417,6 +10107,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Yandex Cloud resources.
     group: cloud-resources-public-access
     name: CKV_YC_17
@@ -9426,6 +10118,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Yandex Cloud resources.
     group: cloud-resources-public-access
     name: CKV_YC_18
@@ -9435,6 +10129,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_19
@@ -9444,6 +10140,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Yandex Cloud resources.
     group: cloud-resources-public-access
     name: CKV_YC_2
@@ -9453,6 +10151,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_20
@@ -9462,6 +10162,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Yandex Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_YC_21
@@ -9471,6 +10173,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_22
@@ -9480,6 +10184,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Yandex Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_YC_23
@@ -9489,6 +10195,8 @@ rules:
     categories:
     - ALL
     - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
     description: Check for weak Yandex Cloud permissions.
     group: cloud-insecure-iam
     name: CKV_YC_24
@@ -9499,6 +10207,7 @@ rules:
     categories:
     - ALL
     - cloud-unencrypted-resources
+    - boost-hardened
     description: Check for unencrypted Yandex Cloud resources.
     group: cloud-unencrypted-resources
     name: CKV_YC_3
@@ -9508,6 +10217,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_4
@@ -9517,6 +10228,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Yandex Cloud resources.
     group: cloud-resources-public-access
     name: CKV_YC_5
@@ -9526,6 +10239,8 @@ rules:
     categories:
     - ALL
     - cloud-resources-public-access
+    - boost-baseline
+    - boost-hardened
     description: Check for publicly accessible Yandex Cloud resources.
     group: cloud-resources-public-access
     name: CKV_YC_6
@@ -9536,6 +10251,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_7
@@ -9545,6 +10262,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-configuration
+    - boost-baseline
+    - boost-hardened
     description: Check for misconfigurations in Yandex Cloud resources.
     group: cloud-weak-configuration
     name: CKV_YC_8
@@ -9554,6 +10273,8 @@ rules:
     categories:
     - ALL
     - cloud-weak-secrets-management
+    - boost-baseline
+    - boost-hardened
     description: Check that ensures best practices in Yandex Cloud secrets management.
     group: cloud-weak-secrets-management
     name: CKV_YC_9
