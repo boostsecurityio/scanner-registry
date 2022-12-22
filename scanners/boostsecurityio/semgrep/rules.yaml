@@ -241,6 +241,19 @@ rules:
     description: The use of a broken or risky cryptographic algorithm is an unnecessary
       risk that may result in the exposure of sensitive information.
     ref: https://github.com/returntocorp/semgrep-rules/
+  CWE-328:
+    categories:
+    - ALL
+    - cwe-328
+    - boost-baseline
+    - boost-hardened
+    - owasp-top-10
+    group: top10-crypto-failures
+    name: CWE-328
+    pretty_name: CWE-328 - Use of Weak Hash
+    description: The use of a weak cryptographic algorithm is an unnecessary
+      risk that may result in the exposure of sensitive information.
+    ref: https://github.com/returntocorp/semgrep-rules/
   CWE-345:
     categories:
     - ALL
