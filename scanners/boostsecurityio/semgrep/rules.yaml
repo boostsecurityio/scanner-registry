@@ -666,6 +666,15 @@ rules:
       and executes the code without sufficiently verifying the origin and integrity
       of the code.
     ref: https://github.com/returntocorp/semgrep-rules/
+  CWE-1333:
+    categories:
+    - ALL
+    - cwe-1333
+    group: top10-insecure-design
+    name: CWE-1333
+    pretty_name: CWE-1333 - Inefficient Regular Expression Complexity
+    description: The product uses a regular expression with an inefficient, possibly exponential worst-case computational complexity that consumes excessive CPU cycles.
+    ref: https://github.com/returntocorp/semgrep-rules/
   CWE-UNKNOWN:
     categories:
     - ALL
