@@ -657,9 +657,6 @@ rules:
     categories:
     - ALL
     - cwe-1333
-    - boost-baseline
-    - boost-hardened
-    - owasp-top-10
     group: top10-insecure-design
     name: CWE-1333
     pretty_name: CWE-1333 - Inefficient Regular Expression Complexity
