@@ -25,7 +25,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-            image: public.ecr.aws/boostsecurityio/boost-converter-sca:335f358@sha256:a59f3ce62d5fabacb9cefd3fdd92862f07f47f3956514aac4c5d78ce7901f275
+            image: public.ecr.aws/boostsecurityio/boost-converter-sca:6e4b6c1@sha256:417c90b672b016b01dac84a4cf24d3a042503b6ddcfd1ba22ebd24d229f78883
             command: |
               process --scanner npm-audit
             environment:

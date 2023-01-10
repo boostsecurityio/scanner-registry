@@ -54,7 +54,7 @@ steps:
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:1a2887c@sha256:9ae707a3369b78d972c75ff552c2cc5b7f25c813549437adbab953e011fe31da
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:2077b09@sha256:9acea8e0566becbbf19a51b7de326cda23d124254091f38cf5e2132f298a1301
           command: process
           environment:
             PYTHONIOENCODING: utf-8
